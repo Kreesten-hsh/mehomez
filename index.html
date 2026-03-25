@@ -2,11 +2,29 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=./mehomez-portfolio.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mehomez</title>
+    <title>Mehomez | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio modernise de Mehomez, artiste plasticien beninois entre l'Allemagne et le Benin."
+    />
+    <link rel="preconnect" href="https://mehomez.de" crossorigin />
+    <link rel="dns-prefetch" href="//mehomez.de" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./app.js"></script>
   </head>
-  <body>
-    <p>Redirection vers <a href="./mehomez-portfolio.html">le portfolio</a>.</p>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+    <div class="site-frame">
+      <header class="site-header" data-site-header></header>
+      <main id="main-content" class="page-main" data-page-root></main>
+      <footer class="site-footer" data-site-footer></footer>
+    </div>
   </body>
 </html>

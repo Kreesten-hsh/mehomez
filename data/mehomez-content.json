@@ -53,7 +53,15 @@
     "title": "L'artiste",
     "html": "<h2>L&rsquo;œuvre</h2>\n<p>Artiste plasticien, compose ses œuvres principalement à partir de matériaux locaux : ocre, terre, latérite  et peinture acrylique sur toile, bois, plastic,&#8230; ainsi que des assemblages avec des matériaux de récupération tels que les canettes, les bouteilles en plastic, etc. Depuis 2010, il développe son propre style. Une combinaison de peinture et de sculpture: la Peinture sculptée.</p>\n<h2>L&rsquo;artiste</h2>\n<p>Né à Porto-Novo en 1978, Ezéchiel Janvier Mehome de son vrai nom, grandit dans une grande famille traditionnelle d&rsquo;une quinzaine d&rsquo;enfant, d&rsquo;un père photographe et d&rsquo;une mère ménagère. Il suit une scolarité jusqu’en classe de terminale et s&rsquo;intéressa à l’agronomie et aux sciences naturelles. À la recherche de ressources financières, il combina d&rsquo;abord l&rsquo;art et les études jusqu&rsquo;au moment où les arts plastiques prirent le dessus. Il retrouve aujourd’hui à travers son œuvre un support d’inspiration engagée.</p>\n<h2>Sa philosophie</h2>\n<p>L&rsquo;artiste tire son inspiration des faits quotidiens se déroulant dans son environnement immédiat et des valeurs intrinsèques qu&rsquo;incarne sa propre culture et celle des autres.</p>\n<p>Sa démarche est un engagement et son regard s&rsquo;accorde des difficultés et des incohérences de la vie quotidienne au Bénin, en Afrique et partout dans le monde.</p>\n<p>Son regard est sensible à la souffrance de son peuple, et inquiet de son devenir.</p>\n",
     "text": "L'œuvre\n Artiste plasticien, compose ses œuvres principalement à partir de matériaux locaux : ocre, terre, latérite  et peinture acrylique sur toile, bois, plastic,… ainsi que des assemblages avec des matériaux de récupération tels que les canettes, les bouteilles en plastic, etc. Depuis 2010, il développe son propre style. Une combinaison de peinture et de sculpture: la Peinture sculptée.\n L'artiste\n Né à Porto-Novo en 1978, Ezéchiel Janvier Mehome de son vrai nom, grandit dans une grande famille traditionnelle d'une quinzaine d'enfant, d'un père photographe et d'une mère ménagère. Il suit une scolarité jusqu’en classe de terminale et s'intéressa à l’agronomie et aux sciences naturelles. À la recherche de ressources financières, il combina d'abord l'art et les études jusqu'au moment où les arts plastiques prirent le dessus. Il retrouve aujourd’hui à travers son œuvre un support d’inspiration engagée.\n Sa philosophie\n L'artiste tire son inspiration des faits quotidiens se déroulant dans son environnement immédiat et des valeurs intrinsèques qu'incarne sa propre culture et celle des autres.\n Sa démarche est un engagement et son regard s'accorde des difficultés et des incohérences de la vie quotidienne au Bénin, en Afrique et partout dans le monde.\n Son regard est sensible à la souffrance de son peuple, et inquiet de son devenir.",
-    "portrait": "https://mehomez.de/wp-content/uploads/2022/10/Circulez.jpg"
+    "portrait": {
+      "thumbnail": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez-150x147.jpg",
+      "medium": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg",
+      "large": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg",
+      "full": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg",
+      "width": 302,
+      "height": 296,
+      "alt": "https://boisacre.blogspot.com/2014/05/ezechiel-mehome-nous-presente-son.html?fbclid=IwAR1qX4Sj1KcL7n1gouzA5IP12w3kIndIpX2ILNOf9ZFXl47gTaZgh4U7TY0"
+    }
   },
   "home": {
     "title": "Page d'accueil",
@@ -125,6 +133,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2022/10/Circulez-150x113.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2022/10/Circulez-370x278.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2022/10/Circulez-600x450.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2022/10/Circulez.jpg",
+        "width": 4160,
+        "height": 3120,
+        "alt": "Circulez! ( 2021-2022)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2022/10/Circulez.jpg"
       ],
@@ -179,6 +196,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm.jpg",
+        "width": 3888,
+        "height": 5184,
+        "alt": "sur le toit du monde 157×71,5x14cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm.jpg"
       ],
@@ -233,6 +259,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm.jpg",
+        "width": 3888,
+        "height": 5184,
+        "alt": "Abor-ilé-Home-back2164x75x10cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm.jpg",
         "blob:http://mehomez.de/a705a042-aeca-449c-8d00-78eb1ab67b16"
@@ -288,6 +323,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm.jpg",
+        "width": 3888,
+        "height": 5184,
+        "alt": "Abor ilé (Home back1) 176x84x17cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm.jpg"
       ],
@@ -342,6 +386,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque.jpg",
+        "width": 720,
+        "height": 960,
+        "alt": "Lorsque l'espoir peu à peu renaît ( Dresde,Mai 2020) composition: peinture acrylique,ficelle sur toile,Bois de chêne Technique : mixte Dimensions: 121,5 x 105 x 13 cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque.jpg"
       ],
@@ -396,6 +449,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Ts-ds-le-mm-panier-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Ts-ds-le-mm-panier-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Ts-ds-le-mm-panier-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Ts-ds-le-mm-panier.jpg",
+        "width": 720,
+        "height": 960,
+        "alt": "Tous dans le même panier?Compositions: peinture acrylique,ficelles sur toile,bois de chêne Technique: mixte Dimensions: 140,5 x 48 x 12 cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Ts-ds-le-mm-panier.jpg"
       ],
@@ -438,6 +500,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie-113x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie-278x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie-375x500.png",
+        "full": "https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie.png",
+        "width": 375,
+        "height": 500,
+        "alt": "Man in Alexanderplatz – Copie"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie.png"
       ],
@@ -480,6 +551,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1-113x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1-278x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1-375x500.png",
+        "full": "https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1.png",
+        "width": 375,
+        "height": 500,
+        "alt": "Woman in Alexanderplatz 1"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1.png"
       ],
@@ -522,6 +602,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/10/les-Messagers-du-Vent-copie-150x94.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/10/les-Messagers-du-Vent-copie-370x231.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/10/les-Messagers-du-Vent-copie-600x375.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/10/les-Messagers-du-Vent-copie.jpg",
+        "width": 801,
+        "height": 500,
+        "alt": "Messagers du vent Composition de l’installation: peinture acrylique sur plastic, bois, ficelles Technique: mixte Dimensions: 310 x 200 x 25 cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/10/les-Messagers-du-Vent-copie.jpg"
       ],
@@ -564,6 +653,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/10/le-débarquement-150x113.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/10/le-débarquement-370x278.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/10/le-débarquement-600x450.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/10/le-débarquement.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Le débarquement Composition de l’installation: plastic, ficelle, peinture acrylique, toile, bois, corde, fenêtre, vitre Technique: mixte Dimensions: 400 x 150 x 15 cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/10/le-débarquement.jpg"
       ],
@@ -606,6 +704,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/10/Foot-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/10/Foot-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/10/Foot-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/10/Foot.jpg",
+        "width": 450,
+        "height": 600,
+        "alt": "Borlu Golu (Ballon d'or)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/10/Foot.jpg"
       ],
@@ -648,6 +755,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/09/musique-des-sphères-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/09/musique-des-sphères-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/09/musique-des-sphères-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/09/musique-des-sphères.jpg",
+        "width": 450,
+        "height": 600,
+        "alt": "A qui appartient la Lune?"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/09/musique-des-sphères.jpg"
       ],
@@ -690,6 +806,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4.jpg",
+        "width": 375,
+        "height": 500,
+        "alt": "Composition: peinture acrylique sur toile,bois ,ficelles Technique: mixte Dimensions: 131 x 95 x 6 cm"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4.jpg"
       ],
@@ -732,6 +857,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/09/Messagers-des-gons-101x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/09/Messagers-des-gons-248x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/09/Messagers-des-gons-335x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/09/Messagers-des-gons.jpg",
+        "width": 335,
+        "height": 500,
+        "alt": "Messager des Gons"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/09/Messagers-des-gons.jpg"
       ],
@@ -774,6 +908,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/le-bal-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/le-bal-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/le-bal-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/le-bal.jpg",
+        "width": 375,
+        "height": 500,
+        "alt": "le Bal (2019)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/le-bal.jpg"
       ],
@@ -816,6 +959,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Emois-150x104.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Emois-370x256.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Emois-600x416.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Emois.jpg",
+        "width": 1671,
+        "height": 1158,
+        "alt": "Émois"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Emois.jpg"
       ],
@@ -858,6 +1010,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/la-cruche-sacrée-87x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/la-cruche-sacrée-213x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/la-cruche-sacrée-213x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/la-cruche-sacrée.png",
+        "width": 251,
+        "height": 435,
+        "alt": "La cruche sacrée"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/la-cruche-sacrée.png"
       ],
@@ -900,6 +1061,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/demoiselle-de-porto-2-82x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/demoiselle-de-porto-2-202x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/demoiselle-de-porto-2-273x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/demoiselle-de-porto-2.jpg",
+        "width": 387,
+        "height": 710,
+        "alt": "Demoiselle de Porto 2"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/demoiselle-de-porto-2.jpg"
       ],
@@ -942,6 +1112,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Messagers-des-tambours-sacres-108x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Messagers-des-tambours-sacres-265x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Messagers-des-tambours-sacres-265x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Messagers-des-tambours-sacres.jpg",
+        "width": 345,
+        "height": 481,
+        "alt": "Messager des tambours sacrés"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Messagers-des-tambours-sacres.jpg"
       ],
@@ -984,6 +1163,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis-104x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis-256x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis-346x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis.jpg",
+        "width": 346,
+        "height": 500,
+        "alt": "L'Holocauste de Tunis"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis.jpg"
       ],
@@ -1026,6 +1214,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente-119x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente-294x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente-294x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente.jpg",
+        "width": 381,
+        "height": 480,
+        "alt": "L'Attente"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente.jpg"
       ],
@@ -1068,6 +1265,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race-116x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race-286x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race-387x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race.jpg",
+        "width": 387,
+        "height": 500,
+        "alt": "Culture de ma race"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race.jpg"
       ],
@@ -1110,6 +1316,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "peinture acrylique sur toile,ficelles,bois,plastique",
@@ -1150,6 +1357,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1-100x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1-247x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1-247x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1.jpg",
+        "width": 320,
+        "height": 480,
+        "alt": "Demoiselle de Porto 1"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1.jpg"
       ],
@@ -1192,6 +1408,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-1-150x101.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-1-370x248.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-1-370x248.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-1.jpg",
+        "width": 576,
+        "height": 386,
+        "alt": "Dans les 3 P (série N 4)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-1.jpg"
       ],
@@ -1234,6 +1459,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-150x101.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-370x248.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-370x248.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4.jpg",
+        "width": 576,
+        "height": 386,
+        "alt": "Dans les 3 P (série N 3)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4.jpg"
       ],
@@ -1276,6 +1510,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-trois-P-serie-N2-2-103x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-trois-P-serie-N2-2-253x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-trois-P-serie-N2-2-253x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-trois-P-serie-N2-2.jpg",
+        "width": 297,
+        "height": 434,
+        "alt": "Dans les 3 P"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-trois-P-serie-N2-2.jpg"
       ],
@@ -1318,6 +1561,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/dans-les-3-P-serie-N1-100x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/dans-les-3-P-serie-N1-246x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/dans-les-3-P-serie-N1-332x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/dans-les-3-P-serie-N1.jpg",
+        "width": 332,
+        "height": 500,
+        "alt": "Dans les 3 P (serie N1)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/dans-les-3-P-serie-N1.jpg"
       ],
@@ -1360,6 +1612,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/La-bergère-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/La-bergère-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/La-bergère-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/La-bergère.jpg",
+        "width": 375,
+        "height": 500,
+        "alt": "La Bergère"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/La-bergère.jpg"
       ],
@@ -1402,6 +1663,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Libre-arbitre-1-84x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Libre-arbitre-1-208x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Libre-arbitre-1-281x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Libre-arbitre-1.jpg",
+        "width": 281,
+        "height": 500,
+        "alt": "Libre-arbitre"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Libre-arbitre-1.jpg"
       ],
@@ -1444,6 +1714,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Verseur-dEau-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Verseur-dEau-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Verseur-dEau-278x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Verseur-dEau.jpg",
+        "width": 360,
+        "height": 480,
+        "alt": "Verseur d'Eau"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Verseur-dEau.jpg"
       ],
@@ -1486,6 +1765,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/wangnigni-150x84.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/wangnigni-370x208.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/wangnigni-370x208.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/wangnigni.jpg",
+        "width": 576,
+        "height": 324,
+        "alt": "Wangnigni"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/wangnigni.jpg"
       ],
@@ -1528,6 +1816,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/LEclipse-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/LEclipse-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/LEclipse-278x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/LEclipse.jpg",
+        "width": 360,
+        "height": 480,
+        "alt": "L'Eclipse"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/LEclipse.jpg"
       ],
@@ -1570,6 +1867,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Transe-mission-150x113.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Transe-mission-370x278.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Transe-mission-600x450.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Transe-mission.jpg",
+        "width": 640,
+        "height": 480,
+        "alt": "Transe-mission"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Transe-mission.jpg"
       ],
@@ -1612,6 +1918,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Les-Cent-Titres-87x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Les-Cent-Titres-215x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Les-Cent-Titres-215x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Les-Cent-Titres.jpg",
+        "width": 278,
+        "height": 479,
+        "alt": "Les-Cent-Titres"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Les-Cent-Titres.jpg"
       ],
@@ -1658,6 +1973,15 @@
         39,
         41
       ],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/A-visage-découvert-84x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/A-visage-découvert-208x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/A-visage-découvert-208x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/A-visage-découvert.jpg",
+        "width": 270,
+        "height": 480,
+        "alt": "A visage découvert"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/A-visage-découvert.jpg"
       ],
@@ -1700,6 +2024,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "peinture acrylique, bois de chêne, plastic, chutes de tissus, ficelles",
@@ -1740,6 +2065,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Les-cinquantes-Nerfs-de-lIndépendance-150x101.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Les-cinquantes-Nerfs-de-lIndépendance-370x248.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Les-cinquantes-Nerfs-de-lIndépendance-600x402.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Les-cinquantes-Nerfs-de-lIndépendance.jpg",
+        "width": 600,
+        "height": 402,
+        "alt": "Les cinquante Nerfs de l'indépendance"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Les-cinquantes-Nerfs-de-lIndépendance.jpg"
       ],
@@ -1782,6 +2116,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "peinture acrylique sur toile,bois,ficelles",
@@ -1822,6 +2157,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "peinture acrylique sur toile",
@@ -1862,6 +2198,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur.jpg",
+        "width": 375,
+        "height": 500,
+        "alt": "L'Explorateur"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur.jpg"
       ],
@@ -1904,6 +2249,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "peinture acrylique sur toile,bois de chêne,ficelles",
@@ -1944,6 +2290,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1.jpg",
+        "width": 375,
+        "height": 500,
+        "alt": "Colonisation et clichés (série N1)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1.jpg"
       ],
@@ -1986,6 +2341,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "peinture acrylique sur toile",
@@ -2026,6 +2382,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/09/20-116x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/09/20-288x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/09/20-389x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/09/20.jpg",
+        "width": "749",
+        "height": "961",
+        "alt": "Cérémonie Royale des Gozins"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/09/20.jpg"
       ],
@@ -2068,6 +2433,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/09/70-77x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/09/70-191x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/09/70-259x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/09/70.jpg",
+        "width": "872",
+        "height": "1681",
+        "alt": "Des Racines et des Ailes"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/09/70.jpg"
       ],
@@ -2110,6 +2484,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/09/25-73x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/09/25-180x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/09/25-243x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/09/25.jpg",
+        "width": "531",
+        "height": "1091",
+        "alt": "Baba alagbada"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/09/25.jpg"
       ],
@@ -2152,6 +2535,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Union-sacrée-109x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Union-sacrée-270x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Union-sacrée-270x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Union-sacrée.jpg",
+        "width": "293",
+        "height": "401",
+        "alt": "Union sacrée"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Union-sacrée.jpg"
       ],
@@ -2194,6 +2586,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Cérémonie-dInitiation-150x91.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Cérémonie-dInitiation-370x225.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Cérémonie-dInitiation-600x366.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Cérémonie-dInitiation.jpg",
+        "width": "631",
+        "height": "385",
+        "alt": "Cérémonie d'Initiation"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Cérémonie-dInitiation.jpg"
       ],
@@ -2236,6 +2637,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Avorka-Offrande-122x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Avorka-Offrande-302x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Avorka-Offrande-302x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Avorka-Offrande.jpg",
+        "width": "343",
+        "height": "419",
+        "alt": "Avorka (Offrande)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Avorka-Offrande.jpg"
       ],
@@ -2278,6 +2688,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Allons-au-ciel-148x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Allons-au-ciel-365x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Allons-au-ciel-365x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Allons-au-ciel.jpg",
+        "width": "394",
+        "height": "399",
+        "alt": "Allons au ciel"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Allons-au-ciel.jpg"
       ],
@@ -2320,6 +2739,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Tchokoto-Kan-Lokpor-150x145.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Tchokoto-Kan-Lokpor-370x359.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Tchokoto-Kan-Lokpor-370x359.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Tchokoto-Kan-Lokpor.jpg",
+        "width": "515",
+        "height": "500",
+        "alt": "Tchokoto Kan Lokpor"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Tchokoto-Kan-Lokpor.jpg"
       ],
@@ -2362,6 +2790,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Ogan-Ho-120x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Ogan-Ho-298x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Ogan-Ho-298x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Ogan-Ho.jpg",
+        "width": "403",
+        "height": "500",
+        "alt": "Ogan Ho"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Ogan-Ho.jpg"
       ],
@@ -2404,6 +2841,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Masques-Initiatiques-150x112.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Masques-Initiatiques-370x276.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Masques-Initiatiques-370x276.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Masques-Initiatiques.jpg",
+        "width": "600",
+        "height": "448",
+        "alt": "Masques Initiatiques"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Masques-Initiatiques.jpg"
       ],
@@ -2446,6 +2892,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Le-Lien-150x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Le-Lien-370x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Le-Lien-370x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Le-Lien.jpg",
+        "width": "501",
+        "height": "500",
+        "alt": "Le Lien"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Le-Lien.jpg"
       ],
@@ -2488,6 +2943,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/02/Oganla-126x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/02/Oganla-313x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/02/Oganla-313x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/02/Oganla.jpg",
+        "width": "423",
+        "height": "500",
+        "alt": "Ogan'la"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/02/Oganla.jpg"
       ],
@@ -2530,6 +2994,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/02/La-table-du-pasteur-111x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/02/La-table-du-pasteur-275x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/02/La-table-du-pasteur-275x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/02/La-table-du-pasteur.png",
+        "width": "372",
+        "height": "500",
+        "alt": "La table du pasteur"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/02/La-table-du-pasteur.png"
       ],
@@ -2572,6 +3045,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit-127x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit-314x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit-314x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit.png",
+        "width": "425",
+        "height": "500",
+        "alt": "Zangbetor Kpakliyaho (Le chef des gardiens de nuit)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit.png"
       ],
@@ -2614,6 +3096,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Vodounsi-au-marché-46x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Vodounsi-au-marché-113x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Vodounsi-au-marché-113x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Vodounsi-au-marché.png",
+        "width": "154",
+        "height": "500",
+        "alt": "Vodounsi au marché"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Vodounsi-au-marché.png"
       ],
@@ -2656,6 +3147,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Sogbégnantor-Le-chasseur-et-son-chien-de-chasse-57x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Sogbégnantor-Le-chasseur-et-son-chien-de-chasse-142x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Sogbégnantor-Le-chasseur-et-son-chien-de-chasse-142x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Sogbégnantor-Le-chasseur-et-son-chien-de-chasse.png",
+        "width": "193",
+        "height": "500",
+        "alt": "Sogbégnantor (Le chasseur et son chien de chasse)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Sogbégnantor-Le-chasseur-et-son-chien-de-chasse.png"
       ],
@@ -2698,6 +3198,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè-150x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè-370x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè-370x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè.png",
+        "width": "499",
+        "height": "500",
+        "alt": "Mon Duo Déè"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè.png"
       ],
@@ -2740,6 +3249,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Loiseau-et-la-marée-noire-150x77.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Loiseau-et-la-marée-noire-370x189.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Loiseau-et-la-marée-noire-370x189.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Loiseau-et-la-marée-noire.png",
+        "width": "600",
+        "height": "308",
+        "alt": "L'oiseau et la marée noire"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Loiseau-et-la-marée-noire.png"
       ],
@@ -2782,6 +3300,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Lexciseuse-55x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Lexciseuse-136x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Lexciseuse-136x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Lexciseuse.png",
+        "width": "184",
+        "height": "500",
+        "alt": "L'exciseuse"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Lexciseuse.png"
       ],
@@ -2824,6 +3351,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Les-oubliés-de-la-Grande-Guerre-79x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Les-oubliés-de-la-Grande-Guerre-196x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Les-oubliés-de-la-Grande-Guerre-196x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Les-oubliés-de-la-Grande-Guerre.png",
+        "width": "265",
+        "height": "500",
+        "alt": "Les oubliés de la Grande Guerre"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Les-oubliés-de-la-Grande-Guerre.png"
       ],
@@ -2866,6 +3402,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor-119x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor-295x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor-295x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor.png",
+        "width": "399",
+        "height": "500",
+        "alt": "Les gardiens du seuil (Tolègba et Zangbetor)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor.png"
       ],
@@ -2908,6 +3453,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Le-prêtre-du-Fa-86x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Le-prêtre-du-Fa-213x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Le-prêtre-du-Fa-213x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Le-prêtre-du-Fa.png",
+        "width": "289",
+        "height": "500",
+        "alt": "Le prêtre du Fa"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Le-prêtre-du-Fa.png"
       ],
@@ -2950,6 +3504,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Le-justicier-108x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Le-justicier-267x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Le-justicier-267x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Le-justicier.png",
+        "width": "361",
+        "height": "500",
+        "alt": "Le justicier"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Le-justicier.png"
       ],
@@ -2992,6 +3555,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux-132x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux-326x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux-326x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux.png",
+        "width": "441",
+        "height": "500",
+        "alt": "Iya Ibéji (La main des jumeaux)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux.png"
       ],
@@ -3034,6 +3606,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Immigration-clandestine-vue-1-150x89.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Immigration-clandestine-vue-1-370x220.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Immigration-clandestine-vue-1-370x220.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Immigration-clandestine-vue-1.png",
+        "width": "600",
+        "height": "357",
+        "alt": "Immigration clandestine"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Immigration-clandestine-vue-1.png"
       ],
@@ -3076,6 +3657,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Igba-Ibéji-Calebasses-des-jumeaux-105x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Igba-Ibéji-Calebasses-des-jumeaux-259x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Igba-Ibéji-Calebasses-des-jumeaux-259x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Igba-Ibéji-Calebasses-des-jumeaux.png",
+        "width": "350",
+        "height": "500",
+        "alt": "Igba Ibéji (Calebasses des jumeaux)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Igba-Ibéji-Calebasses-des-jumeaux.png"
       ],
@@ -3118,6 +3708,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Coule-leur-de-peau-111x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Coule-leur-de-peau-273x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Coule-leur-de-peau-273x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Coule-leur-de-peau.png",
+        "width": "370",
+        "height": "500",
+        "alt": "Coule-leur de peau"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Coule-leur-de-peau.png"
       ],
@@ -3160,6 +3759,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Au-prix-de-ma-liberté-56x150.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Au-prix-de-ma-liberté-138x370.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Au-prix-de-ma-liberté-138x370.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Au-prix-de-ma-liberté.png",
+        "width": "187",
+        "height": "500",
+        "alt": "Au prix de ma liberté"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Au-prix-de-ma-liberté.png"
       ],
@@ -3202,6 +3810,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon-150x75.png",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon-370x186.png",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon-370x186.png",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon.png",
+        "width": "600",
+        "height": "303",
+        "alt": "Agbadjoumon"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon.png"
       ],
@@ -3244,6 +3861,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Ylor-Lappel-150x148.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Ylor-Lappel-370x366.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Ylor-Lappel-370x366.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Ylor-Lappel.jpg",
+        "width": "505",
+        "height": "500",
+        "alt": "Ylor (L'appel)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Ylor-Lappel.jpg"
       ],
@@ -3286,6 +3912,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Totem-89x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Totem-219x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Totem-219x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Totem.jpg",
+        "width": "297",
+        "height": "500",
+        "alt": "Totem"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Totem.jpg"
       ],
@@ -3328,6 +3963,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Sans-titre-2-Lémanence-84x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Sans-titre-2-Lémanence-207x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Sans-titre-2-Lémanence-207x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Sans-titre-2-Lémanence.jpg",
+        "width": "280",
+        "height": "500",
+        "alt": "[sans titre] 2"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Sans-titre-2-Lémanence.jpg"
       ],
@@ -3370,6 +4014,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/sans-titre-1-150x73.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/sans-titre-1-370x181.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/sans-titre-1-370x181.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/sans-titre-1.jpg",
+        "width": "600",
+        "height": "295",
+        "alt": "[sans titre] 1"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/sans-titre-1.jpg"
       ],
@@ -3412,6 +4065,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Les-jumeaux-150x145.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Les-jumeaux-370x359.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Les-jumeaux-370x359.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Les-jumeaux.jpg",
+        "width": "514",
+        "height": "500",
+        "alt": "Les jumeaux"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Les-jumeaux.jpg"
       ],
@@ -3454,6 +4116,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Primitif-instinct-118x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Primitif-instinct-292x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Primitif-instinct-292x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Primitif-instinct.jpg",
+        "width": "395",
+        "height": "500",
+        "alt": "Primitif instinct"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Primitif-instinct.jpg"
       ],
@@ -3496,6 +4167,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Main-tendue-144x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Main-tendue-357x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Main-tendue-357x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Main-tendue.jpg",
+        "width": "483",
+        "height": "500",
+        "alt": "Main tendue"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Main-tendue.jpg"
       ],
@@ -3538,6 +4218,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Le-Vodoun-et-le-Christ-62x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Le-Vodoun-et-le-Christ-154x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Le-Vodoun-et-le-Christ-154x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Le-Vodoun-et-le-Christ.jpg",
+        "width": "209",
+        "height": "500",
+        "alt": "Le Vodoun et le Christ"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Le-Vodoun-et-le-Christ.jpg"
       ],
@@ -3580,6 +4269,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Les-marionnettes-africaines-118x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Les-marionnettes-africaines-292x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Les-marionnettes-africaines-292x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Les-marionnettes-africaines.jpg",
+        "width": "395",
+        "height": "500",
+        "alt": "Les marionnettes africaines"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Les-marionnettes-africaines.jpg"
       ],
@@ -3622,6 +4320,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur-122x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur-301x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur-301x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur.jpg",
+        "width": "408",
+        "height": "500",
+        "alt": "Larmes et sueur"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur.jpg"
       ],
@@ -3664,6 +4371,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Le-gozin-92x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Le-gozin-228x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Le-gozin-228x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Le-gozin.jpg",
+        "width": "309",
+        "height": "500",
+        "alt": "Le gozin"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Le-gozin.jpg"
       ],
@@ -3706,6 +4422,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/La-résonance-147x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/La-résonance-362x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/La-résonance-362x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/La-résonance.jpg",
+        "width": "490",
+        "height": "500",
+        "alt": "La résonance"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/La-résonance.jpg"
       ],
@@ -3748,6 +4473,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Larbre-de-loubli-150x131.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Larbre-de-loubli-370x324.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Larbre-de-loubli-370x324.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Larbre-de-loubli.jpg",
+        "width": "570",
+        "height": "500",
+        "alt": "L'arbre de l'oubli"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Larbre-de-loubli.jpg"
       ],
@@ -3790,6 +4524,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/La-fenêtre-du-retour-150x88.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/La-fenêtre-du-retour-370x217.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/La-fenêtre-du-retour-370x217.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/La-fenêtre-du-retour.jpg",
+        "width": "600",
+        "height": "352",
+        "alt": "La fenêtre du retour"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/La-fenêtre-du-retour.jpg"
       ],
@@ -3832,6 +4575,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/La-danse-des-vierges-135x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/La-danse-des-vierges-333x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/La-danse-des-vierges-333x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/La-danse-des-vierges.jpg",
+        "width": "451",
+        "height": "500",
+        "alt": "La danse des vierges"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/La-danse-des-vierges.jpg"
       ],
@@ -3874,6 +4626,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges-150x145.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges-370x359.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges-370x359.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges.jpg",
+        "width": "514",
+        "height": "500",
+        "alt": "La douleur des vierges"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges.jpg"
       ],
@@ -3916,6 +4677,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Im-waiting-for-you-150x111.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Im-waiting-for-you-370x275.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Im-waiting-for-you-370x275.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Im-waiting-for-you.jpg",
+        "width": "600",
+        "height": "446",
+        "alt": "I'm waiting for you"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Im-waiting-for-you.jpg"
       ],
@@ -3958,6 +4728,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri-133x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri-328x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri-328x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri.jpg",
+        "width": "444",
+        "height": "500",
+        "alt": "Igbé kpaman achiri"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri.jpg"
       ],
@@ -4000,6 +4779,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/I-can-fly-61x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/I-can-fly-150x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/I-can-fly-150x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/I-can-fly.jpg",
+        "width": "204",
+        "height": "500",
+        "alt": "I can fly"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/I-can-fly.jpg"
       ],
@@ -4042,6 +4830,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité-92x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité-227x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité-227x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité.jpg",
+        "width": "308",
+        "height": "500",
+        "alt": "Harmonie de l'unicité"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité.jpg"
       ],
@@ -4084,6 +4881,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Djobalè-150x85.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Djobalè-370x209.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Djobalè-370x209.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Djobalè.jpg",
+        "width": "600",
+        "height": "340",
+        "alt": "Djobalè"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Djobalè.jpg"
       ],
@@ -4126,6 +4932,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Complète-mentalité-150x147.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Complète-mentalité-370x364.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Complète-mentalité-370x364.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Complète-mentalité.jpg",
+        "width": "508",
+        "height": "500",
+        "alt": "Complète - mentalité"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Complète-mentalité.jpg"
       ],
@@ -4168,6 +4983,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Comme-Union-150x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Comme-Union-370x368.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Comme-Union-370x368.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Comme-Union.jpg",
+        "width": "502",
+        "height": "500",
+        "alt": "Comme Union"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Comme-Union.jpg"
       ],
@@ -4210,6 +5034,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/01/Balogun-Le-chef-de-guerre-96x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/01/Balogun-Le-chef-de-guerre-237x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/01/Balogun-Le-chef-de-guerre-237x370.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/01/Balogun-Le-chef-de-guerre.jpg",
+        "width": "321",
+        "height": "500",
+        "alt": "Balogun (Le chef de guerre)"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/01/Balogun-Le-chef-de-guerre.jpg"
       ],
@@ -4266,6 +5099,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-375x500.jpg"
       ],
@@ -4320,6 +5154,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2.jpg",
+        "width": 720,
+        "height": 960,
+        "alt": "press mehomez2"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2.jpg",
         "http://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1-375x500.jpg"
@@ -4375,6 +5218,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/06/Lichtung-expo-collective-150x113.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/06/Lichtung-expo-collective-370x278.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/06/Lichtung-expo-collective-600x450.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/06/Lichtung-expo-collective.jpg",
+        "width": 960,
+        "height": 720,
+        "alt": "Lichtung expo collective"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/06/Lichtung-expo-collective.jpg"
       ],
@@ -4429,6 +5281,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg",
+        "width": null,
+        "height": null,
+        "alt": "Hogbonou: Des Racines et des ailes.Exposition d'Art contemporain de Ezéchiel MEHOME alias MEHOMEZ.Du 11juin au 17 jueillet 2011 au centre culturel ouadada de porto-novo."
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg",
         "http://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg"
@@ -4474,6 +5335,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion-502x500.jpg"
       ],
@@ -4516,6 +5378,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture-280x370.jpg",
         "http://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article.jpg"
@@ -4559,6 +5422,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal.jpg"
       ],
@@ -4601,6 +5465,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale.jpg"
       ],
@@ -4643,6 +5508,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou.jpg"
       ],
@@ -4685,6 +5551,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal.jpg"
       ],
@@ -4727,6 +5594,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale.jpg"
       ],
@@ -4769,6 +5637,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal.jpg"
       ],
@@ -4811,6 +5680,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien.jpg"
       ],
@@ -4853,6 +5723,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction.jpg"
       ],
@@ -4895,6 +5766,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal.jpg"
       ],
@@ -4937,6 +5809,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple.jpg"
       ],
@@ -4979,6 +5852,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore.jpg"
       ],
@@ -5035,6 +5909,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2-113x150.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2-278x370.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2-375x500.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2.jpg",
+        "width": 3888,
+        "height": 5184,
+        "alt": "Homeback 1 detail 2"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2.jpg"
       ],
@@ -5091,6 +5974,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Womit-150x113.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Womit-370x278.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Womit-600x450.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Womit.jpg",
+        "width": 800,
+        "height": 600,
+        "alt": "Mehomez Womit"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Womit.jpg"
       ],
@@ -5147,6 +6039,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/06/Mehomez2020-150x75.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/06/Mehomez2020-370x185.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/06/Mehomez2020-600x300.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/06/Mehomez2020.jpg",
+        "width": 800,
+        "height": 400,
+        "alt": "Lass es besser werden. Dresden,06-2020"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/06/Mehomez2020.jpg"
       ],
@@ -5203,6 +6104,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez-150x147.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg",
+        "width": 302,
+        "height": 296,
+        "alt": "https://boisacre.blogspot.com/2014/05/ezechiel-mehome-nous-presente-son.html?fbclid=IwAR1qX4Sj1KcL7n1gouzA5IP12w3kIndIpX2ILNOf9ZFXl47gTaZgh4U7TY0"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg"
       ],
@@ -5257,6 +6167,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2019/08/Emois-150x104.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2019/08/Emois-370x256.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2019/08/Emois-600x416.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2019/08/Emois.jpg",
+        "width": 1671,
+        "height": 1158,
+        "alt": "Émois"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2019/08/Emois.jpg"
       ],
@@ -5299,6 +6218,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-1-370x266.jpg",
         "http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-2-319x370.jpg",
@@ -5338,6 +6258,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [],
       "embeds": [],
       "composition": "",
@@ -5378,6 +6299,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-1-370x260.jpg",
         "http://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-2-370x284.jpg",
@@ -5422,6 +6344,7 @@
         }
       ],
       "tags": [],
+      "image": null,
       "images": [
         "http://mehomez.de/wp-content/uploads/2011/03/afrique-495-370x277.jpg",
         "http://mehomez.de/wp-content/uploads/2011/03/afrique-496-370x277.jpg",
@@ -5467,6 +6390,15 @@
         }
       ],
       "tags": [],
+      "image": {
+        "thumbnail": "https://mehomez.de/wp-content/uploads/2011/03/Vernissage-de-lexposition-Patrie-Moine-thumb.jpg",
+        "medium": "https://mehomez.de/wp-content/uploads/2011/03/Vernissage-de-lexposition-Patrie-Moine-thumb.jpg",
+        "large": "https://mehomez.de/wp-content/uploads/2011/03/Vernissage-de-lexposition-Patrie-Moine-thumb.jpg",
+        "full": "https://mehomez.de/wp-content/uploads/2011/03/Vernissage-de-lexposition-Patrie-Moine-thumb.jpg",
+        "width": "150",
+        "height": "113",
+        "alt": "Vernissage de l'exposition Patrie-Moine – thumb"
+      },
       "images": [
         "https://mehomez.de/wp-content/uploads/2011/03/Vernissage-de-lexposition-Patrie-Moine-thumb.jpg",
         "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-1.jpg",

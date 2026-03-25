@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: mehomez-portfolio
+    runtime: static
+    buildCommand: echo "Static site ready"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true

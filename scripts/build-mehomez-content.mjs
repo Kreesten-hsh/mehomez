@@ -36,15 +36,6 @@ function stripHtml(text = '') {
   return decodeHtml(text);
 }
 
-function slugifyLabel(text = '') {
-  return text
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
-}
-
 function extractImageUrls(html = '') {
   return [...html.matchAll(/<img[^>]+src=["']([^"']+)["']/gi)].map((match) => match[1]);
 }
@@ -115,6 +106,36 @@ function unique(list) {
   return [...new Set(list.filter(Boolean))];
 }
 
+function buildImageAsset(media) {
+  if (!media) {
+    return null;
+  }
+
+  const sizes = media.media_details?.sizes || {};
+  const pick = (...keys) => {
+    for (const key of keys) {
+      const source =
+        key === 'full'
+          ? sizes.full?.source_url || media.source_url
+          : sizes[key]?.source_url;
+      if (source) {
+        return source;
+      }
+    }
+    return media.source_url || '';
+  };
+
+  return {
+    thumbnail: pick('thumbnail', 'medium', 'large', 'full'),
+    medium: pick('medium', 'medium_large', 'large', 'full', 'thumbnail'),
+    large: pick('large', 'medium_large', 'medium', 'full', 'thumbnail'),
+    full: pick('full', 'large', 'medium_large', 'medium', 'thumbnail'),
+    width: media.media_details?.width || null,
+    height: media.media_details?.height || null,
+    alt: stripHtml(media.alt_text || media.title?.rendered || ''),
+  };
+}
+
 function normalizePage(page) {
   return {
     id: page.id,
@@ -145,8 +166,9 @@ function normalizePost(post, byId, mediaById) {
   const text = stripHtml(html);
   const featuredMediaId = post.featured_media || 0;
   const featuredMedia = mediaById.get(featuredMediaId);
+  const image = buildImageAsset(featuredMedia);
   const images = unique([
-    featuredMedia?.source_url || '',
+    image?.full || '',
     ...extractImageUrls(html),
   ]);
 
@@ -173,6 +195,7 @@ function normalizePost(post, byId, mediaById) {
     archiveYear,
     categories,
     tags: post.tags || [],
+    image,
     images,
     embeds: extractIframeUrls(html),
     composition: extractField(text, 'Composition'),
@@ -212,6 +235,14 @@ async function main() {
   const artistPage = selectPage(pages, 'lartiste');
   const homePage = selectPage(pages, 'a-propos');
   const contactPage = selectPage(pages, 'contact');
+  const portraitMedia =
+    raw.media.find((item) => /portrait-mehomez/i.test(item.slug || '')) ||
+    raw.media.find((item) => /portrait/i.test(stripHtml(item.title?.rendered || '')) && /mehomez/i.test(stripHtml(item.title?.rendered || '')));
+  const portraitAsset =
+    buildImageAsset(portraitMedia) ||
+    works.find((work) => work.image)?.image ||
+    press.find((entry) => entry.image)?.image ||
+    null;
 
   const allText = [
     artistPage?.text || '',
@@ -240,13 +271,10 @@ async function main() {
       title: artistPage?.title || 'Mehomez',
       html: artistPage?.html || '',
       text: artistPage?.text || '',
-      portrait:
-        works.find((work) => work.images.length > 0)?.images[0] ||
-        press.find((entry) => entry.images.length > 0)?.images[0] ||
-        '',
+      portrait: portraitAsset || '',
     },
     home: {
-      title: homePage?.title || 'Page d’accueil',
+      title: homePage?.title || "Page d'accueil",
       html: homePage?.html || '',
       text: homePage?.text || '',
       featuredWorks: works.slice(0, 6).map((work) => work.slug),
