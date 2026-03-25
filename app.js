@@ -3,411 +3,228 @@ import { siteData } from './data/mehomez-content.js';
 const root = document.querySelector('[data-page-root]');
 const header = document.querySelector('[data-site-header]');
 const footer = document.querySelector('[data-site-footer]');
-const currentPage = document.body.dataset.page;
-const themeStorageKey = 'mehomez-theme';
+const page = document.body.dataset.page;
+const searchParams = new URLSearchParams(window.location.search);
+const currentSlug = searchParams.get('slug');
 
-const pageFileByKey = {
-  home: 'mehomez-portfolio.html',
-  artist: 'artiste.html',
-  works: 'oeuvres.html',
-  'work-detail': 'oeuvre.html',
-  parcours: 'parcours.html',
-  press: 'presse.html',
-  'article-detail': 'article.html',
-  contact: 'contact.html',
-};
+const works = [...siteData.works].sort((a, b) => new Date(b.date) - new Date(a.date));
+const pressEntries = [...siteData.press].sort((a, b) => new Date(b.date) - new Date(a.date));
+const parcoursEntries = [...siteData.parcours].sort((a, b) => new Date(b.date) - new Date(a.date));
+const articleEntries = [...pressEntries, ...parcoursEntries];
 
-const works = siteData.works || [];
-const pressEntries = siteData.press || [];
-const parcoursEntries = siteData.parcours || [];
-const pageEntries = [...pressEntries, ...parcoursEntries];
+const navItems = [
+  ['home', 'Accueil', './mehomez-portfolio.html'],
+  ['artist', "L'artiste", './artiste.html'],
+  ['works', 'Galerie', './oeuvres.html'],
+  ['parcours', 'Parcours', './parcours.html'],
+  ['press', 'Presse', './presse.html'],
+  ['contact', 'Contact', './contact.html'],
+];
 
-function escapeHtml(value = '') {
-  return String(value)
+const heroSlides = [1, 2, 3, 4, 5, 6, 7].map(
+  (n) => `https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/0${n}.jpg`,
+);
+
+const esc = (v = '') =>
+  String(v)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
-}
 
-function formatDate(value) {
-  if (!value) return '';
-  return new Intl.DateTimeFormat('fr-FR', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  }).format(new Date(value));
-}
+const fmt = (value = '') =>
+  value
+    ? new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(value))
+    : '';
 
-function formatShortDate(value) {
-  if (!value) return '';
-  return new Intl.DateTimeFormat('fr-FR', {
-    month: 'short',
-    year: 'numeric',
-  }).format(new Date(value));
-}
-
-function excerpt(text = '', max = 220) {
+const excerpt = (text = '', max = 170) => {
   const compact = text.replace(/\s+/g, ' ').trim();
-  if (compact.length <= max) return compact;
-  return `${compact.slice(0, max).trim()}...`;
-}
+  return compact.length <= max ? compact : `${compact.slice(0, max).trim()}...`;
+};
 
-function sentenceBlock(text = '', sentences = 2) {
+const sentenceBlock = (text = '', count = 2) => {
   const chunks = text
     .replace(/\s+/g, ' ')
     .split(/[.!?]+/)
-    .map((chunk) => chunk.trim())
+    .map((item) => item.trim())
     .filter(Boolean);
-  return chunks.slice(0, sentences).join('. ') + (chunks.length ? '.' : '');
-}
+  return chunks.slice(0, count).join('. ') + (chunks.length ? '.' : '');
+};
 
-function getLeadImage(entry) {
-  return entry?.images?.[0] || siteData.artist.portrait || '';
-}
+const sentenceSlice = (text = '', start = 0, count = 2) => {
+  const chunks = text
+    .replace(/\s+/g, ' ')
+    .split(/[.!?]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+  const selected = chunks.slice(start, start + count);
+  return selected.join('. ') + (selected.length ? '.' : '');
+};
 
-function getWorkTypeLabel(work) {
-  return work.type === 'work-sculpture' ? 'Sculpture' : 'Peinture / peinture sculptée';
-}
+const paragraphs = (text = '') =>
+  text
+    .split(/\n+/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .map((part) => `<p>${esc(part)}</p>`)
+    .join('');
 
-function inferSource(entry) {
-  const title = entry?.title || '';
-  if (title.includes(':')) return title.split(':')[0].trim();
-  if (title.includes(',')) return title.split(',')[0].trim();
-  return entry.type === 'press' ? 'Revue de presse' : 'Infos & Parcours';
-}
+const imageOf = (entry) => entry?.images?.[0] || siteData.artist.portrait || heroSlides[0];
+const workKind = (work) => (work.type === 'work-sculpture' ? 'sculpture' : 'peinture');
+const workKindLabel = (work) => (workKind(work) === 'sculpture' ? 'Sculpture' : 'Peinture sculptée');
+const sourceOf = (entry) => (entry.title.includes(':') ? entry.title.split(':')[0].trim() : entry.title.includes(',') ? entry.title.split(',')[0].trim() : entry.type === 'press' ? 'Revue de presse' : 'Infos & Parcours');
+const metaOf = (work) => [work.composition, work.technique ? `Technique ${work.technique}` : '', work.dimensions, work.archiveYear].filter(Boolean).join(' · ');
+const artistPortrait = siteData.artist.portrait || imageOf(works[0]);
+const currentArticle = articleEntries.find((entry) => entry.slug === currentSlug) || null;
+const currentArticleSection = currentArticle ? (currentArticle.type === 'press' ? 'press' : 'parcours') : null;
+const quoteOf = () => (siteData.artist.text.match(/L'artiste tire son inspiration[^.]+\./i)?.[0] || sentenceBlock(siteData.artist.text, 1));
 
-function pageHero({ eyebrow, title, lead, image, meta = [] }) {
-  const imageStyle = image ? `style="background-image:url('${escapeHtml(image)}')"` : '';
+function pageHero(label, title, sub, image) {
   return `
-    <section class="hero section-shell">
-      <div class="hero__grid">
-        <div class="hero__copy reveal">
-          <p class="eyebrow">${escapeHtml(eyebrow)}</p>
-          <h1>${escapeHtml(title)}</h1>
-          <p class="lede">${escapeHtml(lead)}</p>
-          ${
-            meta.length
-              ? `<ul class="meta-strip">${meta
-                  .map((item) => `<li>${escapeHtml(item)}</li>`)
-                  .join('')}</ul>`
-              : ''
-          }
-        </div>
-        <div class="hero__visual reveal" ${imageStyle}>
-          <div class="hero__visual-overlay">
-            <span class="hero__visual-label">Portfolio reconstitué</span>
-            <strong>${escapeHtml(siteData.site.title)}</strong>
-          </div>
-        </div>
+    <section class="page-hero">
+      <div class="page-hero-image" style="--hero-image:url('${esc(image)}')"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <p class="page-hero-eyebrow reveal">${esc(label)}</p>
+        <h1 class="page-hero-title reveal">${title}</h1>
+        <p class="page-hero-sub reveal">${esc(sub)}</p>
+        <div class="page-hero-line reveal"></div>
       </div>
     </section>
   `;
 }
 
-function sectionHeading({ eyebrow, title, lead }) {
+function galleryCard(work) {
   return `
-    <div class="section-heading reveal">
-      <p class="eyebrow">${escapeHtml(eyebrow)}</p>
-      <h2>${escapeHtml(title)}</h2>
-      <p class="section-lede">${escapeHtml(lead)}</p>
-    </div>
-  `;
-}
-
-function workCard(work, featured = false) {
-  const image = getLeadImage(work);
-  const chips = [getWorkTypeLabel(work), work.archiveYear].filter(Boolean);
-  return `
-    <article class="work-card ${featured ? 'work-card--featured' : ''} reveal">
-      <a class="work-card__media" href="./oeuvre.html?slug=${encodeURIComponent(work.slug)}">
-        ${
-          image
-            ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)}" loading="lazy" />`
-            : '<div class="media-fallback">Archive visuelle</div>'
-        }
-      </a>
-      <div class="work-card__body">
-        <div class="chip-list">
-          ${chips.map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join('')}
-        </div>
-        <h3><a href="./oeuvre.html?slug=${encodeURIComponent(work.slug)}">${escapeHtml(work.title)}</a></h3>
-        <p>${escapeHtml(excerpt(work.composition || work.excerpt || work.text, featured ? 180 : 120))}</p>
-        <dl class="card-meta">
-          ${work.technique ? `<div><dt>Technique</dt><dd>${escapeHtml(work.technique)}</dd></div>` : ''}
-          ${work.dimensions ? `<div><dt>Dimensions</dt><dd>${escapeHtml(work.dimensions)}</dd></div>` : ''}
-        </dl>
+    <article class="gallery-item reveal" data-lightbox-kind="work" data-slug="${esc(work.slug)}" tabindex="0" role="button">
+      <div class="gallery-item-tag">${esc(workKindLabel(work))}</div>
+      <img src="${esc(imageOf(work))}" alt="${esc(work.title)}" loading="lazy">
+      <div class="gallery-item-overlay">
+        <h3 class="gallery-item-title">${esc(work.title)}</h3>
+        <div class="gallery-item-meta">${esc(metaOf(work) || work.archiveYear || '')}</div>
       </div>
     </article>
   `;
 }
 
-function storyCard(entry, detailHref = './article.html') {
-  const image = getLeadImage(entry);
+function storyCard(entry) {
   return `
     <article class="story-card reveal">
-      <a class="story-card__media" href="${detailHref}?slug=${encodeURIComponent(entry.slug)}">
-        ${
-          image
-            ? `<img src="${escapeHtml(image)}" alt="${escapeHtml(entry.title)}" loading="lazy" />`
-            : '<div class="media-fallback">Archive</div>'
-        }
-      </a>
-      <div class="story-card__body">
-        <p class="story-card__meta">${escapeHtml(inferSource(entry))} · ${escapeHtml(formatShortDate(entry.date))}</p>
-        <h3><a href="${detailHref}?slug=${encodeURIComponent(entry.slug)}">${escapeHtml(entry.title)}</a></h3>
-        <p>${escapeHtml(excerpt(entry.excerpt || entry.text, 160))}</p>
+      <div class="story-card-image"><img src="${esc(imageOf(entry))}" alt="${esc(entry.title)}" loading="lazy"></div>
+      <div class="story-card-body">
+        <p class="story-card-meta">${esc(sourceOf(entry))} · ${esc(fmt(entry.date))}</p>
+        <h3>${esc(entry.title)}</h3>
+        <p class="story-summary">${esc(excerpt(entry.text, 180))}</p>
+        <a class="cta-link" href="./article.html?slug=${encodeURIComponent(entry.slug)}">Ouvrir l’archive</a>
       </div>
     </article>
   `;
 }
 
-function collectionLink({ title, text, href, count }) {
-  return `
-    <a class="collection-link reveal" href="${href}">
-      <span class="collection-link__count">${escapeHtml(String(count))}</span>
-      <strong>${escapeHtml(title)}</strong>
-      <span>${escapeHtml(text)}</span>
-    </a>
-  `;
-}
-
-function detailMetaGrid(items) {
-  const visible = items.filter((item) => item.value);
-  return `
-    <dl class="detail-meta-grid">
-      ${visible
-        .map(
-          (item) => `
-            <div>
-              <dt>${escapeHtml(item.label)}</dt>
-              <dd>${escapeHtml(item.value)}</dd>
-            </div>
-          `,
-        )
-        .join('')}
-    </dl>
-  `;
-}
-
-function prosePanel(html = '', fallbackText = '') {
-  const content = html?.trim() ? html : `<p>${escapeHtml(fallbackText)}</p>`;
-  return `<div class="panel prose reveal">${content}</div>`;
-}
-
-function renderHeader() {
-  const currentFile = pageFileByKey[currentPage] || '';
+function renderNav() {
   header.innerHTML = `
-    <div class="site-header__inner">
-      <a class="brand" href="./mehomez-portfolio.html">
-        <span class="brand__mark">M</span>
-        <span class="brand__text">Mehomez</span>
-      </a>
-      <nav class="site-nav" aria-label="Navigation principale">
-        ${siteData.site.navigation
-          .map((item) => {
-            const fileName = item.href.replace('./', '');
-            const active = currentFile === fileName ? 'is-active' : '';
-            return `<a class="${active}" href="${item.href}">${escapeHtml(item.label)}</a>`;
+    <nav class="main-nav" id="mainNav">
+      <a href="#top" class="nav-logo" data-scroll-top>Mehomez</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false">Menu</button>
+      <ul class="nav-links" data-nav-links>
+        ${navItems
+          .map(([key, label, href]) => {
+            const active = key === page || (page === 'work-detail' && key === 'works') || (page === 'article-detail' && key === currentArticleSection);
+            return `<li><a class="${active ? 'is-active' : ''}" href="${href}">${esc(label)}</a></li>`;
           })
           .join('')}
-      </nav>
-      <div class="site-header__actions">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Changer le thème">
-          <span data-theme-toggle-label>Mode sombre</span>
-        </button>
-        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">
-          Menu
-        </button>
-      </div>
-    </div>
-    <nav class="mobile-nav" id="mobile-nav" data-mobile-nav hidden aria-label="Navigation mobile">
-      ${siteData.site.navigation
-        .map((item) => {
-          const fileName = item.href.replace('./', '');
-          const active = currentFile === fileName ? 'is-active' : '';
-          return `<a class="${active}" href="${item.href}">${escapeHtml(item.label)}</a>`;
-        })
-        .join('')}
+      </ul>
     </nav>
   `;
 }
 
 function renderFooter() {
   footer.innerHTML = `
-    <div class="site-footer__grid">
-      <div>
-        <p class="eyebrow">À propos du projet</p>
-        <p class="site-footer__lede">
-          Version modernisée réalisée à partir du contenu public de
-          <a href="${siteData.site.source}" target="_blank" rel="noreferrer">mehomez.de</a>.
-        </p>
+    <div class="site-footer-shell">
+      <div class="site-footer-inner">
+        <div class="footer-brand reveal">
+          <h2 class="footer-name">Mehomez</h2>
+          <p>Artiste plasticien<br>Peintre · Sculpteur<br>Porto-Novo, Bénin<br>Vit et travaille entre<br>le Bénin et l'Allemagne</p>
+        </div>
+        <div class="footer-col reveal">
+          <h4>Navigation</h4>
+          <ul>${navItems.map(([, label, href]) => `<li><a href="${href}">${esc(label)}</a></li>`).join('')}</ul>
+        </div>
+        <div class="footer-col reveal">
+          <h4>Contact</h4>
+          <ul>${siteData.contact.emails.map((email) => `<li><a href="mailto:${esc(email)}">${esc(email)}</a></li>`).join('')}</ul>
+          <h4>Liens</h4>
+          <ul><li><a href="https://mehomez.de" target="_blank" rel="noreferrer">mehomez.de</a></li><li><a href="http://www.ouadada.com/" target="_blank" rel="noreferrer">Ouadada</a></li></ul>
+        </div>
       </div>
-      <div class="site-footer__stats">
-        <span>${works.length} œuvres</span>
-        <span>${parcoursEntries.length} jalons de parcours</span>
-        <span>${pressEntries.length} archives presse</span>
+      <div class="footer-bottom"><p>© Copyright Mehomez — Tous droits réservés</p><a href="./contact.html">Contact</a></div>
+    </div>
+  `;
+}
+
+function renderHome() {
+  root.innerHTML = `
+    <section id="hero">
+      <div class="hero-slideshow">${heroSlides.map((url, index) => `<div class="hero-slide ${index === 0 ? 'active' : ''}" style="background-image:url('${url}')"></div>`).join('')}</div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Artiste plasticien · Porto-Novo · Bénin</p>
+        <h1 class="hero-title">Meho<em>mez</em></h1>
+        <p class="hero-sub">Peinture · Sculpture · Peinture sculptée</p>
+        <div class="hero-line"></div>
       </div>
-      <div class="site-footer__meta">
-        <span>Thème ${document.documentElement.dataset.theme === 'dark' ? 'sombre' : 'clair'}</span>
-        <span>Inventaire capturé le ${escapeHtml(formatDate(siteData.site.capturedAt))}</span>
+      <div class="hero-indicators">${heroSlides.map((_, index) => `<span class="hero-dot ${index === 0 ? 'active' : ''}" data-slide="${index}"></span>`).join('')}</div>
+    </section>
+    <div class="stats-band">
+      <div class="stat-item reveal"><span class="stat-number">${works.length}</span><span class="stat-label">Œuvres</span></div>
+      <div class="stat-item reveal"><span class="stat-number">${parcoursEntries.length}</span><span class="stat-label">Parcours</span></div>
+      <div class="stat-item reveal"><span class="stat-number">${pressEntries.length}</span><span class="stat-label">Presse</span></div>
+      <div class="stat-item reveal"><span class="stat-number">${siteData.contact.emails.length}</span><span class="stat-label">Contacts</span></div>
+    </div>
+    <section id="artiste" class="site-section artist-preview">
+      <div class="reveal">
+        <p class="section-label">L'artiste</p>
+        <div class="artiste-portrait"><img src="${esc(artistPortrait)}" alt="Mehomez" loading="lazy"><div class="artiste-portrait-caption">Ezéchiel Janvier Mehome · Porto-Novo, 1978</div></div>
+      </div>
+      <div class="reveal">
+        <h2 class="artist-title"><span>Ezéchiel Janvier Mehome</span>dit Mehomez</h2>
+        <div class="bio-block"><h3>L'œuvre</h3><div class="artist-copy">${paragraphs(sentenceSlice(siteData.artist.text, 0, 3))}</div></div>
+        <div class="bio-block"><h3>Biographie</h3><div class="artist-copy">${paragraphs(sentenceSlice(siteData.artist.text, 3, 3) || sentenceSlice(siteData.artist.text, 0, 3))}</div></div>
+        <div class="quote-block">"Son regard est sensible à la souffrance de son peuple, et inquiet de son devenir."</div>
+      </div>
+    </section>
+    <div class="section-bg">
+      <section class="philosophy-section">
+        <p class="philosophy-quote reveal">${esc(quoteOf())}</p>
+        <span class="philosophy-attr reveal">Sa philosophie</span>
+      </section>
+    </div>
+    <section id="galerie" class="gallery-section">
+      <div class="gallery-header reveal">
+        <div><p class="section-label">Galerie</p><h2 class="section-title">Les <em>Œuvres</em></h2></div>
+        <div class="gallery-filters"><button class="filter-btn active" data-gallery-filter="all">Tout</button><button class="filter-btn" data-gallery-filter="peinture">Peintures</button><button class="filter-btn" data-gallery-filter="sculpture">Sculptures</button></div>
+      </div>
+      <div class="gallery-grid" id="homeGalleryGrid">${works.slice(0, 24).map(galleryCard).join('')}</div>
+    </section>
+    <div class="section-bg">
+      <div id="parcours" class="parcours-section">
+        <div class="reveal"><p class="section-label">Parcours</p><h2 class="section-title">Événements & <em>Presse</em></h2></div>
+        <div class="parcours-grid">
+          <div class="archive-col reveal"><h3>Expositions & événements</h3>${parcoursEntries.slice(0, 6).map((entry) => `<a class="event-item" href="./article.html?slug=${encodeURIComponent(entry.slug)}"><div class="event-year">${esc(entry.date.slice(0, 4))}</div><div class="event-details"><h4>${esc(entry.title)}</h4><p>${esc(excerpt(entry.text, 120))}</p></div></a>`).join('')}</div>
+          <div class="archive-col reveal"><h3>Revue de presse</h3>${pressEntries.slice(0, 8).map((entry) => `<a class="press-item" href="./article.html?slug=${encodeURIComponent(entry.slug)}"><div><div class="press-source">${esc(sourceOf(entry))} · ${esc(entry.date.slice(0, 4))}</div><div class="press-title">${esc(entry.title)}</div></div></a>`).join('')}</div>
+        </div>
       </div>
     </div>
   `;
 }
 
-function getThemePreference() {
-  const stored = localStorage.getItem(themeStorageKey);
-  if (stored === 'light' || stored === 'dark') return stored;
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-}
-
-function applyTheme(theme) {
-  document.documentElement.dataset.theme = theme;
-  const label = document.querySelector('[data-theme-toggle-label]');
-  if (label) label.textContent = theme === 'dark' ? 'Mode clair' : 'Mode sombre';
-  renderFooter();
-}
-
-function setupThemeToggle() {
-  applyTheme(getThemePreference());
-  const button = document.querySelector('[data-theme-toggle]');
-  if (!button) return;
-  button.addEventListener('click', () => {
-    const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-    localStorage.setItem(themeStorageKey, nextTheme);
-    applyTheme(nextTheme);
-  });
-}
-
-function setupMenuToggle() {
-  const button = document.querySelector('[data-menu-toggle]');
-  const mobileNav = document.querySelector('[data-mobile-nav]');
-  if (!button || !mobileNav) return;
-  button.addEventListener('click', () => {
-    const expanded = button.getAttribute('aria-expanded') === 'true';
-    button.setAttribute('aria-expanded', String(!expanded));
-    mobileNav.hidden = expanded;
-  });
-}
-
-function renderHome() {
-  const featuredWorks = siteData.home.featuredWorks
-    .map((slug) => works.find((work) => work.slug === slug))
-    .filter(Boolean);
-  const featuredPress = siteData.home.highlightedPress
-    .map((slug) => pressEntries.find((entry) => entry.slug === slug))
-    .filter(Boolean);
-  const featuredParcours = siteData.home.highlightedParcours
-    .map((slug) => parcoursEntries.find((entry) => entry.slug === slug))
-    .filter(Boolean);
-
-  root.innerHTML = `
-    ${pageHero({
-      eyebrow: 'Portfolio modernisé',
-      title: 'Mehomez, entre mémoire, matière et présence.',
-      lead:
-        siteData.home.text ||
-        "Artiste plasticien béninois, Mehomez vit et travaille entre l'Allemagne et le Bénin.",
-      image: getLeadImage(featuredWorks[0]),
-      meta: [
-        "Vit et travaille entre l'Allemagne et le Bénin",
-        `${works.length} œuvres archivées`,
-        `${pressEntries.length} articles de presse`,
-      ],
-    })}
-    <section class="section-shell stat-band">
-      <div class="stat-band__grid">
-        <div class="stat-card reveal"><strong>${works.length}</strong><span>œuvres documentées</span></div>
-        <div class="stat-card reveal"><strong>${parcoursEntries.length}</strong><span>jalons de parcours</span></div>
-        <div class="stat-card reveal"><strong>${pressEntries.length}</strong><span>archives presse</span></div>
-      </div>
-    </section>
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Œuvres',
-        title: 'Une entrée contemporaine dans l’archive complète.',
-        lead:
-          'La page d’accueil met en scène quelques pièces fortes, mais toutes les œuvres restent accessibles dans les archives par type et par année.',
-      })}
-      <div class="cards-grid cards-grid--featured">
-        ${featuredWorks.map((work, index) => workCard(work, index === 0)).join('')}
-      </div>
-    </section>
-    <section class="section-shell split-grid">
-      <div class="panel panel--tall reveal">
-        <p class="eyebrow">L'artiste</p>
-        <h2>Une pratique née du quotidien, de la culture et de la récupération.</h2>
-        <p class="section-lede">${escapeHtml(sentenceBlock(siteData.artist.text, 4))}</p>
-        <a class="cta-link" href="./artiste.html">Lire la présentation complète</a>
-      </div>
-      <div class="collection-grid">
-        ${collectionLink({
-          title: 'Œuvres',
-          text: 'Accéder à l’ensemble des peintures, peintures sculptées et sculptures.',
-          href: './oeuvres.html',
-          count: works.length,
-        })}
-        ${collectionLink({
-          title: 'Parcours',
-          text: 'Expositions, événements, résidences et archives biographiques.',
-          href: './parcours.html',
-          count: parcoursEntries.length,
-        })}
-        ${collectionLink({
-          title: 'Presse',
-          text: 'Revue de presse, articles et traces de réception publique.',
-          href: './presse.html',
-          count: pressEntries.length,
-        })}
-      </div>
-    </section>
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Parcours',
-        title: 'Trajectoires, expositions, prises de parole.',
-        lead:
-          'Le parcours n’est pas traité comme une annexe. Il devient une couche éditoriale à part entière du portfolio.',
-      })}
-      <div class="cards-grid cards-grid--stories">
-        ${featuredParcours.map((entry) => storyCard(entry)).join('')}
-      </div>
-    </section>
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Presse',
-        title: 'Une mémoire de réception publique conservée et réordonnée.',
-        lead:
-          'Les articles de presse gardent leur date, leur source et leurs visuels, mais dans une interface plus lisible et plus muséale.',
-      })}
-      <div class="cards-grid cards-grid--stories">
-        ${featuredPress.map((entry) => storyCard(entry)).join('')}
-      </div>
-    </section>
-  `;
-}
-
 function renderArtistPage() {
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: "L'artiste",
-      title: 'Ezéchiel Janvier Mehome',
-      lead: sentenceBlock(siteData.artist.text, 3),
-      image: siteData.artist.portrait,
-      meta: ["Né à Porto-Novo en 1978", "Peinture, peinture sculptée, sculpture"],
-    })}
-    <section class="section-shell artist-grid">
-      <div class="panel artist-panel reveal">
-        <p class="eyebrow">Démarche</p>
-        <p class="section-lede">${escapeHtml(sentenceBlock(siteData.artist.text, 5))}</p>
-        <div class="accent-stack">
-          <span>Matériaux locaux</span>
-          <span>Assemblages</span>
-          <span>Peinture sculptée</span>
-        </div>
-      </div>
-      ${prosePanel(siteData.artist.html, siteData.artist.text)}
+    ${pageHero("L'artiste", 'Ezéchiel Janvier Mehome', "Né à Porto-Novo en 1978, Mehomez développe une pratique entre le Bénin et l'Allemagne, entre engagement, matière et mémoire.", imageOf(works[2] || works[0]))}
+    <section class="site-section artist-page-grid">
+      <div class="reveal"><div class="artiste-portrait"><img src="${esc(artistPortrait)}" alt="Mehomez" loading="lazy"><div class="artiste-portrait-caption">Œuvre, matière, engagement</div></div></div>
+      <div class="reveal"><h2 class="artist-title"><span>Parcours d'artiste</span>Une voix plastique entre culture, quotidien et mémoire.</h2><div class="bio-block"><h3>Biographie</h3><div class="artist-copy">${siteData.artist.html || paragraphs(siteData.artist.text)}</div></div><div class="bio-block"><h3>Philosophie</h3><p class="section-copy">${esc(quoteOf())}</p></div><a class="button-link" href="./oeuvres.html">Voir les œuvres</a></div>
     </section>
   `;
 }
@@ -415,334 +232,251 @@ function renderArtistPage() {
 function renderWorksPage() {
   const years = [...new Set(works.map((work) => work.archiveYear).filter(Boolean))].sort((a, b) => b.localeCompare(a));
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: 'Archives d’œuvres',
-      title: 'Peintures, peintures sculptées et sculptures.',
-      lead:
-        'Les archives restent complètes, mais deviennent consultables avec des filtres clairs, une meilleure hiérarchie et des fiches plus nettes.',
-      image: getLeadImage(works[0]),
-      meta: [`${works.length} œuvres conservées`, `${years.length} années visibles`],
-    })}
-    <section class="section-shell">
-      <div class="panel filter-panel reveal">
-        <div class="filter-grid">
-          <label class="field">
-            <span>Type</span>
-            <select id="type-filter">
-              <option value="all">Tous les types</option>
-              <option value="work-painting">Peintures et peintures sculptées</option>
-              <option value="work-sculpture">Sculptures</option>
-            </select>
-          </label>
-          <label class="field">
-            <span>Année</span>
-            <select id="year-filter">
-              <option value="all">Toutes les années</option>
-              ${years.map((year) => `<option value="${escapeHtml(year)}">${escapeHtml(year)}</option>`).join('')}
-            </select>
-          </label>
-          <label class="field field--search">
-            <span>Recherche</span>
-            <input id="search-filter" type="search" placeholder="Titre, technique, dimension..." />
-          </label>
-        </div>
+    ${pageHero('Galerie', "Archives d'œuvres", "Peintures, peintures sculptées et sculptures rassemblées dans une galerie plus contemporaine.", imageOf(works[0]))}
+    <section class="gallery-section">
+      <div class="archive-toolbar reveal">
+        <div><p class="section-label">Archives</p><h2 class="section-title">Toute l'œuvre, sans <em>compression</em></h2></div>
+        <div class="archive-filters"><button class="filter-btn active" data-works-type="all">Tout</button><button class="filter-btn" data-works-type="peinture">Peintures</button><button class="filter-btn" data-works-type="sculpture">Sculptures</button><select class="archive-select" id="worksYearFilter"><option value="all">Toutes les années</option>${years.map((year) => `<option value="${esc(year)}">${esc(year)}</option>`).join('')}</select><input class="archive-search" id="worksSearch" type="search" placeholder="Titre, technique, dimension"></div>
       </div>
-      <div class="results-bar reveal"><p id="works-results"></p></div>
-      <div id="works-grid" class="cards-grid cards-grid--works"></div>
+      <div class="results-note reveal" id="worksCount"></div>
+      <div class="gallery-grid gallery-grid--wide" id="worksGrid"></div>
     </section>
   `;
 
-  const grid = document.getElementById('works-grid');
-  const results = document.getElementById('works-results');
-  const typeFilter = document.getElementById('type-filter');
-  const yearFilter = document.getElementById('year-filter');
-  const searchFilter = document.getElementById('search-filter');
+  const grid = document.getElementById('worksGrid');
+  const year = document.getElementById('worksYearFilter');
+  const search = document.getElementById('worksSearch');
+  const buttons = [...document.querySelectorAll('[data-works-type]')];
+  let type = 'all';
 
-  function updateGrid() {
-    const type = typeFilter.value;
-    const year = yearFilter.value;
-    const search = searchFilter.value.trim().toLowerCase();
+  const update = () => {
     const filtered = works.filter((work) => {
-      const matchesType = type === 'all' || work.type === type;
-      const matchesYear = year === 'all' || work.archiveYear === year;
-      const haystack = [work.title, work.technique, work.dimensions, work.composition, work.text].join(' ').toLowerCase();
-      const matchesSearch = !search || haystack.includes(search);
-      return matchesType && matchesYear && matchesSearch;
+      const typeOk = type === 'all' || workKind(work) === type;
+      const yearOk = year.value === 'all' || work.archiveYear === year.value;
+      const hay = [work.title, work.text, work.technique, work.dimensions, work.composition].join(' ').toLowerCase();
+      const searchOk = !search.value.trim() || hay.includes(search.value.trim().toLowerCase());
+      return typeOk && yearOk && searchOk;
     });
-    results.textContent = `${filtered.length} œuvre${filtered.length > 1 ? 's' : ''} affichée${filtered.length > 1 ? 's' : ''}`;
-    grid.innerHTML = filtered.length
-      ? filtered.map((work) => workCard(work)).join('')
-      : `<div class="empty-state"><strong>Aucun résultat.</strong><p>Essaie un autre filtre ou une autre année.</p></div>`;
-  }
+    document.getElementById('worksCount').textContent = `${filtered.length} œuvre${filtered.length > 1 ? 's' : ''}`;
+    grid.innerHTML = filtered.length ? filtered.map(galleryCard).join('') : '<div class="empty-state">Aucune œuvre ne correspond à ce filtre.</div>';
+  };
 
-  typeFilter.addEventListener('change', updateGrid);
-  yearFilter.addEventListener('change', updateGrid);
-  searchFilter.addEventListener('input', updateGrid);
-  updateGrid();
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    buttons.forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
+    type = button.dataset.worksType;
+    update();
+  }));
+  year.addEventListener('change', update);
+  search.addEventListener('input', update);
+  update();
 }
 
 function renderWorkDetailPage() {
-  const slug = new URLSearchParams(window.location.search).get('slug');
-  const work = works.find((item) => item.slug === slug) || works[0];
-  const related = works.filter((item) => item.slug !== work.slug && item.type === work.type).slice(0, 3);
+  const work = works.find((entry) => entry.slug === currentSlug) || works[0];
+  const related = works.filter((entry) => entry.slug !== work.slug && workKind(entry) === workKind(work)).slice(0, 6);
   document.title = `${work.title} | Mehomez`;
-
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: 'Fiche d’œuvre',
-      title: work.title,
-      lead: excerpt(work.text, 280) || 'Archive d’œuvre',
-      image: getLeadImage(work),
-      meta: [getWorkTypeLabel(work), work.archiveYear, formatDate(work.date)].filter(Boolean),
-    })}
-    <section class="section-shell detail-grid">
-      <div class="detail-gallery reveal">
-        <figure class="detail-figure panel">
-          ${
-            getLeadImage(work)
-              ? `<img src="${escapeHtml(getLeadImage(work))}" alt="${escapeHtml(work.title)}" />`
-              : '<div class="media-fallback media-fallback--large">Œuvre sans média principal</div>'
-          }
-        </figure>
-        ${
-          work.images.length > 1
-            ? `<div class="thumb-strip">${work.images
-                .slice(1, 4)
-                .map((image) => `<figure class="thumb-card"><img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)}" loading="lazy" /></figure>`)
-                .join('')}</div>`
-            : ''
-        }
-      </div>
-      <div class="detail-stack">
-        <div class="panel reveal">
-          <p class="eyebrow">Métadonnées</p>
-          ${detailMetaGrid([
-            { label: 'Type', value: getWorkTypeLabel(work) },
-            { label: 'Année d’archive', value: work.archiveYear },
-            { label: 'Technique', value: work.technique },
-            { label: 'Dimensions', value: work.dimensions },
-            { label: 'Composition', value: work.composition },
-          ])}
-          <div class="chip-list">
-            ${work.categories.map((category) => `<span class="chip">${escapeHtml(category.name)}</span>`).join('')}
-          </div>
-        </div>
-        ${prosePanel(work.html, work.text)}
-        <div class="panel reveal">
-          <a class="cta-link" href="${work.link}" target="_blank" rel="noreferrer">Voir l’archive d’origine</a>
-        </div>
+    ${pageHero(workKindLabel(work), esc(work.title), metaOf(work) || "Archive d'œuvre", imageOf(work))}
+    <section class="site-section detail-layout">
+      <div class="reveal"><div class="detail-image-panel"><img src="${esc(imageOf(work))}" alt="${esc(work.title)}" loading="lazy"><div class="feature-caption">${esc(work.archiveYear || '')}</div></div></div>
+      <div class="reveal">
+        <h2 class="detail-title"><span>Fiche d’œuvre</span>${esc(work.title)}</h2>
+        <div class="detail-card"><h3>Métadonnées</h3><div class="detail-meta"><div class="detail-meta-item"><span class="detail-meta-label">Type</span><span class="detail-meta-value">${esc(workKindLabel(work))}</span></div>${work.archiveYear ? `<div class="detail-meta-item"><span class="detail-meta-label">Année</span><span class="detail-meta-value">${esc(work.archiveYear)}</span></div>` : ''}${work.technique ? `<div class="detail-meta-item"><span class="detail-meta-label">Technique</span><span class="detail-meta-value">${esc(work.technique)}</span></div>` : ''}${work.dimensions ? `<div class="detail-meta-item"><span class="detail-meta-label">Dimensions</span><span class="detail-meta-value">${esc(work.dimensions)}</span></div>` : ''}${work.composition ? `<div class="detail-meta-item"><span class="detail-meta-label">Composition</span><span class="detail-meta-value">${esc(work.composition)}</span></div>` : ''}</div></div>
+        <div class="detail-card"><h3>Texte</h3><div class="detail-prose">${work.html || paragraphs(work.text)}</div></div>
+        <a class="button-link" href="./oeuvres.html">Retour à la galerie</a>
       </div>
     </section>
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Explorer',
-        title: 'Autres œuvres à proximité de cette archive.',
-        lead: 'La navigation détail reste reliée au reste de l’œuvre et non isolée dans une fiche orpheline.',
-      })}
-      <div class="cards-grid cards-grid--works">
-        ${related.map((item) => workCard(item)).join('')}
-      </div>
-    </section>
+    <section class="gallery-section"><div class="gallery-header reveal"><div><p class="section-label">Explorer</p><h2 class="section-title">Œuvres <em>associées</em></h2></div></div><div class="gallery-grid gallery-grid--wide">${related.map(galleryCard).join('')}</div></section>
   `;
 }
 
 function renderParcoursPage() {
+  const left = parcoursEntries.slice(0, Math.ceil(parcoursEntries.length / 2));
+  const right = parcoursEntries.slice(Math.ceil(parcoursEntries.length / 2));
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: 'Infos & Parcours',
-      title: 'Expositions, résidences, événements et archives de trajectoire.',
-      lead:
-        'Le parcours est traité ici comme une ligne éditoriale, avec ses contextes, ses lieux et ses prises de parole.',
-      image: getLeadImage(parcoursEntries[0]),
-      meta: [`${parcoursEntries.length} entrées conservées`, "Archives d'une pratique située"],
-    })}
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Chronologie',
-        title: 'Une timeline éditoriale du parcours.',
-        lead:
-          'Chaque entrée garde sa date et son contenu, mais gagne une forme plus lisible, plus dense et plus contemporaine.',
-      })}
-      <div class="timeline">
-        ${parcoursEntries
-          .map(
-            (entry) => `
-              <article class="timeline-item reveal">
-                <span class="timeline-item__date">${escapeHtml(formatDate(entry.date))}</span>
-                <div class="timeline-item__body">
-                  <h3><a href="./article.html?slug=${encodeURIComponent(entry.slug)}">${escapeHtml(entry.title)}</a></h3>
-                  <p>${escapeHtml(excerpt(entry.text, 220))}</p>
-                  <a class="cta-link" href="./article.html?slug=${encodeURIComponent(entry.slug)}">Ouvrir l’archive</a>
-                </div>
-              </article>
-            `,
-          )
-          .join('')}
-      </div>
-    </section>
+    ${pageHero('Parcours', 'Expositions & événements', "Une lecture plus éditoriale du parcours de Mehomez, sans perdre l'archive.", imageOf(parcoursEntries[0]))}
+    <div class="section-bg"><div class="parcours-section"><div class="parcours-grid"><div class="archive-col reveal"><h3>Archives récentes</h3>${left.map((entry) => `<a class="event-item" href="./article.html?slug=${encodeURIComponent(entry.slug)}"><div class="event-year">${esc(entry.date.slice(0, 4))}</div><div class="event-details"><h4>${esc(entry.title)}</h4><p>${esc(excerpt(entry.text, 130))}</p></div></a>`).join('')}</div><div class="archive-col reveal"><h3>Autres jalons</h3>${right.map((entry) => `<a class="event-item" href="./article.html?slug=${encodeURIComponent(entry.slug)}"><div class="event-year">${esc(entry.date.slice(0, 4))}</div><div class="event-details"><h4>${esc(entry.title)}</h4><p>${esc(excerpt(entry.text, 130))}</p></div></a>`).join('')}</div></div></div></div>
   `;
 }
 
 function renderPressPage() {
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: 'Revue de presse',
-      title: 'La presse conservée comme une matière vivante.',
-      lead:
-        'Le redesign remet la presse à niveau visuel sans casser la nature documentaire des coupures, articles et annonces.',
-      image: getLeadImage(pressEntries[0]),
-      meta: [`${pressEntries.length} archives presse`, 'Dates et sources conservées'],
-    })}
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Archives',
-        title: 'Une lecture plus claire de la réception publique.',
-        lead:
-          'Les articles sont reclassés dans une grille éditoriale, mais toutes les entrées restent consultables individuellement.',
-      })}
-      <div class="cards-grid cards-grid--stories">
-        ${pressEntries.map((entry) => storyCard(entry)).join('')}
-      </div>
-    </section>
+    ${pageHero('Presse', 'Revue de presse', "Une traversée plus élégante des articles, annonces et traces publiques autour du travail de Mehomez.", imageOf(pressEntries[0]))}
+    <section class="site-section"><div class="story-grid">${pressEntries.map(storyCard).join('')}</div></section>
   `;
 }
 
 function renderArticleDetailPage() {
-  const slug = new URLSearchParams(window.location.search).get('slug');
-  const entry = pageEntries.find((item) => item.slug === slug) || pressEntries[0] || parcoursEntries[0];
-  const siblings = pageEntries.filter((item) => item.slug !== entry.slug).slice(0, 3);
-  const pageLabel = entry.type === 'press' ? 'Revue de presse' : 'Infos & Parcours';
+  const entry = currentArticle || pressEntries[0] || parcoursEntries[0];
+  const siblings = articleEntries.filter((item) => item.slug !== entry.slug).slice(0, 4);
   document.title = `${entry.title} | Mehomez`;
-
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: pageLabel,
-      title: entry.title,
-      lead: excerpt(entry.text, 260),
-      image: getLeadImage(entry),
-      meta: [inferSource(entry), formatDate(entry.date)].filter(Boolean),
-    })}
-    <section class="section-shell detail-grid">
-      <div class="detail-gallery reveal">
-        <figure class="detail-figure panel">
-          ${
-            getLeadImage(entry)
-              ? `<img src="${escapeHtml(getLeadImage(entry))}" alt="${escapeHtml(entry.title)}" />`
-              : '<div class="media-fallback media-fallback--large">Archive sans image principale</div>'
-          }
-        </figure>
-      </div>
-      <div class="detail-stack">
-        <div class="panel reveal">
-          <p class="eyebrow">${escapeHtml(pageLabel)}</p>
-          ${detailMetaGrid([
-            { label: 'Source', value: inferSource(entry) },
-            { label: 'Date', value: formatDate(entry.date) },
-            { label: 'Rubrique', value: pageLabel },
-          ])}
-        </div>
-        ${prosePanel(entry.html, entry.text)}
-        ${
-          entry.embeds?.length
-            ? `<div class="panel prose reveal">${entry.embeds
-                .map((url) => `<p><a class="cta-link" href="${escapeHtml(url)}" target="_blank" rel="noreferrer">Ouvrir le média embarqué</a></p>`)
-                .join('')}</div>`
-            : ''
-        }
-        <div class="panel reveal">
-          <a class="cta-link" href="${entry.link}" target="_blank" rel="noreferrer">Voir l’archive d’origine</a>
-        </div>
-      </div>
+    ${pageHero(entry.type === 'press' ? 'Presse' : 'Parcours', esc(entry.title), `${sourceOf(entry)} · ${fmt(entry.date)}`, imageOf(entry))}
+    <section class="site-section detail-layout">
+      <div class="reveal"><div class="detail-image-panel"><img src="${esc(imageOf(entry))}" alt="${esc(entry.title)}" loading="lazy"><div class="feature-caption">${esc(sourceOf(entry))}</div></div></div>
+      <div class="reveal"><h2 class="detail-title"><span>${entry.type === 'press' ? 'Article' : 'Archive'}</span>${esc(entry.title)}</h2><div class="detail-card"><h3>Repères</h3><div class="detail-meta"><div class="detail-meta-item"><span class="detail-meta-label">Source</span><span class="detail-meta-value">${esc(sourceOf(entry))}</span></div><div class="detail-meta-item"><span class="detail-meta-label">Date</span><span class="detail-meta-value">${esc(fmt(entry.date))}</span></div></div></div><div class="detail-card"><h3>Texte</h3><div class="detail-prose">${entry.html || paragraphs(entry.text)}</div></div><a class="button-link" href="${entry.type === 'press' ? './presse.html' : './parcours.html'}">Retour aux archives</a></div>
     </section>
-    <section class="section-shell">
-      ${sectionHeading({
-        eyebrow: 'Continuer',
-        title: 'Autres archives à consulter.',
-        lead: 'Les entrées connexes restent à portée pour encourager une lecture continue du corpus.',
-      })}
-      <div class="cards-grid cards-grid--stories">
-        ${siblings.map((item) => storyCard(item)).join('')}
-      </div>
-    </section>
+    <section class="site-section"><div class="story-grid">${siblings.map(storyCard).join('')}</div></section>
   `;
 }
 
 function renderContactPage() {
   root.innerHTML = `
-    ${pageHero({
-      eyebrow: 'Contact',
-      title: 'Prendre contact avec Mehomez.',
-      lead:
-        'La page de contact reprend les informations présentes sur le site public actuel et les remet dans un cadre plus simple et plus direct.',
-      image: siteData.artist.portrait,
-      meta: ['Coordonnées publiques conservées', 'Version démonstrative locale'],
-    })}
-    <section class="section-shell contact-grid">
-      <div class="panel reveal">
-        <p class="eyebrow">Coordonnées</p>
-        <h2>Contacter l’artiste</h2>
-        <div class="link-stack">
-          ${siteData.contact.emails.map((email) => `<a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a>`).join('')}
-        </div>
-      </div>
-      <div class="panel reveal">
-        <p class="eyebrow">Liens utiles</p>
-        <h2>Ressources et archives</h2>
-        <div class="link-stack">
-          ${siteData.contact.links
-            .map((link) => `<a href="${escapeHtml(link)}" target="_blank" rel="noreferrer">${escapeHtml(link)}</a>`)
-            .join('')}
-        </div>
-      </div>
-      ${prosePanel(`<p>${escapeHtml(siteData.contact.text)}</p>`, siteData.contact.text)}
-    </section>
-  `;
-}
-
-function renderNotFound() {
-  root.innerHTML = `
-    <section class="section-shell">
-      <div class="empty-state">
-        <strong>Page inconnue.</strong>
-        <p>La structure locale n’a pas reconnu cette page.</p>
-      </div>
+    ${pageHero('Contact', 'Prendre contact', 'Coordonnées publiques de l’artiste et liens utiles.', imageOf(works[4] || works[0]))}
+    <section class="site-section contact-grid">
+      <div class="contact-card reveal"><p class="section-label">Écrire</p><h2 class="section-title">L’artiste</h2>${siteData.contact.emails.map((email) => `<p><a href="mailto:${esc(email)}">${esc(email)}</a></p>`).join('')}</div>
+      <div class="contact-card reveal"><p class="section-label">Ressources</p><h2 class="section-title">Liens utiles</h2><p><a href="https://mehomez.de" target="_blank" rel="noreferrer">Site web</a></p><p><a href="http://www.ouadada.com/" target="_blank" rel="noreferrer">Ouadada</a></p><p><a href="http://creapage.net/" target="_blank" rel="noreferrer">Creapage</a></p></div>
+      <div class="contact-card reveal"><p class="section-label">Ancrage</p><h2 class="section-title">Présence</h2><p>Porto-Novo, Bénin</p><p>Vit et travaille entre le Bénin et l’Allemagne.</p></div>
     </section>
   `;
 }
 
 function renderPage() {
-  switch (currentPage) {
-    case 'home':
-      renderHome();
-      break;
-    case 'artist':
-      renderArtistPage();
-      break;
-    case 'works':
-      renderWorksPage();
-      break;
-    case 'work-detail':
-      renderWorkDetailPage();
-      break;
-    case 'parcours':
-      renderParcoursPage();
-      break;
-    case 'press':
-      renderPressPage();
-      break;
-    case 'article-detail':
-      renderArticleDetailPage();
-      break;
-    case 'contact':
-      renderContactPage();
-      break;
-    default:
-      renderNotFound();
-      break;
-  }
+  if (page === 'home') renderHome();
+  else if (page === 'artist') renderArtistPage();
+  else if (page === 'works') renderWorksPage();
+  else if (page === 'work-detail') renderWorkDetailPage();
+  else if (page === 'parcours') renderParcoursPage();
+  else if (page === 'press') renderPressPage();
+  else if (page === 'article-detail') renderArticleDetailPage();
+  else if (page === 'contact') renderContactPage();
+  else root.innerHTML = '<section class="site-section"><div class="empty-state">Page non reconnue.</div></section>';
 }
 
-renderHeader();
-setupThemeToggle();
-setupMenuToggle();
+function setupNav() {
+  const nav = document.getElementById('mainNav');
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const links = document.querySelector('[data-nav-links]');
+  const logo = document.querySelector('[data-scroll-top]');
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    links?.classList.toggle('open');
+  });
+  logo?.addEventListener('click', (event) => {
+    event.preventDefault();
+    toggle?.setAttribute('aria-expanded', 'false');
+    links?.classList.remove('open');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  window.addEventListener('scroll', () => nav?.classList.toggle('is-scrolled', window.scrollY > 100));
+}
+
+function setupReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+}
+
+function setupCursor() {
+  if (window.matchMedia('(pointer: coarse)').matches) return;
+  const dot = document.createElement('div');
+  const ring = document.createElement('div');
+  dot.className = 'cursor-dot';
+  ring.className = 'cursor-ring';
+  document.body.append(dot, ring);
+  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+  document.addEventListener('mousemove', (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
+    dot.style.left = `${mouseX}px`;
+    dot.style.top = `${mouseY}px`;
+  });
+  const animate = () => {
+    ringX += (mouseX - ringX) * 0.12;
+    ringY += (mouseY - ringY) * 0.12;
+    ring.style.left = `${ringX}px`;
+    ring.style.top = `${ringY}px`;
+    requestAnimationFrame(animate);
+  };
+  animate();
+  const selector = 'a, button, .gallery-item, select, input';
+  document.addEventListener('mouseover', (event) => {
+    if (event.target.closest(selector)) {
+      ring.style.transform = 'translate(-50%, -50%) scale(1.8)';
+      ring.style.borderColor = 'var(--ochre)';
+    }
+  });
+  document.addEventListener('mouseout', (event) => {
+    if (event.target.closest(selector)) {
+      ring.style.transform = 'translate(-50%, -50%) scale(1)';
+      ring.style.borderColor = 'rgba(200, 122, 42, 0.5)';
+    }
+  });
+}
+
+function setupHeroSlides() {
+  const slides = [...document.querySelectorAll('.hero-slide')];
+  const dots = [...document.querySelectorAll('.hero-dot')];
+  if (!slides.length || !dots.length) return;
+  let current = 0;
+  const go = (next) => {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (next + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  };
+  dots.forEach((dot, index) => dot.addEventListener('click', () => go(index)));
+  window.setInterval(() => go(current + 1), 5000);
+}
+
+function setupHomeFilters() {
+  const buttons = [...document.querySelectorAll('[data-gallery-filter]')];
+  if (!buttons.length) return;
+  buttons.forEach((button) => button.addEventListener('click', () => {
+    buttons.forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
+    const filter = button.dataset.galleryFilter;
+    document.querySelectorAll('#homeGalleryGrid .gallery-item').forEach((card) => {
+      const work = works.find((entry) => entry.slug === card.dataset.slug);
+      card.classList.toggle('hidden', !(filter === 'all' || (work && workKind(work) === filter)));
+    });
+  }));
+}
+
+function setupLightbox() {
+  const shell = document.createElement('div');
+  shell.id = 'lightbox';
+  shell.className = 'lightbox';
+  shell.innerHTML = `<div class="lightbox-inner"><button class="lightbox-close" type="button" data-lightbox-close>✕</button><img class="lightbox-img" id="lightboxImg" src="" alt=""><div class="lightbox-info"><h3 class="lightbox-title" id="lightboxTitle"></h3><div class="lightbox-details" id="lightboxDetails"></div><div class="lightbox-actions" id="lightboxActions"></div></div></div>`;
+  document.body.append(shell);
+  const close = () => {
+    shell.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  shell.addEventListener('click', (event) => {
+    if (event.target === shell || event.target.closest('[data-lightbox-close]')) close();
+  });
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') close(); });
+  document.addEventListener('click', (event) => {
+    const card = event.target.closest('[data-lightbox-kind="work"]');
+    if (!card) return;
+    const work = works.find((entry) => entry.slug === card.dataset.slug);
+    if (!work) return;
+    document.getElementById('lightboxImg').src = imageOf(work);
+    document.getElementById('lightboxImg').alt = work.title;
+    document.getElementById('lightboxTitle').textContent = work.title;
+    document.getElementById('lightboxDetails').textContent = metaOf(work) || work.archiveYear || '';
+    document.getElementById('lightboxActions').innerHTML = `<a class="button-link" href="./oeuvre.html?slug=${encodeURIComponent(work.slug)}">Voir la fiche</a>`;
+    shell.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+renderNav();
 renderPage();
+renderFooter();
+setupNav();
+setupReveal();
+setupCursor();
+setupHeroSlides();
+setupHomeFilters();
+setupLightbox();
