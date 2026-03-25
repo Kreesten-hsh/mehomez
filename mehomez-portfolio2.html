@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mehomez — Artiste Plasticien</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0A0907;
+    --bg2: #110F0C;
+    --bg3: #1A1712;
+    --ochre: #C87A2A;
+    --ochre-light: #E09040;
+    --earth: #7A5C30;
+    --text: #E8DEC8;
+    --text-dim: #9A9080;
+    --text-muted: #5A5248;
+    --border: rgba(200, 122, 42, 0.15);
+    --border-dim: rgba(255,255,255,0.07);
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Jost', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ─── Noise Texture Overlay ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.4;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 48px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(10,9,7,0.95) 0%, transparent 100%);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid var(--border-dim);
+    transition: background 0.4s;
+  }
+
+  .nav-logo {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    color: var(--text);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0; right: 0;
+    height: 1px;
+    background: var(--ochre);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+
+  .nav-links a:hover { color: var(--ochre-light); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+
+  /* ─── HERO ─── */
+  #hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .hero-slideshow {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out, transform 8s ease-in-out;
+    transform: scale(1.05);
+  }
+
+  .hero-slide.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(10,9,7,0.3) 0%,
+      rgba(10,9,7,0.1) 40%,
+      rgba(10,9,7,0.7) 75%,
+      rgba(10,9,7,0.98) 100%
+    );
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 80px 80px;
+    max-width: 900px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s 0.5s forwards;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(4.5rem, 10vw, 9rem);
+    font-weight: 300;
+    line-height: 0.9;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1.2s 0.7s forwards;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: var(--ochre-light);
+  }
+
+  .hero-sub {
+    margin-top: 24px;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s 1s forwards;
+  }
+
+  .hero-line {
+    width: 60px;
+    height: 1px;
+    background: var(--ochre);
+    margin-top: 32px;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: lineReveal 0.8s 1.3s forwards;
+  }
+
+  .hero-indicators {
+    position: absolute;
+    right: 48px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 3;
+  }
+
+  .hero-dot {
+    width: 2px;
+    height: 24px;
+    background: var(--text-muted);
+    cursor: pointer;
+    transition: background 0.3s, height 0.3s;
+  }
+
+  .hero-dot.active {
+    background: var(--ochre);
+    height: 40px;
+  }
+
+  /* ─── SECTION COMMON ─── */
+  section {
+    padding: 120px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--text);
+  }
+
+  .section-title em { 
+    font-style: italic; 
+    color: var(--ochre-light); 
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border-dim);
+    margin: 0;
+  }
+
+  /* ─── ARTIST SECTION ─── */
+  #artiste {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+    padding: 120px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .artiste-left .section-label { margin-bottom: 40px; }
+
+  .artiste-portrait {
+    position: relative;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    margin-top: 24px;
+  }
+
+  .artiste-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: sepia(30%) contrast(1.1);
+    transition: transform 0.8s ease;
+  }
+
+  .artiste-portrait:hover img { transform: scale(1.04); }
+
+  .artiste-portrait::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1px solid var(--border);
+    pointer-events: none;
+    transform: translate(12px, 12px);
+  }
+
+  .artiste-portrait-caption {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px;
+    background: linear-gradient(transparent, rgba(10,9,7,0.9));
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+  }
+
+  .artiste-right { padding-top: 60px; }
+
+  .artiste-name {
+    font-family: var(--serif);
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 300;
+    line-height: 1.05;
+    margin-bottom: 40px;
+    color: var(--text);
+  }
+
+  .artiste-name span {
+    display: block;
+    font-size: 0.7rem;
+    font-family: var(--sans);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .artiste-bio-block {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border-dim);
+  }
+
+  .artiste-bio-block h3 {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 16px;
+  }
+
+  .artiste-bio-block p {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.85;
+  }
+
+  .artiste-quote {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text);
+    line-height: 1.5;
+    padding-left: 24px;
+    border-left: 2px solid var(--ochre);
+  }
+
+  /* ─── GALLERY ─── */
+  #galerie {
+    padding: 80px 80px 120px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+  }
+
+  .gallery-filters {
+    display: flex;
+    gap: 4px;
+    background: var(--bg2);
+    padding: 4px;
+    border-radius: 2px;
+    border: 1px solid var(--border-dim);
+  }
+
+  .filter-btn {
+    padding: 8px 20px;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: var(--sans);
+    font-weight: 400;
+    border-radius: 1px;
+  }
+
+  .filter-btn.active, .filter-btn:hover {
+    background: var(--ochre);
+    color: var(--bg);
+  }
+
+  .gallery-grid {
+    columns: 4;
+    column-gap: 16px;
+  }
+
+  @media (max-width: 1200px) { .gallery-grid { columns: 3; } }
+  @media (max-width: 768px) { .gallery-grid { columns: 2; } }
+
+  .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: var(--bg2);
+  }
+
+  .gallery-item.hidden {
+    display: none;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.7s ease;
+    filter: sepia(10%) contrast(1.05);
+  }
+
+  .gallery-item:hover img { transform: scale(1.06); }
+
+  .gallery-item-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(10,9,7,0.95) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .gallery-item:hover .gallery-item-overlay { opacity: 1; }
+
+  .gallery-item-title {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .gallery-item-meta {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+  }
+
+  .gallery-item-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 0.55rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    background: rgba(200, 122, 42, 0.9);
+    color: var(--bg);
+    font-weight: 500;
+  }
+
+  /* ─── FULL SECTION BG ─── */
+  .section-bg {
+    background: var(--bg2);
+    border-top: 1px solid var(--border-dim);
+    border-bottom: 1px solid var(--border-dim);
+  }
+
+  /* ─── PARCOURS ─── */
+  #parcours {
+    padding: 120px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .parcours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-top: 60px;
+  }
+
+  .parcours-col h3 {
+    font-size: 0.6rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .event-item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-dim);
+    transition: background 0.2s;
+  }
+
+  .event-item:hover { padding-left: 8px; }
+
+  .event-year {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--ochre);
+    line-height: 1;
+  }
+
+  .event-details h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+
+  .event-details p {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  .press-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-dim);
+    cursor: pointer;
+    transition: padding-left 0.2s;
+  }
+
+  .press-item:hover { padding-left: 8px; }
+
+  .press-source {
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 4px;
+  }
+
+  .press-title {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+
+  /* ─── STATS BAND ─── */
+  .stats-band {
+    background: var(--bg3);
+    border-top: 1px solid var(--border-dim);
+    border-bottom: 1px solid var(--border-dim);
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 100%;
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid var(--border-dim);
+  }
+
+  .stat-item:last-child { border-right: none; }
+
+  .stat-number {
+    font-family: var(--serif);
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: var(--ochre-light);
+    line-height: 1;
+    display: block;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-top: 8px;
+    display: block;
+  }
+
+  /* ─── PHILOSOPHY FULL-WIDTH ─── */
+  .philosophy-section {
+    padding: 120px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .philosophy-section::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--serif);
+    font-size: 20rem;
+    color: rgba(200,122,42,0.04);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .philosophy-quote {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+  }
+
+  .philosophy-attr {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-top: 32px;
+    display: block;
+  }
+
+  /* ─── CONTACT / FOOTER ─── */
+  footer {
+    background: var(--bg);
+    padding: 100px 80px 60px;
+    border-top: 1px solid var(--border-dim);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    max-width: 100%;
+  }
+
+  .footer-brand .footer-name {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--text);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .footer-brand p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    line-height: 1.8;
+  }
+
+  .footer-col h4 {
+    font-size: 0.6rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--ochre);
+    margin-bottom: 20px;
+  }
+
+  .footer-col ul {
+    list-style: none;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .footer-col ul li:hover { color: var(--text); }
+
+  .footer-bottom {
+    border-top: 1px solid var(--border-dim);
+    padding: 24px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-bottom p {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+  }
+
+  .footer-bottom a {
+    font-size: 0.65rem;
+    color: var(--ochre);
+    text-decoration: none;
+    letter-spacing: 0.15em;
+  }
+
+  /* ─── LIGHTBOX ─── */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9000;
+    background: rgba(10,9,7,0.97);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .lightbox.open { display: flex; }
+
+  .lightbox-inner {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .lightbox-img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  .lightbox-info {
+    padding: 20px 0;
+  }
+
+  .lightbox-title {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+
+  .lightbox-details {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-dim);
+    cursor: pointer;
+    color: var(--text-dim);
+    font-size: 1.2rem;
+    background: transparent;
+    transition: all 0.2s;
+  }
+
+  .lightbox-close:hover {
+    background: var(--ochre);
+    color: var(--bg);
+    border-color: var(--ochre);
+  }
+
+  /* ─── SCROLL ANIMATIONS ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* ─── KEYFRAMES ─── */
+  @keyframes fadeUp {
+    to { opacity: 1; transform: none; }
+  }
+
+  @keyframes lineReveal {
+    to { opacity: 1; transform: scaleX(1); }
+  }
+
+  /* ─── CUSTOM SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--earth); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--ochre); }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 900px) {
+    nav { padding: 0 24px; }
+    .nav-links { display: none; }
+    #artiste { grid-template-columns: 1fr; gap: 40px; padding: 80px 24px; }
+    #galerie { padding: 60px 24px; }
+    .gallery-grid { columns: 2; }
+    .gallery-header { flex-direction: column; align-items: flex-start; gap: 24px; }
+    section { padding: 80px 24px; }
+    #parcours { padding: 80px 24px; }
+    .parcours-grid { grid-template-columns: 1fr; gap: 40px; }
+    .stats-band { grid-template-columns: 1fr 1fr; padding: 40px 24px; }
+    .philosophy-section { padding: 80px 24px; }
+    footer { grid-template-columns: 1fr; padding: 60px 24px; }
+    .footer-bottom { padding: 24px; flex-direction: column; gap: 8px; }
+    .hero-content { padding: 0 24px 60px; }
+    .hero-title { font-size: 4rem; }
+    .hero-indicators { display: none; }
+  }
+
+  /* ─── CURSOR ─── */
+  .cursor-dot {
+    width: 6px;
+    height: 6px;
+    background: var(--ochre);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    transition: transform 0.1s;
+    transform: translate(-50%, -50%);
+  }
+
+  .cursor-ring {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(200,122,42,0.5);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    transition: all 0.15s ease;
+  }
+
+  @media (pointer: coarse) {
+    .cursor-dot, .cursor-ring { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">Mehomez</a>
+  <ul class="nav-links">
+    <li><a href="#artiste">L'artiste</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#parcours">Parcours</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-slideshow" id="heroSlideshow">
+    <div class="hero-slide active" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/01.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/02.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/03.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/04.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/05.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/06.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('https://mehomez.de/wp-content/themes/mehomez/images/diapo-accueil/07.jpg')"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Artiste plasticien · Porto-Novo · Bénin</p>
+    <h1 class="hero-title">Meho<em>mez</em></h1>
+    <p class="hero-sub">Peinture &nbsp;·&nbsp; Sculpture &nbsp;·&nbsp; Peinture sculptée</p>
+    <div class="hero-line"></div>
+  </div>
+  <div class="hero-indicators" id="heroIndicators">
+    <div class="hero-dot active" data-index="0"></div>
+    <div class="hero-dot" data-index="1"></div>
+    <div class="hero-dot" data-index="2"></div>
+    <div class="hero-dot" data-index="3"></div>
+    <div class="hero-dot" data-index="4"></div>
+    <div class="hero-dot" data-index="5"></div>
+    <div class="hero-dot" data-index="6"></div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="stat-item reveal">
+    <span class="stat-number">20+</span>
+    <span class="stat-label">Années de pratique</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-number">60+</span>
+    <span class="stat-label">Œuvres réalisées</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-number">3</span>
+    <span class="stat-label">Pays d'exposition</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-number">∞</span>
+    <span class="stat-label">Engagements artistiques</span>
+  </div>
+</div>
+
+<!-- ARTIST SECTION -->
+<section id="artiste">
+  <div class="artiste-left reveal">
+    <p class="section-label">L'artiste</p>
+    <div class="artiste-portrait">
+      <img src="https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez-150x147.jpg" 
+           alt="Portrait de Mehomez"
+           onerror="this.src='https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2-113x150.jpg'">
+      <div class="artiste-portrait-caption">Ezéchiel Janvier Mehome &nbsp;·&nbsp; Porto-Novo, 1978</div>
+    </div>
+  </div>
+  <div class="artiste-right reveal">
+    <h2 class="artiste-name">
+      <span>Ezéchiel Janvier Mehome</span>
+      dit Mehomez
+    </h2>
+    <div class="artiste-bio-block">
+      <h3>L'œuvre</h3>
+      <p>Artiste plasticien, Mehomez compose ses œuvres principalement à partir de matériaux locaux : ocre, terre, latérite et peinture acrylique sur toile, bois, plastique — ainsi que des assemblages avec des matériaux de récupération tels que les canettes, les bouteilles en plastique. Depuis 2010, il développe son propre style : <strong style="color:var(--text); font-weight:400;">la Peinture sculptée</strong>, une combinaison unique de peinture et de sculpture.</p>
+    </div>
+    <div class="artiste-bio-block">
+      <h3>Biographie</h3>
+      <p>Né à Porto-Novo en 1978, il grandit dans une grande famille traditionnelle d'une quinzaine d'enfants, d'un père photographe et d'une mère ménagère. Ses premières inspirations prises entre l'agronomie, les sciences naturelles et l'art plastique finissent par laisser place à une pratique artistique engagée, partagée entre l'Allemagne et le Bénin.</p>
+    </div>
+    <blockquote class="artiste-quote">
+      "Son regard est sensible à la souffrance de son peuple, et inquiet de son devenir."
+    </blockquote>
+  </div>
+</section>
+
+<!-- PHILOSOPHY BAND -->
+<div class="section-bg">
+  <div class="philosophy-section reveal">
+    <p class="philosophy-quote">
+      L'artiste tire son inspiration des faits quotidiens se déroulant dans son environnement immédiat et des valeurs intrinsèques qu'incarne sa propre culture et celle des autres.
+    </p>
+    <span class="philosophy-attr">— Sa philosophie</span>
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div id="galerie">
+  <div class="gallery-header reveal">
+    <div>
+      <p class="section-label">Galerie</p>
+      <h2 class="section-title">Les <em>Œuvres</em></h2>
+    </div>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="peinture">Peintures</button>
+      <button class="filter-btn" data-filter="sculpture">Sculptures</button>
+    </div>
+  </div>
+
+  <div class="gallery-grid" id="galleryGrid">
+
+    <!-- Peintures Sculptées -->
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2022/10/Circulez-150x113.jpg" alt="Circulez! 2021-2022" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Circulez! 2021-2022</div>
+        <div class="gallery-item-meta">Peinture acrylique, bois, ficelles · 275×220×28 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm-113x150.jpg" alt="Sur le Toit du monde" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Sur le Toit du monde</div>
+        <div class="gallery-item-meta">2021 · 157×71,5×14 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm-113x150.jpg" alt="Abor Ilé Home Back 2" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Abor Ilé (Home Back 2)</div>
+        <div class="gallery-item-meta">Peinture acrylique, ficelle, bois · 164×75×10 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm-113x150.jpg" alt="Abor Ilé Home Back 1" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Abor Ilé (Home-Back 1)</div>
+        <div class="gallery-item-meta">Peinture acrylique, ficelle, bois · 176×84×17 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque-113x150.jpg" alt="Lorsque l'espoir peu à peu renaît" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Lorsque l'espoir peu à peu renaît</div>
+        <div class="gallery-item-meta">Dresde, Mai 2020 · 121,5×105×13 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/99Luftballon-375x500-113x150.jpg" alt="99 Luftballons" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">99 Luftballons</div>
+        <div class="gallery-item-meta">Peinture acrylique, bois, plastique · 105×42×12 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4-113x150.jpg" alt="Am Eiffelturm, save selfie" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Am Eiffelturm, save selfie</div>
+        <div class="gallery-item-meta">Colonisation et clichés N4 · 131×95×6 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1-113x150.jpg" alt="Au Studio Vedette" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Au Studio «Vedette»</div>
+        <div class="gallery-item-meta">Colonisation et clichés N1 · 211×104×16 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N-2-113x150.jpg" alt="Colonisation et clichés N2" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Colonisation et clichés N2</div>
+        <div class="gallery-item-meta">Peinture acrylique, bois de chêne · 175×100×10 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race-116x150.jpg" alt="Culture de ma race" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Culture de ma race</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre, terre · 110×100 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1-100x150.jpg" alt="Demoiselle de Porto 1" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Demoiselle de Porto 1</div>
+        <div class="gallery-item-meta">Peinture acrylique, ficelles, bois · 110×50×14 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente-119x150.jpg" alt="L'Attente" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">L'Attente</div>
+        <div class="gallery-item-meta">Peinture acrylique, fils en coton, cauris · 55×45 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Le-bal-113x150.jpg" alt="Le Bal" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Le Bal</div>
+        <div class="gallery-item-meta">Peinture acrylique, bois, ficelle · 156×77×12 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis-104x150.jpg" alt="L'Holocauste de Tunis" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">L'Holocauste de Tunis</div>
+        <div class="gallery-item-meta">Peinture acrylique, bois, bonbonne · 130×37×20 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Golgota-84x150.jpg" alt="Golgotha" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Golgotha</div>
+        <div class="gallery-item-meta">Peinture acrylique, ficelles, bois · 103×49×17 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/09/70-77x150.jpg" alt="Des Racines et des Ailes" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Des Racines et des Ailes</div>
+        <div class="gallery-item-meta">2011</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur-122x150.jpg" alt="Larmes et sueur" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Larmes et sueur</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre, terre · 103×130 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges-150x145.jpg" alt="La douleur des vierges" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">La douleur des vierges</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre, bois · 65,5×121 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri-133x150.jpg" alt="Igbé kpaman achiri" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Igbé kpaman achiri</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre · 58×58 cm</div>
+      </div>
+    </div>
+
+    <!-- Sculptures -->
+    <div class="gallery-item" data-cat="sculpture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Sculpture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit-314x370.png" alt="Zangbetor Kpakliyaho" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Zangbetor Kpakliyaho</div>
+        <div class="gallery-item-meta">Le chef des gardiens de nuit · Bois, fibres, fer · 2010</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="sculpture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Sculpture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux-326x370.png" alt="Iya Ibéji" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Iya Ibéji</div>
+        <div class="gallery-item-meta">La mère des jumeaux · Bois, cauris, canettes · 2010</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="sculpture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Sculpture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè-370x370.png" alt="Mon Duo Déè" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Mon Duo Déè</div>
+        <div class="gallery-item-meta">Bois, cauris, canettes, assiette émaillée · 2010</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="sculpture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Sculpture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor-295x370.png" alt="Les gardiens du seuil" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Les gardiens du seuil</div>
+        <div class="gallery-item-meta">Tolègba et Zangbetor · Bois, cauris, fer · 2010</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="sculpture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Sculpture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon-370x186.png" alt="Agbadjoumon" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Agbadjoumon</div>
+        <div class="gallery-item-meta">Bois, cauris, canettes · 43×22×11 cm · 2010</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie-113x150.png" alt="Man in Alexanderplatz" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Man in Alexanderplatz</div>
+        <div class="gallery-item-meta">2019</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1-113x150.png" alt="Woman in Alexanderplatz" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Woman in Alexanderplatz</div>
+        <div class="gallery-item-meta">2019</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/03/La-table-du-pasteur-111x150.png" alt="La table du pasteur" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">La table du pasteur</div>
+        <div class="gallery-item-meta">Technique mixte</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/09/20-116x150.jpg" alt="Cérémonie royale des gozins" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Cérémonie royale des gozins</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre, corde · 130×103 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité-92x150.jpg" alt="Harmonie de l'unicité" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Harmonie de l'unicité</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre · 41×68,5 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Installation</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/10/le-débarquement-150x113.jpg" alt="Le débarquement" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">Le débarquement</div>
+        <div class="gallery-item-meta">Installation · Plastique, toile, bois · 400×150×15 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture sculptée</div>
+      <img src="https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur-113x150.jpg" alt="L'Explorateur" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">l'Explorateur</div>
+        <div class="gallery-item-meta">Colonisation et clichés N4 · 156×75×10 cm</div>
+      </div>
+    </div>
+
+    <div class="gallery-item" data-cat="peinture" onclick="openLightbox(this)">
+      <div class="gallery-item-tag">Peinture</div>
+      <img src="https://mehomez.de/wp-content/uploads/2011/01/I-can-fly-61x150.jpg" alt="I can fly" loading="lazy">
+      <div class="gallery-item-overlay">
+        <div class="gallery-item-title">I can fly</div>
+        <div class="gallery-item-meta">Peinture acrylique, ocre · 40×100,5 cm</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- PARCOURS & PRESS -->
+<div class="section-bg">
+  <div id="parcours">
+    <div class="reveal">
+      <p class="section-label">Parcours</p>
+      <h2 class="section-title">Événements & <em>Presse</em></h2>
+    </div>
+
+    <div class="parcours-grid">
+      <div class="reveal">
+        <h3>Expositions & Événements</h3>
+
+        <div class="event-item">
+          <div class="event-year">2021</div>
+          <div class="event-details">
+            <h4>Billet Retour: Effet Papillon?!</h4>
+            <p>Exposition sur la restitution des trésors royaux pillés par la France au Dahomey. Cotonou, Bénin.</p>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-year">2020</div>
+          <div class="event-details">
+            <h4>Lass es besser werden</h4>
+            <p>Centre Culturel Zentralwerk, Dresde, Allemagne.</p>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-year">2019</div>
+          <div class="event-details">
+            <h4>Womit haben wir das verdient?</h4>
+            <p>Bredelar Marsberg, Deutschland. Vernissage et droits de l'homme.</p>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-year">2017</div>
+          <div class="event-details">
+            <h4>Lichtung #1 — Alte Werkstatt</h4>
+            <p>Galerie Junges quintett, Brilon, Allemagne.</p>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-year">2014</div>
+          <div class="event-details">
+            <h4>Bois sacré — Dak'art</h4>
+            <p>Wallonie-Bruxelles International, Dakar.</p>
+          </div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-year">2011</div>
+          <div class="event-details">
+            <h4>Hogbonou: Des Racines et des Ailes</h4>
+            <p>Centre culturel Ouadada, Porto-Novo. Juin–Juillet 2011.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <h3>Revue de presse</h3>
+
+        <div class="press-item">
+          <div class="press-source">Sauerlandkurier · 2019</div>
+          <div class="press-title">Vernissage trifft auf Menschenrechte</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">Zeitung für das Hochsauerland · 2017</div>
+          <div class="press-title">Alte Werkstatt wird zu Galerie — Junges Quintett zeigt vielfältige Kunst</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">La Tribune de la Capitale · 2011</div>
+          <div class="press-title">L'art plastique béninois en pleine expansion</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">La Tribune de la Capitale · 2009</div>
+          <div class="press-title">Plus d'une vingtaine de toiles exposées au musée Alexandre Adandé</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">Le Matinal · 2009</div>
+          <div class="press-title">Mehomez explique son vernissage « Patrie-moine »</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">L'Aurore · 2003</div>
+          <div class="press-title">Ézéchiel Mèhomè — Lauréat du Fesnac</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">L'action · 2003</div>
+          <div class="press-title">Ézéchiel Mèhomè, l'artiste plasticien qui monte</div>
+        </div>
+
+        <div class="press-item">
+          <div class="press-source">Le Matinal · 2006</div>
+          <div class="press-title">Mehomez présente « Secrets des quatre murs »</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact">
+  <div class="footer-brand reveal">
+    <div class="footer-name">Mehomez</div>
+    <p>
+      Artiste plasticien<br>
+      Peintre · Sculpteur<br>
+      Porto-Novo, Bénin<br>
+      Vit et travaille entre<br>
+      le Bénin et l'Allemagne
+    </p>
+  </div>
+  <div class="footer-col reveal">
+    <h4>Navigation</h4>
+    <ul>
+      <li onclick="document.getElementById('artiste').scrollIntoView({behavior:'smooth'})">L'artiste</li>
+      <li onclick="document.getElementById('galerie').scrollIntoView({behavior:'smooth'})">Galerie</li>
+      <li onclick="document.getElementById('parcours').scrollIntoView({behavior:'smooth'})">Parcours</li>
+      <li>Télécharger le CV</li>
+    </ul>
+  </div>
+  <div class="footer-col reveal">
+    <h4>Partenaires</h4>
+    <ul>
+      <li>Centre Culturel Ouadada</li>
+      <li>Porto-Novo, Bénin</li>
+    </ul>
+    <br>
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="https://mehomez.de/contact" style="color:var(--text-dim);text-decoration:none">mehomez.de/contact</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© Copyright Mehomez — Tous droits réservés</p>
+  <a href="https://mehomez.de">mehomez.de</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <div class="lightbox-info">
+      <div class="lightbox-title" id="lightboxTitle"></div>
+      <div class="lightbox-details" id="lightboxDetails"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ── Cursor ──
+  const dot = document.getElementById('cursorDot');
+  const ring = document.getElementById('cursorRing');
+  let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    dot.style.left = mouseX + 'px'; dot.style.top = mouseY + 'px';
+  });
+
+  function animateRing() {
+    ringX += (mouseX - ringX) * 0.12;
+    ringY += (mouseY - ringY) * 0.12;
+    ring.style.left = ringX + 'px'; ring.style.top = ringY + 'px';
+    requestAnimationFrame(animateRing);
+  }
+  animateRing();
+
+  document.querySelectorAll('a, button, .gallery-item, .hero-dot, .filter-btn').forEach(el => {
+    el.addEventListener('mouseenter', () => { ring.style.transform = 'translate(-50%,-50%) scale(1.8)'; ring.style.borderColor = 'var(--ochre)'; });
+    el.addEventListener('mouseleave', () => { ring.style.transform = 'translate(-50%,-50%) scale(1)'; ring.style.borderColor = 'rgba(200,122,42,0.5)'; });
+  });
+
+  // ── Hero Slideshow ──
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.hero-dot');
+  let currentSlide = 0;
+
+  function goToSlide(n) {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }
+
+  dots.forEach(d => d.addEventListener('click', () => goToSlide(+d.dataset.index)));
+  setInterval(() => goToSlide(currentSlide + 1), 5000);
+
+  // ── Gallery Filter ──
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.dataset.cat === filter) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // ── Lightbox ──
+  function openLightbox(item) {
+    const img = item.querySelector('img');
+    const title = item.querySelector('.gallery-item-title').textContent;
+    const meta = item.querySelector('.gallery-item-meta').textContent;
+    // Try to get a larger image URL by removing dimension constraints from path
+    let src = img.src;
+    document.getElementById('lightboxImg').src = src;
+    document.getElementById('lightboxTitle').textContent = title;
+    document.getElementById('lightboxDetails').textContent = meta;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox(e) {
+    if (!e || e.target === document.getElementById('lightbox') || e.currentTarget.tagName === 'BUTTON') {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+  // ── Scroll Reveal ──
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        // Stagger children if multiple in same parent
+        const siblings = e.target.parentElement.querySelectorAll('.reveal');
+        siblings.forEach((s, i) => {
+          s.style.transitionDelay = (i * 80) + 'ms';
+        });
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealEls.forEach(el => observer.observe(el));
+
+  // ── Nav Background on Scroll ──
+  const nav = document.getElementById('mainNav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      nav.style.background = 'rgba(10,9,7,0.97)';
+      nav.style.backdropFilter = 'blur(12px)';
+    } else {
+      nav.style.background = '';
+      nav.style.backdropFilter = 'blur(4px)';
+    }
+  });
+</script>
+</body>
+</html>

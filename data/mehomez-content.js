@@ -1,0 +1,5894 @@
+export const siteData = {
+  "site": {
+    "title": "Mehomez",
+    "description": "Artiste plasticien au Bénin",
+    "source": "https://mehomez.de",
+    "capturedAt": "2026-03-25T18:54:24.294Z",
+    "counts": {
+      "pages": {
+        "totalItems": 3,
+        "totalPages": 1
+      },
+      "posts": {
+        "totalItems": 124,
+        "totalPages": 2
+      },
+      "categories": {
+        "totalItems": 49,
+        "totalPages": 1
+      },
+      "media": {
+        "totalItems": 205,
+        "totalPages": 3
+      }
+    },
+    "navigation": [
+      {
+        "label": "Accueil",
+        "href": "./mehomez-portfolio.html"
+      },
+      {
+        "label": "L'artiste",
+        "href": "./artiste.html"
+      },
+      {
+        "label": "Œuvres",
+        "href": "./oeuvres.html"
+      },
+      {
+        "label": "Parcours",
+        "href": "./parcours.html"
+      },
+      {
+        "label": "Presse",
+        "href": "./presse.html"
+      },
+      {
+        "label": "Contact",
+        "href": "./contact.html"
+      }
+    ]
+  },
+  "artist": {
+    "title": "L'artiste",
+    "html": "<h2>L&rsquo;œuvre</h2>\n<p>Artiste plasticien, compose ses œuvres principalement à partir de matériaux locaux : ocre, terre, latérite  et peinture acrylique sur toile, bois, plastic,&#8230; ainsi que des assemblages avec des matériaux de récupération tels que les canettes, les bouteilles en plastic, etc. Depuis 2010, il développe son propre style. Une combinaison de peinture et de sculpture: la Peinture sculptée.</p>\n<h2>L&rsquo;artiste</h2>\n<p>Né à Porto-Novo en 1978, Ezéchiel Janvier Mehome de son vrai nom, grandit dans une grande famille traditionnelle d&rsquo;une quinzaine d&rsquo;enfant, d&rsquo;un père photographe et d&rsquo;une mère ménagère. Il suit une scolarité jusqu’en classe de terminale et s&rsquo;intéressa à l’agronomie et aux sciences naturelles. À la recherche de ressources financières, il combina d&rsquo;abord l&rsquo;art et les études jusqu&rsquo;au moment où les arts plastiques prirent le dessus. Il retrouve aujourd’hui à travers son œuvre un support d’inspiration engagée.</p>\n<h2>Sa philosophie</h2>\n<p>L&rsquo;artiste tire son inspiration des faits quotidiens se déroulant dans son environnement immédiat et des valeurs intrinsèques qu&rsquo;incarne sa propre culture et celle des autres.</p>\n<p>Sa démarche est un engagement et son regard s&rsquo;accorde des difficultés et des incohérences de la vie quotidienne au Bénin, en Afrique et partout dans le monde.</p>\n<p>Son regard est sensible à la souffrance de son peuple, et inquiet de son devenir.</p>\n",
+    "text": "L'œuvre\n Artiste plasticien, compose ses œuvres principalement à partir de matériaux locaux : ocre, terre, latérite  et peinture acrylique sur toile, bois, plastic,… ainsi que des assemblages avec des matériaux de récupération tels que les canettes, les bouteilles en plastic, etc. Depuis 2010, il développe son propre style. Une combinaison de peinture et de sculpture: la Peinture sculptée.\n L'artiste\n Né à Porto-Novo en 1978, Ezéchiel Janvier Mehome de son vrai nom, grandit dans une grande famille traditionnelle d'une quinzaine d'enfant, d'un père photographe et d'une mère ménagère. Il suit une scolarité jusqu’en classe de terminale et s'intéressa à l’agronomie et aux sciences naturelles. À la recherche de ressources financières, il combina d'abord l'art et les études jusqu'au moment où les arts plastiques prirent le dessus. Il retrouve aujourd’hui à travers son œuvre un support d’inspiration engagée.\n Sa philosophie\n L'artiste tire son inspiration des faits quotidiens se déroulant dans son environnement immédiat et des valeurs intrinsèques qu'incarne sa propre culture et celle des autres.\n Sa démarche est un engagement et son regard s'accorde des difficultés et des incohérences de la vie quotidienne au Bénin, en Afrique et partout dans le monde.\n Son regard est sensible à la souffrance de son peuple, et inquiet de son devenir.",
+    "portrait": "https://mehomez.de/wp-content/uploads/2022/10/Circulez.jpg"
+  },
+  "home": {
+    "title": "Page d'accueil",
+    "html": "<p>Bonjour et bienvenue sur le site de Mehomez, artiste plasticien, peintre et sculpteur d&rsquo;origine béninoise.Vit et travaille entre l&rsquo;Allemagne et le Bénin.</p>\n",
+    "text": "Bonjour et bienvenue sur le site de Mehomez, artiste plasticien, peintre et sculpteur d'origine béninoise.Vit et travaille entre l'Allemagne et le Bénin.",
+    "featuredWorks": [
+      "circulez-2021-2022",
+      "sur-le-toit-du-monde-2021",
+      "abor-ile-home-back-2",
+      "abor-ile-home-back-1",
+      "lorsque-lespoir-peu-a-peu-renait",
+      "tous-dans-le-meme-panier"
+    ],
+    "highlightedPress": [
+      "sauerlandkurier2019-vernissage-trifft-auf-menschenrechte",
+      "zeitung-fur-das-hochsauerland2017-alte-werkstatt-wird-zu-galerie-junges-quintett-zeigt-vielfaltige-kunst",
+      "lichtung1-zeigt-kunstwerke-in-brilons-alter-werkstatt"
+    ],
+    "highlightedParcours": [
+      "billet-retour-effet-papillon-2",
+      "womit-haben-wir-das-verdient-06-2019-bredelar-marsberg-deutschland",
+      "las-es-besser-werden",
+      "exposition-bois-sacre-dakart-2014-wallonie-bruxelles-international"
+    ]
+  },
+  "works": [
+    {
+      "id": 921,
+      "slug": "circulez-2021-2022",
+      "link": "https://mehomez.de/circulez-2021-2022/",
+      "type": "work-painting",
+      "title": "Circulez! 2021-2022",
+      "excerpt": "Composition: peinture acrylique sur toile, bois, chutes de toile, ficellesTechnique: mixteDimensions: 275 x 220 x 28 cm",
+      "html": "\n<p> Composition: peinture acrylique sur toile, bois, chutes de toile, ficelles<br />Technique: mixte<br />Dimensions: 275 x 220 x 28 cm </p>\n",
+      "text": "Composition: peinture acrylique sur toile, bois, chutes de toile, ficelles\nTechnique: mixte\nDimensions: 275 x 220 x 28 cm",
+      "date": "2022-10-25T21:19:52",
+      "dateGmt": "2022-10-25T20:19:52",
+      "createdYear": "2022",
+      "archiveYear": "2021",
+      "categories": [
+        {
+          "id": 45,
+          "name": "Les Peintures et Les Peintures Sculptées",
+          "slug": "peintures-sculptees-2020",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "Peintures 2021",
+          "slug": "peintures-2021",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 48,
+              "name": "Peintures 2021",
+              "slug": "peintures-2021"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2022/10/Circulez.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile, bois, chutes de toile, ficelles",
+      "technique": "mixte",
+      "dimensions": "275 x 220 x 28 cm",
+      "materials": ""
+    },
+    {
+      "id": 837,
+      "slug": "sur-le-toit-du-monde-2021",
+      "link": "https://mehomez.de/sur-le-toit-du-monde-2021/",
+      "type": "work-painting",
+      "title": "Sur le Toit du monde",
+      "excerpt": "Composition: peinture acrylique, ficelle sur toile, bois\nTechnique : mixte\nDimensions: 157 x 71,5 x 14 cm Continuer la lecture &rarr;",
+      "html": "\n<p> Composition: peinture acrylique, ficelle sur toile, bois<br />Technique : mixte<br />Dimensions: 157 x 71,5 x 14 cm </p>\n",
+      "text": "Composition: peinture acrylique, ficelle sur toile, bois\nTechnique : mixte\nDimensions: 157 x 71,5 x 14 cm",
+      "date": "2022-01-08T15:11:50",
+      "dateGmt": "2022-01-08T14:11:50",
+      "createdYear": "2022",
+      "archiveYear": "2021",
+      "categories": [
+        {
+          "id": 45,
+          "name": "Les Peintures et Les Peintures Sculptées",
+          "slug": "peintures-sculptees-2020",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "Peintures 2021",
+          "slug": "peintures-2021",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 48,
+              "name": "Peintures 2021",
+              "slug": "peintures-2021"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2022/01/sur-le-toit-du-monde-157x715x14cm.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ficelle sur toile, bois",
+      "technique": "mixte",
+      "dimensions": "157 x 71,5 x 14 cm",
+      "materials": ""
+    },
+    {
+      "id": 834,
+      "slug": "abor-ile-home-back-2",
+      "link": "https://mehomez.de/abor-ile-home-back-2/",
+      "type": "work-painting",
+      "title": "Abor Ilé (Home Back 2)",
+      "excerpt": "Composition: peinture acrylique, ficelle sur toile, boisTechnique : mixteDimensions: 164 x 75 x 10 cm",
+      "html": "\n<p> Composition: peinture acrylique, ficelle sur toile, bois<br />Technique : mixte<br />Dimensions: 164 x 75 x 10 cm </p>\n\n\n\n<figure class=\"wp-block-image\"><img src=\"blob:http://mehomez.de/a705a042-aeca-449c-8d00-78eb1ab67b16\" alt=\"\"/></figure>\n",
+      "text": "Composition: peinture acrylique, ficelle sur toile, bois\nTechnique : mixte\nDimensions: 164 x 75 x 10 cm",
+      "date": "2022-01-08T14:54:38",
+      "dateGmt": "2022-01-08T13:54:38",
+      "createdYear": "2022",
+      "archiveYear": "2021",
+      "categories": [
+        {
+          "id": 45,
+          "name": "Les Peintures et Les Peintures Sculptées",
+          "slug": "peintures-sculptees-2020",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "Peintures 2021",
+          "slug": "peintures-2021",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 48,
+              "name": "Peintures 2021",
+              "slug": "peintures-2021"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back2164x75x10cm.jpg",
+        "blob:http://mehomez.de/a705a042-aeca-449c-8d00-78eb1ab67b16"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ficelle sur toile, bois",
+      "technique": "mixte",
+      "dimensions": "164 x 75 x 10 cm",
+      "materials": ""
+    },
+    {
+      "id": 826,
+      "slug": "abor-ile-home-back-1",
+      "link": "https://mehomez.de/abor-ile-home-back-1/",
+      "type": "work-painting",
+      "title": "Abor Ilé (Home-Back 1)",
+      "excerpt": "Composition: peinture acrylique, ficelle sur toile, bois Technique : mixteDimensions: 176 x 84 x 17 cm",
+      "html": "\n<p> Composition: peinture acrylique, ficelle sur toile, bois <br />Technique : mixte<br />Dimensions: 176 x 84 x 17 cm  </p>\n",
+      "text": "Composition: peinture acrylique, ficelle sur toile, bois\nTechnique : mixte\nDimensions: 176 x 84 x 17 cm",
+      "date": "2022-01-08T14:15:43",
+      "dateGmt": "2022-01-08T13:15:43",
+      "createdYear": "2022",
+      "archiveYear": "2021",
+      "categories": [
+        {
+          "id": 45,
+          "name": "Les Peintures et Les Peintures Sculptées",
+          "slug": "peintures-sculptees-2020",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "Peintures 2021",
+          "slug": "peintures-2021",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 48,
+              "name": "Peintures 2021",
+              "slug": "peintures-2021"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2022/01/Abor-ilé-Home-back1-176x84x17cm.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ficelle sur toile, bois",
+      "technique": "mixte",
+      "dimensions": "176 x 84 x 17 cm",
+      "materials": ""
+    },
+    {
+      "id": 817,
+      "slug": "lorsque-lespoir-peu-a-peu-renait",
+      "link": "https://mehomez.de/lorsque-lespoir-peu-a-peu-renait/",
+      "type": "work-painting",
+      "title": "Lorsque l'espoir peu à peu renaît",
+      "excerpt": "composition: peinture acrylique,ficelle sur toile,Bois de chêneTechnique : mixteDimensions: 121,5 x 105 x 13 cm",
+      "html": "\n<p>\n\ncomposition: peinture acrylique,ficelle sur toile,Bois de chêne<br />Technique : mixte<br />Dimensions: 121,5 x 105 x 13 cm\n\n</p>\n",
+      "text": "composition: peinture acrylique,ficelle sur toile,Bois de chêne\nTechnique : mixte\nDimensions: 121,5 x 105 x 13 cm",
+      "date": "2020-07-07T01:04:45",
+      "dateGmt": "2020-07-07T00:04:45",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 45,
+          "name": "Les Peintures et Les Peintures Sculptées",
+          "slug": "peintures-sculptees-2020",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "Peintures 2020",
+          "slug": "peintures-2020-2",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 46,
+              "name": "Peintures 2020",
+              "slug": "peintures-2020-2"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Lorsque.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique,ficelle sur toile,Bois de chêne",
+      "technique": "mixte",
+      "dimensions": "121,5 x 105 x 13 cm",
+      "materials": ""
+    },
+    {
+      "id": 814,
+      "slug": "tous-dans-le-meme-panier",
+      "link": "https://mehomez.de/tous-dans-le-meme-panier/",
+      "type": "work-painting",
+      "title": "Tous dans le même panier?",
+      "excerpt": "Compositions: peinture acrylique,ficelles sur toile,bois de chêne Technique: mixte Dimensions: 140,5 x 48 x 12 cm",
+      "html": "\n<p>Compositions: peinture acrylique,ficelles sur toile,bois de chêne</p>\n\n\n\n<p>Technique: mixte</p>\n\n\n\n<p> Dimensions: 140,5 x 48 x 12 cm </p>\n",
+      "text": "Compositions: peinture acrylique,ficelles sur toile,bois de chêne\n Technique: mixte\n Dimensions: 140,5 x 48 x 12 cm",
+      "date": "2020-07-07T00:43:15",
+      "dateGmt": "2020-07-06T23:43:15",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 45,
+          "name": "Les Peintures et Les Peintures Sculptées",
+          "slug": "peintures-sculptees-2020",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "Peintures 2020",
+          "slug": "peintures-2020-2",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 46,
+              "name": "Peintures 2020",
+              "slug": "peintures-2020-2"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Ts-ds-le-mm-panier.jpg"
+      ],
+      "embeds": [],
+      "composition": "s: peinture acrylique,ficelles sur toile,bois de chêne",
+      "technique": "mixte",
+      "dimensions": "140,5 x 48 x 12 cm",
+      "materials": ""
+    },
+    {
+      "id": 752,
+      "slug": "man-in-alexanderplatz",
+      "link": "https://mehomez.de/man-in-alexanderplatz/",
+      "type": "work-sculpture",
+      "title": "Man in Alexanderplatz",
+      "excerpt": "Composition: bois, peinture acrylique, plastic, canette, ficelle Technique: assemblage Dimensions: 75 x 40 x 10 cm",
+      "html": "\n<p><br /> Composition: bois, peinture acrylique, plastic, canette, ficelle </p>\n\n\n\n<p> Technique: assemblage<br /> Dimensions: 75 x 40 x 10 cm</p>\n",
+      "text": "Composition: bois, peinture acrylique, plastic, canette, ficelle\n Technique: assemblage\n Dimensions: 75 x 40 x 10 cm",
+      "date": "2019-10-03T13:08:36",
+      "dateGmt": "2019-10-03T12:08:36",
+      "createdYear": "2019",
+      "archiveYear": "2015",
+      "categories": [
+        {
+          "id": 29,
+          "name": "Sculptures 2015",
+          "slug": "s-2015",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 29,
+              "name": "Sculptures 2015",
+              "slug": "s-2015"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/10/Man-in-Alexanderplatz-Copie.png"
+      ],
+      "embeds": [],
+      "composition": "bois, peinture acrylique, plastic, canette, ficelle",
+      "technique": "assemblage",
+      "dimensions": "75 x 40 x 10 cm",
+      "materials": ""
+    },
+    {
+      "id": 748,
+      "slug": "woman-in-alexanderplatz",
+      "link": "https://mehomez.de/woman-in-alexanderplatz/",
+      "type": "work-sculpture",
+      "title": "Woman in Alexanderplatz",
+      "excerpt": "Composition: peinture acrylique, bois, plastic, mèche de cheveux artificiels, canette, ficelle Technique: assemblage Dimensions : 60 x 25 x 19 cm",
+      "html": "\n<p>Composition: peinture acrylique, bois, plastic, mèche de cheveux artificiels, canette, ficelle</p>\n\n\n\n<p>Technique: assemblage </p>\n\n\n\n<p> Dimensions :  60 x 25 x 19 cm </p>\n\n\n\n<hr class=\"wp-block-separator\"/>\n",
+      "text": "Composition: peinture acrylique, bois, plastic, mèche de cheveux artificiels, canette, ficelle\n Technique: assemblage\n Dimensions : 60 x 25 x 19 cm",
+      "date": "2019-10-03T11:47:58",
+      "dateGmt": "2019-10-03T10:47:58",
+      "createdYear": "2019",
+      "archiveYear": "2015",
+      "categories": [
+        {
+          "id": 29,
+          "name": "Sculptures 2015",
+          "slug": "s-2015",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 29,
+              "name": "Sculptures 2015",
+              "slug": "s-2015"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/10/Woman-in-Alexanderplatz-1.png"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, bois, plastic, mèche de cheveux artificiels, canette, ficelle",
+      "technique": "assemblage",
+      "dimensions": "60 x 25 x 19 cm",
+      "materials": ""
+    },
+    {
+      "id": 745,
+      "slug": "messagers-du-vent",
+      "link": "https://mehomez.de/messagers-du-vent/",
+      "type": "work-painting",
+      "title": "Messagers du Vent",
+      "excerpt": "Composition de l’installation: peinture acrylique sur plastic, bois, ficelles Technique: mixte Dimensions: 310 x 200 x 25 cm",
+      "html": "\n<p><br /> Composition de l’installation: peinture acrylique sur plastic, bois, ficelles<br /> Technique: mixte<br /> Dimensions: 310 x 200 x 25 cm</p>\n",
+      "text": "Composition de l’installation: peinture acrylique sur plastic, bois, ficelles\n Technique: mixte\n Dimensions: 310 x 200 x 25 cm",
+      "date": "2019-10-03T10:45:27",
+      "dateGmt": "2019-10-03T09:45:27",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/10/les-Messagers-du-Vent-copie.jpg"
+      ],
+      "embeds": [],
+      "composition": "de l’installation: peinture acrylique sur plastic, bois, ficelles",
+      "technique": "mixte",
+      "dimensions": "310 x 200 x 25 cm",
+      "materials": ""
+    },
+    {
+      "id": 742,
+      "slug": "le-debarquement",
+      "link": "https://mehomez.de/le-debarquement/",
+      "type": "work-painting",
+      "title": "Le débarquement",
+      "excerpt": "Le débarquement Composition de l’installation: plastic, ficelle, peinture acrylique, toile, bois, corde, fenêtre, vitre Technique: mixte Dimensions: 400 x 150 x 15 cm",
+      "html": "\n<p>Le débarquement <br /> Composition de l’installation: plastic, ficelle, peinture acrylique, toile, bois, corde, fenêtre, vitre<br /> Technique: mixte<br /> Dimensions: 400 x 150 x 15 cm</p>\n",
+      "text": "Le débarquement\n Composition de l’installation: plastic, ficelle, peinture acrylique, toile, bois, corde, fenêtre, vitre\n Technique: mixte\n Dimensions: 400 x 150 x 15 cm",
+      "date": "2019-10-03T10:27:19",
+      "dateGmt": "2019-10-03T09:27:19",
+      "createdYear": "2019",
+      "archiveYear": "2015",
+      "categories": [
+        {
+          "id": 24,
+          "name": "Peintures sculptées 2015",
+          "slug": "p-2015",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 24,
+              "name": "Peintures sculptées 2015",
+              "slug": "p-2015"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/10/le-débarquement.jpg"
+      ],
+      "embeds": [],
+      "composition": "de l’installation: plastic, ficelle, peinture acrylique, toile, bois, corde, fenêtre, vitre",
+      "technique": "mixte",
+      "dimensions": "400 x 150 x 15 cm",
+      "materials": ""
+    },
+    {
+      "id": 734,
+      "slug": "borlu-golu-ballon-dor",
+      "link": "https://mehomez.de/borlu-golu-ballon-dor/",
+      "type": "work-painting",
+      "title": "Bɔlu Golu (Ballon d'or)",
+      "excerpt": "Composition de l'installation: peinture acrylique sur toile,bois ,ficellesTechnique: mixteDimensions: 140 x 50 x 10 cm Dimensions des Ballons: 10 cm de diamètre",
+      "html": "\n<p>Composition de l&rsquo;installation: peinture acrylique sur toile,bois ,ficelles<br />Technique: mixte<br />Dimensions: 140 x 50 x 10 cm</p>\n\n\n\n<p> Dimensions des Ballons: 10 cm de diamètre</p>\n\n\n\n<p></p>\n\n\n\n<hr class=\"wp-block-separator\"/>\n",
+      "text": "Composition de l'installation: peinture acrylique sur toile,bois ,ficelles\nTechnique: mixte\nDimensions: 140 x 50 x 10 cm\n Dimensions des Ballons: 10 cm de diamètre",
+      "date": "2019-10-02T15:12:06",
+      "dateGmt": "2019-10-02T14:12:06",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/10/Foot.jpg"
+      ],
+      "embeds": [],
+      "composition": "de l'installation: peinture acrylique sur toile,bois ,ficelles",
+      "technique": "mixte",
+      "dimensions": "140 x 50 x 10 cm",
+      "materials": ""
+    },
+    {
+      "id": 731,
+      "slug": "a-qui-appartient-la-lune",
+      "link": "https://mehomez.de/a-qui-appartient-la-lune/",
+      "type": "work-painting",
+      "title": "A qui appartient la Lune?",
+      "excerpt": "Composition: peinture acrylique sur toile,bois ,ficellesTechnique: mixteDimensions: 134 x 31 x 17 cm",
+      "html": "\n<p> Composition: peinture acrylique sur toile,bois ,ficelles<br />Technique: mixte<br />Dimensions: 134 x 31 x 17 cm </p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois ,ficelles\nTechnique: mixte\nDimensions: 134 x 31 x 17 cm",
+      "date": "2019-09-25T23:19:44",
+      "dateGmt": "2019-09-25T22:19:44",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/09/musique-des-sphères.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois ,ficelles",
+      "technique": "mixte",
+      "dimensions": "134 x 31 x 17 cm",
+      "materials": ""
+    },
+    {
+      "id": 725,
+      "slug": "am-eiffelturmsave-selfie-colonisation-et-cliches-n4",
+      "link": "https://mehomez.de/am-eiffelturmsave-selfie-colonisation-et-cliches-n4/",
+      "type": "work-painting",
+      "title": "Am Eiffelturm,save selfie (colonisation et clichés N 4)",
+      "excerpt": "Composition: peinture acrylique sur toile,bois ,ficellesTechnique: mixteDimensions: 131 x 95 x 6 cm",
+      "html": "\n<p> Composition: peinture acrylique sur toile,bois ,ficelles<br />Technique: mixte<br />Dimensions: 131 x 95 x 6 cm </p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois ,ficelles\nTechnique: mixte\nDimensions: 131 x 95 x 6 cm",
+      "date": "2019-09-25T22:55:40",
+      "dateGmt": "2019-09-25T21:55:40",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/09/Colonisationet-Cliche-N-4.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois ,ficelles",
+      "technique": "mixte",
+      "dimensions": "131 x 95 x 6 cm",
+      "materials": ""
+    },
+    {
+      "id": 705,
+      "slug": "messager-des-gons",
+      "link": "https://mehomez.de/messager-des-gons/",
+      "type": "work-painting",
+      "title": "Messager des Gons",
+      "excerpt": "Composition: Peinture acrylique sur toile, bois,plastique,pinceau, fils, tissusTechnique: mixteDimensions: 134 x 40 x 17 cm",
+      "html": "\n<p>Composition: Peinture acrylique sur toile, bois,plastique,pinceau, fils, tissus<br />Technique: mixte<br />Dimensions: 134 x 40 x 17 cm </p>\n\n\n\n<p></p>\n",
+      "text": "Composition: Peinture acrylique sur toile, bois,plastique,pinceau, fils, tissus\nTechnique: mixte\nDimensions: 134 x 40 x 17 cm",
+      "date": "2019-09-04T23:35:16",
+      "dateGmt": "2019-09-04T22:35:16",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/09/Messagers-des-gons.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique sur toile, bois,plastique,pinceau, fils, tissus",
+      "technique": "mixte",
+      "dimensions": "134 x 40 x 17 cm",
+      "materials": ""
+    },
+    {
+      "id": 686,
+      "slug": "le-bal",
+      "link": "https://mehomez.de/le-bal/",
+      "type": "work-painting",
+      "title": "Le Bal",
+      "excerpt": "Composition: Peinture acrylique sur toile,bois,ficelle Technique: mixte Dimensions: 156 X 77 X 12 cm",
+      "html": "\n<p>Composition: Peinture acrylique sur toile,bois,ficelle </p>\n\n\n\n<p>Technique: mixte </p>\n\n\n\n<p>Dimensions: 156 X 77 X 12 cm</p>\n\n\n\n<p></p>\n",
+      "text": "Composition: Peinture acrylique sur toile,bois,ficelle\n Technique: mixte\n Dimensions: 156 X 77 X 12 cm",
+      "date": "2019-09-02T12:18:32",
+      "dateGmt": "2019-09-02T11:18:32",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/le-bal.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique sur toile,bois,ficelle",
+      "technique": "mixte",
+      "dimensions": "156 X 77 X 12 cm",
+      "materials": ""
+    },
+    {
+      "id": 659,
+      "slug": "emois",
+      "link": "https://mehomez.de/emois/",
+      "type": "work-painting",
+      "title": "Emois",
+      "excerpt": "Série de dessins au format de carte postal Composition: peinture acrylique sur papier Technique: découpage et collage Dimensions irrégulières",
+      "html": "<p>Série de dessins au format de carte postal</p>\n<p>Composition: peinture acrylique sur papier</p>\n<p>Technique: découpage et collage</p>\n<p>Dimensions irrégulières</p>\n",
+      "text": "Série de dessins au format de carte postal\n Composition: peinture acrylique sur papier\n Technique: découpage et collage\n Dimensions irrégulières",
+      "date": "2019-08-30T22:11:05",
+      "dateGmt": "2019-08-30T21:11:05",
+      "createdYear": "2019",
+      "archiveYear": "2016",
+      "categories": [
+        {
+          "id": 25,
+          "name": "Peintures sculptées 2016",
+          "slug": "p-2016",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 25,
+              "name": "Peintures sculptées 2016",
+              "slug": "p-2016"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Emois.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur papier",
+      "technique": "découpage et collage",
+      "dimensions": "irrégulières",
+      "materials": ""
+    },
+    {
+      "id": 654,
+      "slug": "la-cruche-sacree",
+      "link": "https://mehomez.de/la-cruche-sacree/",
+      "type": "work-painting",
+      "title": "La cruche sacrée",
+      "excerpt": "Composition: peinture acrylique sur toile Technique: peinture Dimension: 100 x 55 cm",
+      "html": "<p>Composition: peinture acrylique sur toile</p>\n<p>Technique: peinture</p>\n<p>Dimension: 100 x 55 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile\n Technique: peinture\n Dimension: 100 x 55 cm",
+      "date": "2019-08-30T20:31:53",
+      "dateGmt": "2019-08-30T19:31:53",
+      "createdYear": "2019",
+      "archiveYear": "2003",
+      "categories": [
+        {
+          "id": 43,
+          "name": "Peintures 2003",
+          "slug": "peintures-2003",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 43,
+              "name": "Peintures 2003",
+              "slug": "peintures-2003"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/la-cruche-sacrée.png"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile",
+      "technique": "peinture",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 651,
+      "slug": "demoiselle-de-porto-2",
+      "link": "https://mehomez.de/demoiselle-de-porto-2/",
+      "type": "work-painting",
+      "title": "Demoiselle de Porto 2",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,poussière de bois,plastique Technique: mixte Dimension: 100 x 45 x 13 cm",
+      "html": "<h1 class=\"entry-title\"></h1>\n<div class=\"entry-content\">\n<p>Composition: peinture acrylique sur toile,ficelles,bois,poussière de bois,plastique</p>\n<p>Technique: mixte</p>\n<p>Dimension: 100 x 45 x 13 cm</p>\n</div>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,poussière de bois,plastique\n Technique: mixte\n Dimension: 100 x 45 x 13 cm",
+      "date": "2019-08-30T20:09:51",
+      "dateGmt": "2019-08-30T19:09:51",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/demoiselle-de-porto-2.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,poussière de bois,plastique",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 648,
+      "slug": "messager-des-tambours-sacres",
+      "link": "https://mehomez.de/messager-des-tambours-sacres/",
+      "type": "work-painting",
+      "title": "Messager des Tambours Sacrés",
+      "excerpt": "Composition: Peinture acrylique sur toile, bois, corde,plastique,ficelle,tissus Technique: mixte Dimensions: 120 x 37 x 25 cm",
+      "html": "<p>Composition: Peinture acrylique sur toile, bois, corde,plastique,ficelle,tissus<br />\nTechnique: mixte<br />\nDimensions: 120 x 37 x 25 cm</p>\n",
+      "text": "Composition: Peinture acrylique sur toile, bois, corde,plastique,ficelle,tissus\nTechnique: mixte\nDimensions: 120 x 37 x 25 cm",
+      "date": "2019-08-30T19:41:24",
+      "dateGmt": "2019-08-30T18:41:24",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Messagers-des-tambours-sacres.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique sur toile, bois, corde,plastique,ficelle,tissus",
+      "technique": "mixte",
+      "dimensions": "120 x 37 x 25 cm",
+      "materials": ""
+    },
+    {
+      "id": 643,
+      "slug": "lholocauste-de-tunis",
+      "link": "https://mehomez.de/lholocauste-de-tunis/",
+      "type": "work-painting",
+      "title": "L'Holocauste de Tunis",
+      "excerpt": "Composition: Peinture acrylique sur toile, bois, corde,bonbonne de liquide inflammable Technique: mixte Dimensions: 130 x 37 x 20 cm",
+      "html": "<p>Composition: Peinture acrylique sur toile, bois, corde,bonbonne de liquide inflammable<br />\nTechnique: mixte<br />\nDimensions: 130 x 37 x 20 cm</p>\n",
+      "text": "Composition: Peinture acrylique sur toile, bois, corde,bonbonne de liquide inflammable\nTechnique: mixte\nDimensions: 130 x 37 x 20 cm",
+      "date": "2019-08-30T19:08:29",
+      "dateGmt": "2019-08-30T18:08:29",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/LHolocauste-de-Tunis.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique sur toile, bois, corde,bonbonne de liquide inflammable",
+      "technique": "mixte",
+      "dimensions": "130 x 37 x 20 cm",
+      "materials": ""
+    },
+    {
+      "id": 635,
+      "slug": "lattente",
+      "link": "https://mehomez.de/lattente/",
+      "type": "work-painting",
+      "title": "L'Attente",
+      "excerpt": "Composition : peinture acrylique, fils en coton,cauris Technique : mixte Dimensions : 55 x 45 cm",
+      "html": "<p>Composition : peinture acrylique, fils en coton,cauris</p>\n<p>Technique : mixte</p>\n<p>Dimensions : 55 x 45 cm</p>\n",
+      "text": "Composition : peinture acrylique, fils en coton,cauris\n Technique : mixte\n Dimensions : 55 x 45 cm",
+      "date": "2019-08-30T17:10:54",
+      "dateGmt": "2019-08-30T16:10:54",
+      "createdYear": "2019",
+      "archiveYear": "2001",
+      "categories": [
+        {
+          "id": 42,
+          "name": "Peinture 2001",
+          "slug": "peinture-2001",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 42,
+              "name": "Peinture 2001",
+              "slug": "peinture-2001"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Dans-lattente.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, fils en coton,cauris",
+      "technique": "mixte",
+      "dimensions": "55 x 45 cm",
+      "materials": ""
+    },
+    {
+      "id": 629,
+      "slug": "culture-de-ma-race",
+      "link": "https://mehomez.de/culture-de-ma-race/",
+      "type": "work-painting",
+      "title": "Culture de ma race",
+      "excerpt": "Composition : peinture acrylique, pigments, terre, morceau de sac de jute, corde de lampion Technique : mixte Dimensions : 110 x 100 cm",
+      "html": "<p>Composition : peinture acrylique, pigments, terre, morceau de sac de jute, corde de lampion</p>\n<p>Technique : mixte</p>\n<p>Dimensions : 110 x 100 cm</p>\n",
+      "text": "Composition : peinture acrylique, pigments, terre, morceau de sac de jute, corde de lampion\n Technique : mixte\n Dimensions : 110 x 100 cm",
+      "date": "2019-08-30T16:50:56",
+      "dateGmt": "2019-08-30T15:50:56",
+      "createdYear": "2019",
+      "archiveYear": "2002",
+      "categories": [
+        {
+          "id": 37,
+          "name": "Peintures 2002",
+          "slug": "p-2002",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 37,
+              "name": "Peintures 2002",
+              "slug": "p-2002"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Culture-de-ma-race.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, pigments, terre, morceau de sac de jute, corde de lampion",
+      "technique": "mixte",
+      "dimensions": "110 x 100 cm",
+      "materials": ""
+    },
+    {
+      "id": 626,
+      "slug": "golgotha",
+      "link": "https://mehomez.de/golgotha/",
+      "type": "work-painting",
+      "title": "Golgotha",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,plastique Technique: mixte Dimension: 103 x 49 x 17 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,plastique</p>\n<p>Technique: mixte</p>\n<p>Dimension: 103 x 49 x 17 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,plastique\n Technique: mixte\n Dimension: 103 x 49 x 17 cm",
+      "date": "2019-08-30T15:09:52",
+      "dateGmt": "2019-08-30T14:09:52",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,plastique",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 623,
+      "slug": "demoiselle-de-porto-1",
+      "link": "https://mehomez.de/demoiselle-de-porto-1/",
+      "type": "work-painting",
+      "title": "Demoiselle de Porto 1",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,pointes Technique: mixte Dimension: 110 x 50 x 14 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,pointes</p>\n<p>Technique: mixte</p>\n<p>Dimension: 110 x 50 x 14 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,pointes\n Technique: mixte\n Dimension: 110 x 50 x 14 cm",
+      "date": "2019-08-30T14:40:02",
+      "dateGmt": "2019-08-30T13:40:02",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Demoiselle-de-porto-1.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,pointes",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 619,
+      "slug": "dans-les-3-p-serie-n-4",
+      "link": "https://mehomez.de/dans-les-3-p-serie-n-4/",
+      "type": "work-painting",
+      "title": "Dans les 3 P (série N 4)",
+      "excerpt": "Composition : Vieux vêtements,filet,chute de toile, papier Technique : Collage sur papier Dimensions: 55 X 40 cm",
+      "html": "<p>Composition : Vieux vêtements,filet,chute de toile, papier</p>\n<p>Technique : Collage sur papier</p>\n<p>Dimensions: 55 X 40 cm</p>\n",
+      "text": "Composition : Vieux vêtements,filet,chute de toile, papier\n Technique : Collage sur papier\n Dimensions: 55 X 40 cm",
+      "date": "2019-08-30T13:50:41",
+      "dateGmt": "2019-08-30T12:50:41",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4-1.jpg"
+      ],
+      "embeds": [],
+      "composition": "Vieux vêtements,filet,chute de toile, papier",
+      "technique": "Collage sur papier",
+      "dimensions": "55 X 40 cm",
+      "materials": ""
+    },
+    {
+      "id": 616,
+      "slug": "dans-les-3-p-serie-n3",
+      "link": "https://mehomez.de/dans-les-3-p-serie-n3/",
+      "type": "work-painting",
+      "title": "Dans les 3 P (série N3)",
+      "excerpt": "Composition : Vieux vêtements,filet,chute de toile, papier Technique : Collage sur papier Dimensions: 48 X 35 cm",
+      "html": "<p>Composition : Vieux vêtements,filet,chute de toile, papier</p>\n<p>Technique : Collage sur papier</p>\n<p>Dimensions: 48 X 35 cm</p>\n",
+      "text": "Composition : Vieux vêtements,filet,chute de toile, papier\n Technique : Collage sur papier\n Dimensions: 48 X 35 cm",
+      "date": "2019-08-30T13:39:07",
+      "dateGmt": "2019-08-30T12:39:07",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-3-P-serie-N-4.jpg"
+      ],
+      "embeds": [],
+      "composition": "Vieux vêtements,filet,chute de toile, papier",
+      "technique": "Collage sur papier",
+      "dimensions": "48 X 35 cm",
+      "materials": ""
+    },
+    {
+      "id": 613,
+      "slug": "dans-les-3-p-serie-n-2",
+      "link": "https://mehomez.de/dans-les-3-p-serie-n-2/",
+      "type": "work-painting",
+      "title": "Dans les 3 P ( série N 2)",
+      "excerpt": "Composition : Vieux vêtements,mèche de cheveux artificiels,sac de jute,fils de courant électrique,chute de toile,fils en plastique,pigment, papier Technique : Collage et pigment sur papier Dimensions: 48 X 35 cm",
+      "html": "<p>Composition : Vieux vêtements,mèche de cheveux artificiels,sac de jute,fils de courant électrique,chute de toile,fils en plastique,pigment, papier</p>\n<p>Technique : Collage et pigment sur papier</p>\n<p>Dimensions: 48 X 35 cm</p>\n",
+      "text": "Composition : Vieux vêtements,mèche de cheveux artificiels,sac de jute,fils de courant électrique,chute de toile,fils en plastique,pigment, papier\n Technique : Collage et pigment sur papier\n Dimensions: 48 X 35 cm",
+      "date": "2019-08-30T13:07:38",
+      "dateGmt": "2019-08-30T12:07:38",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Dans-les-trois-P-serie-N2-2.jpg"
+      ],
+      "embeds": [],
+      "composition": "Vieux vêtements,mèche de cheveux artificiels,sac de jute,fils de courant électrique,chute de toile,fils en plastique,pigment, papier",
+      "technique": "Collage et pigment sur papier",
+      "dimensions": "48 X 35 cm",
+      "materials": ""
+    },
+    {
+      "id": 610,
+      "slug": "dans-les-3-p-serie-n1",
+      "link": "https://mehomez.de/dans-les-3-p-serie-n1/",
+      "type": "work-painting",
+      "title": "Dans les 3 P (série N1)",
+      "excerpt": "Composition : Vieux vêtements,papier,filet Technique : Collage Dimensions: 48 X 35 cm",
+      "html": "<p>Composition : Vieux vêtements,papier,filet</p>\n<p>Technique : Collage</p>\n<p>Dimensions: 48 X 35 cm</p>\n",
+      "text": "Composition : Vieux vêtements,papier,filet\n Technique : Collage\n Dimensions: 48 X 35 cm",
+      "date": "2019-08-30T12:48:33",
+      "dateGmt": "2019-08-30T11:48:33",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/dans-les-3-P-serie-N1.jpg"
+      ],
+      "embeds": [],
+      "composition": "Vieux vêtements,papier,filet",
+      "technique": "Collage",
+      "dimensions": "48 X 35 cm",
+      "materials": ""
+    },
+    {
+      "id": 605,
+      "slug": "la-bergere",
+      "link": "https://mehomez.de/la-bergere/",
+      "type": "work-painting",
+      "title": "La bergère",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,plastique Technique: mixte Dimension: 104 x 37 x 15 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,plastique</p>\n<p>Technique: mixte</p>\n<p>Dimension: 104 x 37 x 15 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,plastique\n Technique: mixte\n Dimension: 104 x 37 x 15 cm",
+      "date": "2019-08-29T14:53:10",
+      "dateGmt": "2019-08-29T13:53:10",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/La-bergère.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,plastique",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 601,
+      "slug": "libre-arbitre",
+      "link": "https://mehomez.de/libre-arbitre/",
+      "type": "work-painting",
+      "title": "Libre-arbitre",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,charbon Technique: mixte Dimension: 125 x 43 x 14 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,charbon</p>\n<p>Technique: mixte</p>\n<p>Dimension: 125 x 43 x 14 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,charbon\n Technique: mixte\n Dimension: 125 x 43 x 14 cm",
+      "date": "2019-08-29T14:43:55",
+      "dateGmt": "2019-08-29T13:43:55",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Libre-arbitre-1.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,charbon",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 598,
+      "slug": "verseur-deau",
+      "link": "https://mehomez.de/verseur-deau/",
+      "type": "work-painting",
+      "title": "Verseur d'Eau",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,plastique Technique: mixte Dimension: 108 x 47 x 14 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,plastique</p>\n<p>Technique: mixte</p>\n<p>Dimension: 108 x 47 x 14 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,plastique\n Technique: mixte\n Dimension: 108 x 47 x 14 cm",
+      "date": "2019-08-29T14:34:36",
+      "dateGmt": "2019-08-29T13:34:36",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Verseur-dEau.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,plastique",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 595,
+      "slug": "wangnigni",
+      "link": "https://mehomez.de/wangnigni/",
+      "type": "work-painting",
+      "title": "Wangnigni",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,charbon,pigment Technique: mixte Dimension: 113 x 115 x 12 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,charbon,pigment</p>\n<p>Technique: mixte</p>\n<p>Dimension: 113 x 115 x 12 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,charbon,pigment\n Technique: mixte\n Dimension: 113 x 115 x 12 cm",
+      "date": "2019-08-29T14:23:41",
+      "dateGmt": "2019-08-29T13:23:41",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/wangnigni.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,charbon,pigment",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 587,
+      "slug": "leclipse",
+      "link": "https://mehomez.de/leclipse/",
+      "type": "work-painting",
+      "title": "L'Eclipse",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,tissus,clignotant de moto Technique: mixte Dimension: 115 x 38 x 18 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,tissus,clignotant de moto</p>\n<p>Technique: mixte</p>\n<p>Dimension: 115 x 38 x 18 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,tissus,clignotant de moto\n Technique: mixte\n Dimension: 115 x 38 x 18 cm",
+      "date": "2019-08-29T14:03:16",
+      "dateGmt": "2019-08-29T13:03:16",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/LEclipse.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,tissus,clignotant de moto",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 571,
+      "slug": "transe-mission",
+      "link": "https://mehomez.de/transe-mission/",
+      "type": "work-painting",
+      "title": "Transe-mission",
+      "excerpt": "Composition: peinture acrylique sur toile,bois.ficelles,antenne de radio,photographies Technique: mixte Dimensions: 280 x 172 x 13 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,bois.ficelles,antenne de radio,photographies<br />\nTechnique: mixte<br />\nDimensions: 280 x 172 x 13 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois.ficelles,antenne de radio,photographies\nTechnique: mixte\nDimensions: 280 x 172 x 13 cm",
+      "date": "2019-08-29T12:47:00",
+      "dateGmt": "2019-08-29T11:47:00",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Transe-mission.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois.ficelles,antenne de radio,photographies",
+      "technique": "mixte",
+      "dimensions": "280 x 172 x 13 cm",
+      "materials": ""
+    },
+    {
+      "id": 566,
+      "slug": "cent-titres",
+      "link": "https://mehomez.de/cent-titres/",
+      "type": "work-painting",
+      "title": "Les Cent titres",
+      "excerpt": "Composition: peinture acrylique sur toile,ficelles,bois,plastique Technique: mixte Dimension: 105 x 56 x 12 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,ficelles,bois,plastique</p>\n<p>Technique: mixte</p>\n<p>Dimension: 105 x 56 x 12 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,ficelles,bois,plastique\n Technique: mixte\n Dimension: 105 x 56 x 12 cm",
+      "date": "2019-08-29T12:28:53",
+      "dateGmt": "2019-08-29T11:28:53",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Les-Cent-Titres.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,ficelles,bois,plastique",
+      "technique": "mixte",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 561,
+      "slug": "a-visage-decouvert",
+      "link": "https://mehomez.de/a-visage-decouvert/",
+      "type": "work-painting",
+      "title": "A visage découvert",
+      "excerpt": "Composition: Peinture acrylique sur toile, bois, ficelles Technique: mixte Dimensions: 110 x 40 x 15 cm",
+      "html": "<p>Composition: Peinture acrylique sur toile, bois, ficelles<br />\nTechnique: mixte<br />\nDimensions: 110 x 40 x 15 cm</p>\n",
+      "text": "Composition: Peinture acrylique sur toile, bois, ficelles\nTechnique: mixte\nDimensions: 110 x 40 x 15 cm",
+      "date": "2019-08-29T00:17:30",
+      "dateGmt": "2019-08-28T23:17:30",
+      "createdYear": "2019",
+      "archiveYear": "2014",
+      "categories": [
+        {
+          "id": 23,
+          "name": "Peintures 2014",
+          "slug": "p-2014",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 23,
+              "name": "Peintures 2014",
+              "slug": "p-2014"
+            }
+          ]
+        }
+      ],
+      "tags": [
+        40,
+        39,
+        41
+      ],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/A-visage-découvert.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique sur toile, bois, ficelles",
+      "technique": "mixte",
+      "dimensions": "110 x 40 x 15 cm",
+      "materials": ""
+    },
+    {
+      "id": 558,
+      "slug": "99-luftballons",
+      "link": "https://mehomez.de/99-luftballons/",
+      "type": "work-painting",
+      "title": "99 Luftballons",
+      "excerpt": "Composition: peinture acrylique, bois de chêne, plastic, chutes de tissus, ficelles Technique: mixte Dimensions: 105 x 42 x 12 cm",
+      "html": "<p>Composition: peinture acrylique, bois de chêne, plastic, chutes de tissus, ficelles<br />\nTechnique: mixte<br />\nDimensions: 105 x 42 x 12 cm</p>\n",
+      "text": "Composition: peinture acrylique, bois de chêne, plastic, chutes de tissus, ficelles\nTechnique: mixte\nDimensions: 105 x 42 x 12 cm",
+      "date": "2019-08-28T23:52:21",
+      "dateGmt": "2019-08-28T22:52:21",
+      "createdYear": "2019",
+      "archiveYear": "2017",
+      "categories": [
+        {
+          "id": 38,
+          "name": "Peintures sculptées 2017",
+          "slug": "peintures-2017",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 38,
+              "name": "Peintures sculptées 2017",
+              "slug": "peintures-2017"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "peinture acrylique, bois de chêne, plastic, chutes de tissus, ficelles",
+      "technique": "mixte",
+      "dimensions": "105 x 42 x 12 cm",
+      "materials": ""
+    },
+    {
+      "id": 552,
+      "slug": "les-cinquante-nerfs-des-independances-2013",
+      "link": "https://mehomez.de/les-cinquante-nerfs-des-independances-2013/",
+      "type": "work-painting",
+      "title": "Les cinquante nerfs des indépendances",
+      "excerpt": "Composition: peinture acrylique sur toile,bois,plastique,ficelles,fils de sérum,charbon,vieux T Shirt Technique: mixte Dimensions: 200 cm x 165 cm x 17 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,bois,plastique,ficelles,fils de sérum,charbon,vieux T Shirt<br />\nTechnique: mixte</p>\n<p>Dimensions: 200 cm x 165 cm x 17 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois,plastique,ficelles,fils de sérum,charbon,vieux T Shirt\nTechnique: mixte\n Dimensions: 200 cm x 165 cm x 17 cm",
+      "date": "2019-08-28T23:15:39",
+      "dateGmt": "2019-08-28T22:15:39",
+      "createdYear": "2019",
+      "archiveYear": "2013",
+      "categories": [
+        {
+          "id": 22,
+          "name": "Peintures sculptées 2013",
+          "slug": "p-2013",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 22,
+              "name": "Peintures sculptées 2013",
+              "slug": "p-2013"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Les-cinquantes-Nerfs-de-lIndépendance.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois,plastique,ficelles,fils de sérum,charbon,vieux T Shirt",
+      "technique": "mixte",
+      "dimensions": "200 cm x 165 cm x 17 cm",
+      "materials": ""
+    },
+    {
+      "id": 538,
+      "slug": "nefertiti-la-parfaite-est-arrivee-2019",
+      "link": "https://mehomez.de/nefertiti-la-parfaite-est-arrivee-2019/",
+      "type": "work-painting",
+      "title": "Néfertiti: la Parfaite est arrivée",
+      "excerpt": "Composition: peinture acrylique sur toile,bois,ficelles Technique: mixte Dimensions: 131 x 45 x 21 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,bois,ficelles</p>\n<p>Technique: mixte</p>\n<p>Dimensions: 131 x 45 x 21 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois,ficelles\n Technique: mixte\n Dimensions: 131 x 45 x 21 cm",
+      "date": "2019-08-27T14:18:35",
+      "dateGmt": "2019-08-27T13:18:35",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois,ficelles",
+      "technique": "mixte",
+      "dimensions": "131 x 45 x 21 cm",
+      "materials": ""
+    },
+    {
+      "id": 535,
+      "slug": "under-punshes-2018",
+      "link": "https://mehomez.de/under-punshes-2018/",
+      "type": "work-painting",
+      "title": "Under Punshes",
+      "excerpt": "Composition: peinture acrylique sur toile Technique: peinture Dimensions: 119 x 75 cm",
+      "html": "<p>Composition: peinture acrylique sur toile<br />\nTechnique: peinture<br />\nDimensions: 119 x 75 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile\nTechnique: peinture\nDimensions: 119 x 75 cm",
+      "date": "2019-08-27T01:50:35",
+      "dateGmt": "2019-08-27T00:50:35",
+      "createdYear": "2019",
+      "archiveYear": "2018",
+      "categories": [
+        {
+          "id": 36,
+          "name": "Peintures 2018",
+          "slug": "peintures-2018",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 36,
+              "name": "Peintures 2018",
+              "slug": "peintures-2018"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile",
+      "technique": "peinture",
+      "dimensions": "119 x 75 cm",
+      "materials": ""
+    },
+    {
+      "id": 531,
+      "slug": "colonisation-et-cliches-serie-n-4-lexplorateur-2019",
+      "link": "https://mehomez.de/colonisation-et-cliches-serie-n-4-lexplorateur-2019/",
+      "type": "work-painting",
+      "title": "l'Explorateur",
+      "excerpt": "Composition: peinture acrylique sur toile,bois ,ficelles Technique: mixte Dimensions: 156 x 75 x 10 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,bois ,ficelles<br />\nTechnique: mixte<br />\nDimensions: 156 x 75 x 10 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois ,ficelles\nTechnique: mixte\nDimensions: 156 x 75 x 10 cm",
+      "date": "2019-08-27T01:05:49",
+      "dateGmt": "2019-08-27T00:05:49",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-Série-N-4-lExplorateur.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois ,ficelles",
+      "technique": "mixte",
+      "dimensions": "156 x 75 x 10 cm",
+      "materials": ""
+    },
+    {
+      "id": 528,
+      "slug": "colonisation-et-cliches-serie-n-2-2019",
+      "link": "https://mehomez.de/colonisation-et-cliches-serie-n-2-2019/",
+      "type": "work-painting",
+      "title": "Colonisation et clichés N 2",
+      "excerpt": "Composition: peinture acrylique sur toile,bois de chêne,ficelles Technique: mixte Dimensions: 175 x 100 x 10 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,bois de chêne,ficelles<br />\nTechnique: mixte<br />\nDimensions: 175 x 100 x 10 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois de chêne,ficelles\nTechnique: mixte\nDimensions: 175 x 100 x 10 cm",
+      "date": "2019-08-27T00:33:10",
+      "dateGmt": "2019-08-26T23:33:10",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois de chêne,ficelles",
+      "technique": "mixte",
+      "dimensions": "175 x 100 x 10 cm",
+      "materials": ""
+    },
+    {
+      "id": 522,
+      "slug": "vedette-studio-colonisation-et-cliches-serie-n-1",
+      "link": "https://mehomez.de/vedette-studio-colonisation-et-cliches-serie-n-1/",
+      "type": "work-painting",
+      "title": "Au Studio  »Vedette » (Colonisation et clichés N 1)",
+      "excerpt": "Composition: peinture acrylique sur toile,bois de chêne,ficelles Technique: mixte Dimensions: 211 x 104 x 16 cm",
+      "html": "<p>Composition: peinture acrylique sur toile,bois de chêne,ficelles<br />\nTechnique: mixte<br />\nDimensions: 211 x 104 x 16 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile,bois de chêne,ficelles\nTechnique: mixte\nDimensions: 211 x 104 x 16 cm",
+      "date": "2019-08-26T23:40:14",
+      "dateGmt": "2019-08-26T22:40:14",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 35,
+          "name": "Peintures 2019",
+          "slug": "p-2019",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 35,
+              "name": "Peintures 2019",
+              "slug": "p-2019"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Colonisation-et-clichés-série-N1.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile,bois de chêne,ficelles",
+      "technique": "mixte",
+      "dimensions": "211 x 104 x 16 cm",
+      "materials": ""
+    },
+    {
+      "id": 518,
+      "slug": "les-trois-m",
+      "link": "https://mehomez.de/les-trois-m/",
+      "type": "work-painting",
+      "title": "Les trois « M »",
+      "excerpt": "Composition: peinture acrylique sur toile Technique: peinture Dimensions: 110 x 107 cm",
+      "html": "<p>Composition: peinture acrylique sur toile<br />\nTechnique: peinture<br />\nDimensions: 110 x 107 cm</p>\n",
+      "text": "Composition: peinture acrylique sur toile\nTechnique: peinture\nDimensions: 110 x 107 cm",
+      "date": "2019-08-26T23:21:46",
+      "dateGmt": "2019-08-26T22:21:46",
+      "createdYear": "2019",
+      "archiveYear": "2018",
+      "categories": [
+        {
+          "id": 36,
+          "name": "Peintures 2018",
+          "slug": "peintures-2018",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 36,
+              "name": "Peintures 2018",
+              "slug": "peintures-2018"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "peinture acrylique sur toile",
+      "technique": "peinture",
+      "dimensions": "110 x 107 cm",
+      "materials": ""
+    },
+    {
+      "id": 414,
+      "slug": "ceremonie-royale-des-gozins",
+      "link": "https://mehomez.de/ceremonie-royale-des-gozins/",
+      "type": "work-painting",
+      "title": "Cérémonie royale des gozins",
+      "excerpt": "Composition: peinture acrylique,terre, ocre,cordes,pigments sur toile Dimension: 130 x 103 cm",
+      "html": "<p>Composition: peinture acrylique,terre, ocre,cordes,pigments sur toile</p>\n<p>Dimension: 130 x 103 cm</p>\n",
+      "text": "Composition: peinture acrylique,terre, ocre,cordes,pigments sur toile\n Dimension: 130 x 103 cm",
+      "date": "2011-09-10T21:09:27",
+      "dateGmt": "2011-09-10T20:09:27",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/09/20.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique,terre, ocre,cordes,pigments sur toile",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 408,
+      "slug": "des-racines-et-des-ailes",
+      "link": "https://mehomez.de/des-racines-et-des-ailes/",
+      "type": "work-sculpture",
+      "title": "Des Racines et des Ailes",
+      "excerpt": "Titre:Des racines et des Ailes Composition:Bois,perles,calebasses,fers,pigments,peiture acrylique. Dimensions: 65x45x29.",
+      "html": "<p> Titre:Des racines et des Ailes</p>\n<p>Composition:Bois,perles,calebasses,fers,pigments,peiture acrylique.</p>\n<p>Dimensions: 65x45x29.</p>\n",
+      "text": "Titre:Des racines et des Ailes\n Composition:Bois,perles,calebasses,fers,pigments,peiture acrylique.\n Dimensions: 65x45x29.",
+      "date": "2011-09-10T20:33:32",
+      "dateGmt": "2011-09-10T19:33:32",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 19,
+          "name": "Sculptures 2011",
+          "slug": "s-2011",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 19,
+              "name": "Sculptures 2011",
+              "slug": "s-2011"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/09/70.jpg"
+      ],
+      "embeds": [],
+      "composition": "Bois,perles,calebasses,fers,pigments,peiture acrylique.",
+      "technique": "",
+      "dimensions": "65x45x29.",
+      "materials": ""
+    },
+    {
+      "id": 402,
+      "slug": "baba-alagbada-135x71x9-technique-toile-sculptee",
+      "link": "https://mehomez.de/baba-alagbada-135x71x9-technique-toile-sculptee/",
+      "type": "work-painting",
+      "title": "Baba Alagbada.",
+      "excerpt": "Composition: Peinture acrylique, pigment sur toile, bois,sac de jute Technique: mixte Dimensions:  135 x 71 x 9 cm",
+      "html": "<p>Composition: Peinture acrylique, pigment sur toile, bois,sac de jute<br />\nTechnique: mixte<br />\nDimensions:  135 x 71 x 9 cm</p>\n",
+      "text": "Composition: Peinture acrylique, pigment sur toile, bois,sac de jute\nTechnique: mixte\nDimensions:  135 x 71 x 9 cm",
+      "date": "2011-09-10T20:02:17",
+      "dateGmt": "2011-09-10T19:02:17",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 13,
+          "name": "Peintures sculptées 2011",
+          "slug": "p-2011",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 13,
+              "name": "Peintures sculptées 2011",
+              "slug": "p-2011"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/09/25.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique, pigment sur toile, bois,sac de jute",
+      "technique": "mixte",
+      "dimensions": "135 x 71 x 9 cm",
+      "materials": ""
+    },
+    {
+      "id": 347,
+      "slug": "union-sacree",
+      "link": "https://mehomez.de/union-sacree/",
+      "type": "work-painting",
+      "title": "Union sacrée",
+      "excerpt": "Dimensions : 95 x 70 cm. Technique : mixte. Composition : peinture acrylique, corde, avorkidja (chutes de tissus), ocre, sur toile.",
+      "html": "<p>Dimensions : 95 x 70 cm.</p>\n<p>Technique : mixte.</p>\n<p>Composition : peinture acrylique, corde, avorkidja (chutes de tissus), ocre, sur toile.</p>\n",
+      "text": "Dimensions : 95 x 70 cm.\n Technique : mixte.\n Composition : peinture acrylique, corde, avorkidja (chutes de tissus), ocre, sur toile.",
+      "date": "2011-03-15T09:33:56",
+      "dateGmt": "2011-03-15T08:33:56",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Union-sacrée.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, corde, avorkidja (chutes de tissus), ocre, sur toile.",
+      "technique": "mixte.",
+      "dimensions": "95 x 70 cm.",
+      "materials": ""
+    },
+    {
+      "id": 344,
+      "slug": "ceremonie-dinitiation",
+      "link": "https://mehomez.de/ceremonie-dinitiation/",
+      "type": "work-painting",
+      "title": "Cérémonie d'initiation",
+      "excerpt": "Dimensions : 100 x 50 cm. Technique : mixte. Composition : Peinture acrylique, ocre, terre, avorkidja (chutes de tissus) sur toile.",
+      "html": "<p>Dimensions : 100 x 50 cm.</p>\n<p>Technique : mixte.</p>\n<p>Composition : Peinture acrylique, ocre, terre, avorkidja (chutes de tissus) sur toile.</p>\n",
+      "text": "Dimensions : 100 x 50 cm.\n Technique : mixte.\n Composition : Peinture acrylique, ocre, terre, avorkidja (chutes de tissus) sur toile.",
+      "date": "2011-03-15T09:32:11",
+      "dateGmt": "2011-03-15T08:32:11",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Cérémonie-dInitiation.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique, ocre, terre, avorkidja (chutes de tissus) sur toile.",
+      "technique": "mixte.",
+      "dimensions": "100 x 50 cm.",
+      "materials": ""
+    },
+    {
+      "id": 341,
+      "slug": "avorka-offrande",
+      "link": "https://mehomez.de/avorka-offrande/",
+      "type": "work-painting",
+      "title": "Avorka (Offrande)",
+      "excerpt": "Dimensions : 100 x 100 cm. Technique : mixte. Composition : peinture acrylique, fibres végétales, ocre, corde sur toile.",
+      "html": "<p>Dimensions : 100 x 100 cm.</p>\n<p>Technique : mixte.</p>\n<p>Composition : peinture acrylique, fibres végétales, ocre, corde sur toile.</p>\n",
+      "text": "Dimensions : 100 x 100 cm.\n Technique : mixte.\n Composition : peinture acrylique, fibres végétales, ocre, corde sur toile.",
+      "date": "2011-03-15T09:30:33",
+      "dateGmt": "2011-03-15T08:30:33",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Avorka-Offrande.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, fibres végétales, ocre, corde sur toile.",
+      "technique": "mixte.",
+      "dimensions": "100 x 100 cm.",
+      "materials": ""
+    },
+    {
+      "id": 338,
+      "slug": "allons-au-ciel",
+      "link": "https://mehomez.de/allons-au-ciel/",
+      "type": "work-painting",
+      "title": "Allons au ciel",
+      "excerpt": "Composition : Peinture acrylique sur toile. Technique : mixte. Dimensions : 100 x 100 cm.",
+      "html": "<p>Composition : Peinture acrylique sur toile.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 100 x 100 cm.</p>\n",
+      "text": "Composition : Peinture acrylique sur toile.\n Technique : mixte.\n Dimensions : 100 x 100 cm.",
+      "date": "2011-03-15T09:29:06",
+      "dateGmt": "2011-03-15T08:29:06",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Allons-au-ciel.jpg"
+      ],
+      "embeds": [],
+      "composition": "Peinture acrylique sur toile.",
+      "technique": "mixte.",
+      "dimensions": "100 x 100 cm.",
+      "materials": ""
+    },
+    {
+      "id": 335,
+      "slug": "tchokoto-kan-lokpor",
+      "link": "https://mehomez.de/tchokoto-kan-lokpor/",
+      "type": "work-painting",
+      "title": "Tchokoto Kan Lokpor",
+      "excerpt": "Composition : peinture acrylique, avorkidja (chutes de tissus). Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, avorkidja (chutes de tissus).\n Technique : mixte.",
+      "date": "2011-03-15T09:27:28",
+      "dateGmt": "2011-03-15T08:27:28",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Tchokoto-Kan-Lokpor.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 332,
+      "slug": "ogan-ho",
+      "link": "https://mehomez.de/ogan-ho/",
+      "type": "work-painting",
+      "title": "Ogan Ho",
+      "excerpt": "Composition : peinture acrylique, terre, avorkidja (chutes de tissus). Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, terre, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, terre, avorkidja (chutes de tissus).\n Technique : mixte.",
+      "date": "2011-03-15T09:26:07",
+      "dateGmt": "2011-03-15T08:26:07",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Ogan-Ho.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, terre, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 329,
+      "slug": "masques-initiatiques",
+      "link": "https://mehomez.de/masques-initiatiques/",
+      "type": "work-painting",
+      "title": "Masques Initiatiques",
+      "excerpt": "Composition : peinture acrylique, terre, avorkidja (chutes de tissus). Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, terre, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, terre, avorkidja (chutes de tissus).\n Technique : mixte.",
+      "date": "2011-03-15T09:24:17",
+      "dateGmt": "2011-03-15T08:24:17",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Masques-Initiatiques.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, terre, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 326,
+      "slug": "le-lien",
+      "link": "https://mehomez.de/le-lien/",
+      "type": "work-painting",
+      "title": "Le Lien",
+      "excerpt": "Composition : peinture acrylique, terre, avorkidja (chutes de tissus). Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, terre, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, terre, avorkidja (chutes de tissus).\n Technique : mixte.",
+      "date": "2011-03-15T09:22:34",
+      "dateGmt": "2011-03-15T08:22:34",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Le-Lien.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, terre, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 295,
+      "slug": "oganla",
+      "link": "https://mehomez.de/oganla/",
+      "type": "work-painting",
+      "title": "Ogan'la",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde. Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.\n Technique : mixte.",
+      "date": "2011-02-07T14:56:52",
+      "dateGmt": "2011-02-07T13:56:52",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 13,
+          "name": "Peintures sculptées 2011",
+          "slug": "p-2011",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 13,
+              "name": "Peintures sculptées 2011",
+              "slug": "p-2011"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/02/Oganla.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 290,
+      "slug": "la-table-du-pasteur",
+      "link": "https://mehomez.de/la-table-du-pasteur/",
+      "type": "work-sculpture",
+      "title": "La table du pasteur",
+      "excerpt": "Composition : bois, cauris, fer, canettes vides, bouteille vide en plastique, os, corne.",
+      "html": "<p>Composition : bois, cauris, fer, canettes vides, bouteille vide en plastique, os, corne.</p>\n",
+      "text": "Composition : bois, cauris, fer, canettes vides, bouteille vide en plastique, os, corne.",
+      "date": "2011-02-07T14:52:57",
+      "dateGmt": "2011-02-07T13:52:57",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/02/La-table-du-pasteur.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, fer, canettes vides, bouteille vide en plastique, os, corne.",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 239,
+      "slug": "zangbetor-kpakliyaho-le-chef-des-gardiens-de-nuit",
+      "link": "https://mehomez.de/zangbetor-kpakliyaho-le-chef-des-gardiens-de-nuit/",
+      "type": "work-sculpture",
+      "title": "Zangbetor Kpakliyaho (Le chef des gardiens de nuit)",
+      "excerpt": "Composition : bois, fibres végétales, fer, corde. Dimensions : 49 x 59 x 9 cm.",
+      "html": "<p>Composition : bois, fibres végétales, fer, corde.</p>\n<p>Dimensions : 49 x 59 x 9 cm.</p>\n",
+      "text": "Composition : bois, fibres végétales, fer, corde.\n Dimensions : 49 x 59 x 9 cm.",
+      "date": "2011-01-18T08:21:24",
+      "dateGmt": "2011-01-18T07:21:24",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Zangbetor-Kpakliyaho-Le-chef-des-gardiens-de-nuit.png"
+      ],
+      "embeds": [],
+      "composition": "bois, fibres végétales, fer, corde.",
+      "technique": "",
+      "dimensions": "49 x 59 x 9 cm.",
+      "materials": ""
+    },
+    {
+      "id": 236,
+      "slug": "vodounsi-au-marche",
+      "link": "https://mehomez.de/vodounsi-au-marche/",
+      "type": "work-sculpture",
+      "title": "Vodounsi au marché",
+      "excerpt": "Composition : bois, cauris, fibres végétales, corde, perles. Dimensions : 15 x 63,5 x 19 cm.",
+      "html": "<p>Composition : bois, cauris, fibres végétales, corde, perles.</p>\n<p>Dimensions : 15 x 63,5 x 19 cm.</p>\n",
+      "text": "Composition : bois, cauris, fibres végétales, corde, perles.\n Dimensions : 15 x 63,5 x 19 cm.",
+      "date": "2011-01-18T08:19:48",
+      "dateGmt": "2011-01-18T07:19:48",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Vodounsi-au-marché.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, fibres végétales, corde, perles.",
+      "technique": "",
+      "dimensions": "15 x 63,5 x 19 cm.",
+      "materials": ""
+    },
+    {
+      "id": 232,
+      "slug": "sogbegnantor-le-chasseur-et-son-chien-de-chasse",
+      "link": "https://mehomez.de/sogbegnantor-le-chasseur-et-son-chien-de-chasse/",
+      "type": "work-sculpture",
+      "title": "Sogbégnantor (Le chasseur et son chien de chasse)",
+      "excerpt": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), fer. Dimensions : 28 x 91 x 10 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), fer.</p>\n<p>Dimensions : 28 x 91 x 10 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), fer.\n Dimensions : 28 x 91 x 10 cm.",
+      "date": "2011-01-18T08:17:52",
+      "dateGmt": "2011-01-18T07:17:52",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Sogbégnantor-Le-chasseur-et-son-chien-de-chasse.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides, avorkidja (chutes de tissus), fer.",
+      "technique": "",
+      "dimensions": "28 x 91 x 10 cm.",
+      "materials": ""
+    },
+    {
+      "id": 229,
+      "slug": "mon-duo-dee",
+      "link": "https://mehomez.de/mon-duo-dee/",
+      "type": "work-sculpture",
+      "title": "Mon Duo Déè",
+      "excerpt": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), assiette émaillée. Dimensions : 42 x 36 x 19 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), assiette émaillée.</p>\n<p>Dimensions : 42 x 36 x 19 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), assiette émaillée.\n Dimensions : 42 x 36 x 19 cm.",
+      "date": "2011-01-18T08:15:42",
+      "dateGmt": "2011-01-18T07:15:42",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Mon-Duo-Déè.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides, avorkidja (chutes de tissus), assiette émaillée.",
+      "technique": "",
+      "dimensions": "42 x 36 x 19 cm.",
+      "materials": ""
+    },
+    {
+      "id": 226,
+      "slug": "loiseau-et-la-maree-noire",
+      "link": "https://mehomez.de/loiseau-et-la-maree-noire/",
+      "type": "work-sculpture",
+      "title": "L'oiseau et la marée noire",
+      "excerpt": "Composition : bois, support plastique. Dimensions : 47 x 30 x 21 cm.",
+      "html": "<p>Composition : bois, support plastique.</p>\n<p>Dimensions : 47 x 30 x 21 cm.</p>\n",
+      "text": "Composition : bois, support plastique.\n Dimensions : 47 x 30 x 21 cm.",
+      "date": "2011-01-18T08:13:45",
+      "dateGmt": "2011-01-18T07:13:45",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Loiseau-et-la-marée-noire.png"
+      ],
+      "embeds": [],
+      "composition": "bois, support plastique.",
+      "technique": "",
+      "dimensions": "47 x 30 x 21 cm.",
+      "materials": ""
+    },
+    {
+      "id": 223,
+      "slug": "lexciseuse",
+      "link": "https://mehomez.de/lexciseuse/",
+      "type": "work-sculpture",
+      "title": "L'exciseuse",
+      "excerpt": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), perles. Dimensions : 11 x 37 x 11 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), perles.</p>\n<p>Dimensions : 11 x 37 x 11 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), perles.\n Dimensions : 11 x 37 x 11 cm.",
+      "date": "2011-01-18T08:08:29",
+      "dateGmt": "2011-01-18T07:08:29",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Lexciseuse.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides, avorkidja (chutes de tissus), perles.",
+      "technique": "",
+      "dimensions": "11 x 37 x 11 cm.",
+      "materials": ""
+    },
+    {
+      "id": 220,
+      "slug": "les-oublies-de-la-grande-guerre",
+      "link": "https://mehomez.de/les-oublies-de-la-grande-guerre/",
+      "type": "work-sculpture",
+      "title": "Les oubliés de la Grande Guerre",
+      "excerpt": "Composition : bois, perles, corde, fer, fibres végétales. Dimensions : 25 x 49 x 16 cm.",
+      "html": "<p>Composition : bois, perles, corde, fer, fibres végétales.</p>\n<p>Dimensions : 25 x 49 x 16 cm.</p>\n",
+      "text": "Composition : bois, perles, corde, fer, fibres végétales.\n Dimensions : 25 x 49 x 16 cm.",
+      "date": "2011-01-18T08:06:55",
+      "dateGmt": "2011-01-18T07:06:55",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Les-oubliés-de-la-Grande-Guerre.png"
+      ],
+      "embeds": [],
+      "composition": "bois, perles, corde, fer, fibres végétales.",
+      "technique": "",
+      "dimensions": "25 x 49 x 16 cm.",
+      "materials": ""
+    },
+    {
+      "id": 217,
+      "slug": "les-gardiens-du-seuil-tolegba-et-zangbetor",
+      "link": "https://mehomez.de/les-gardiens-du-seuil-tolegba-et-zangbetor/",
+      "type": "work-sculpture",
+      "title": "Les gardiens du seuil (Tolègba et Zangbetor)",
+      "excerpt": "Composition : bois, cauris, fer, corde, fibres végétales. Dimensions : 48 x 58 x 21 cm.",
+      "html": "<p>Composition : bois, cauris, fer, corde, fibres végétales.</p>\n<p>Dimensions : 48 x 58 x 21 cm.</p>\n",
+      "text": "Composition : bois, cauris, fer, corde, fibres végétales.\n Dimensions : 48 x 58 x 21 cm.",
+      "date": "2011-01-18T08:05:16",
+      "dateGmt": "2011-01-18T07:05:16",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Les-gardiens-du-seuil-Tolègba-et-Zangbetor.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, fer, corde, fibres végétales.",
+      "technique": "",
+      "dimensions": "48 x 58 x 21 cm.",
+      "materials": ""
+    },
+    {
+      "id": 214,
+      "slug": "le-pretre-du-fa",
+      "link": "https://mehomez.de/le-pretre-du-fa/",
+      "type": "work-sculpture",
+      "title": "Le prêtre du Fa",
+      "excerpt": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), manche de parapluie. Dimensions : 26 x 51 x 24 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), manche de parapluie.</p>\n<p>Dimensions : 26 x 51 x 24 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus), manche de parapluie.\n Dimensions : 26 x 51 x 24 cm.",
+      "date": "2011-01-18T08:03:35",
+      "dateGmt": "2011-01-18T07:03:35",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Le-prêtre-du-Fa.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides, avorkidja (chutes de tissus), manche de parapluie.",
+      "technique": "",
+      "dimensions": "26 x 51 x 24 cm.",
+      "materials": ""
+    },
+    {
+      "id": 210,
+      "slug": "le-justicier",
+      "link": "https://mehomez.de/le-justicier/",
+      "type": "work-sculpture",
+      "title": "Le justicier",
+      "excerpt": "Composition : bois, cauris, corde, fer, perles. Dimensions : 75 x 110 x 37 cm.",
+      "html": "<p>Composition : bois, cauris, corde, fer, perles.</p>\n<p>Dimensions : 75 x 110 x 37 cm.</p>\n",
+      "text": "Composition : bois, cauris, corde, fer, perles.\n Dimensions : 75 x 110 x 37 cm.",
+      "date": "2011-01-18T08:00:32",
+      "dateGmt": "2011-01-18T07:00:32",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Le-justicier.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, corde, fer, perles.",
+      "technique": "",
+      "dimensions": "75 x 110 x 37 cm.",
+      "materials": ""
+    },
+    {
+      "id": 207,
+      "slug": "iya-ibeji-la-mere-des-jumeaux",
+      "link": "https://mehomez.de/iya-ibeji-la-mere-des-jumeaux/",
+      "type": "work-sculpture",
+      "title": "Iya Ibéji (La mère des jumeaux)",
+      "excerpt": "Composition : bois, cauris, canettes vides. Dimensions : 60 x 43 x 14 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides.</p>\n<p>Dimensions : 60 x 43 x 14 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides.\n Dimensions : 60 x 43 x 14 cm.",
+      "date": "2011-01-18T07:58:46",
+      "dateGmt": "2011-01-18T06:58:46",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Iya-Ibéji-La-mère-des-jumeaux.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides.",
+      "technique": "",
+      "dimensions": "60 x 43 x 14 cm.",
+      "materials": ""
+    },
+    {
+      "id": 204,
+      "slug": "immigration-clandestine",
+      "link": "https://mehomez.de/immigration-clandestine/",
+      "type": "work-sculpture",
+      "title": "Immigration clandestine",
+      "excerpt": "Composition : bois, cauris, canettes vides. Dimensions : 141 x 65 x 51 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides.</p>\n<p>Dimensions : 141 x 65 x 51 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides.\n Dimensions : 141 x 65 x 51 cm.",
+      "date": "2011-01-18T07:56:50",
+      "dateGmt": "2011-01-18T06:56:50",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Immigration-clandestine-vue-1.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides.",
+      "technique": "",
+      "dimensions": "141 x 65 x 51 cm.",
+      "materials": ""
+    },
+    {
+      "id": 200,
+      "slug": "igba-ibeji-calebasses-des-jumeaux",
+      "link": "https://mehomez.de/igba-ibeji-calebasses-des-jumeaux/",
+      "type": "work-sculpture",
+      "title": "Igba Ibéji (Calebasses des jumeaux)",
+      "excerpt": "Composition : bois, cauris, canettes vides, calebasses, fibres végétales, perles. Dimensions : 39 x 54 x 21,5 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides, calebasses, fibres végétales, perles.</p>\n<p>Dimensions : 39 x 54 x 21,5 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides, calebasses, fibres végétales, perles.\n Dimensions : 39 x 54 x 21,5 cm.",
+      "date": "2011-01-18T07:53:41",
+      "dateGmt": "2011-01-18T06:53:41",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Igba-Ibéji-Calebasses-des-jumeaux.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides, calebasses, fibres végétales, perles.",
+      "technique": "",
+      "dimensions": "39 x 54 x 21,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 197,
+      "slug": "coule-leur-de-peau",
+      "link": "https://mehomez.de/coule-leur-de-peau/",
+      "type": "work-sculpture",
+      "title": "Coule-leur de peau",
+      "excerpt": "Composition : bois, cauris, fer, bouteille vide de pommade. Dimensions : 51 x 63 x 21 cm.",
+      "html": "<p>Composition : bois, cauris, fer, bouteille vide de pommade.</p>\n<p>Dimensions : 51 x 63 x 21 cm.</p>\n",
+      "text": "Composition : bois, cauris, fer, bouteille vide de pommade.\n Dimensions : 51 x 63 x 21 cm.",
+      "date": "2011-01-18T07:50:48",
+      "dateGmt": "2011-01-18T06:50:48",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Coule-leur-de-peau.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, fer, bouteille vide de pommade.",
+      "technique": "",
+      "dimensions": "51 x 63 x 21 cm.",
+      "materials": ""
+    },
+    {
+      "id": 172,
+      "slug": "au-prix-de-ma-liberte",
+      "link": "https://mehomez.de/au-prix-de-ma-liberte/",
+      "type": "work-sculpture",
+      "title": "Au prix de ma liberté",
+      "excerpt": "Composition : bois, cauris, fer, corde. Dimensions : 23 x 56 x 8 cm.",
+      "html": "<p>Composition : bois, cauris, fer, corde.</p>\n<p>Dimensions : 23 x 56 x 8 cm.</p>\n",
+      "text": "Composition : bois, cauris, fer, corde.\n Dimensions : 23 x 56 x 8 cm.",
+      "date": "2011-01-18T07:35:48",
+      "dateGmt": "2011-01-18T06:35:48",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Au-prix-de-ma-liberté.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, fer, corde.",
+      "technique": "",
+      "dimensions": "23 x 56 x 8 cm.",
+      "materials": ""
+    },
+    {
+      "id": 168,
+      "slug": "agbadjoumon",
+      "link": "https://mehomez.de/agbadjoumon/",
+      "type": "work-sculpture",
+      "title": "Agbadjoumon",
+      "excerpt": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus). Dimensions : 43 x 22 x 11 cm.",
+      "html": "<p>Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus).</p>\n<p>Dimensions : 43 x 22 x 11 cm.</p>\n",
+      "text": "Composition : bois, cauris, canettes vides, avorkidja (chutes de tissus).\n Dimensions : 43 x 22 x 11 cm.",
+      "date": "2011-01-18T07:33:15",
+      "dateGmt": "2011-01-18T06:33:15",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 18,
+          "name": "Sculptures 2010",
+          "slug": "s-2010",
+          "trail": [
+            {
+              "id": 5,
+              "name": "Les Sculptures",
+              "slug": "sculptures"
+            },
+            {
+              "id": 18,
+              "name": "Sculptures 2010",
+              "slug": "s-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Agbadjoumon.png"
+      ],
+      "embeds": [],
+      "composition": "bois, cauris, canettes vides, avorkidja (chutes de tissus).",
+      "technique": "",
+      "dimensions": "43 x 22 x 11 cm.",
+      "materials": ""
+    },
+    {
+      "id": 165,
+      "slug": "ylor-lappel",
+      "link": "https://mehomez.de/ylor-lappel/",
+      "type": "work-painting",
+      "title": "Ylor (L'appel)",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 70,5 x 75,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 70,5 x 75,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 70,5 x 75,5 cm.",
+      "date": "2011-01-17T22:28:41",
+      "dateGmt": "2011-01-17T21:28:41",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Ylor-Lappel.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "70,5 x 75,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 161,
+      "slug": "totem",
+      "link": "https://mehomez.de/totem/",
+      "type": "work-painting",
+      "title": "Totem",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 26 x 49 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 26 x 49 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 26 x 49 cm.",
+      "date": "2011-01-17T22:26:47",
+      "dateGmt": "2011-01-17T21:26:47",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Totem.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "26 x 49 cm.",
+      "materials": ""
+    },
+    {
+      "id": 158,
+      "slug": "sans-titre-3",
+      "link": "https://mehomez.de/sans-titre-3/",
+      "type": "work-painting",
+      "title": "[sans titre]",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments. Technique : mixte. Dimensions : 68 x 81 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 68 x 81 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments.\n Technique : mixte.\n Dimensions : 68 x 81 cm.",
+      "date": "2011-01-17T22:24:27",
+      "dateGmt": "2011-01-17T21:24:27",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Sans-titre-2-Lémanence.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments.",
+      "technique": "mixte.",
+      "dimensions": "68 x 81 cm.",
+      "materials": ""
+    },
+    {
+      "id": 155,
+      "slug": "sans-titre",
+      "link": "https://mehomez.de/sans-titre/",
+      "type": "work-painting",
+      "title": "[sans titre]",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde. Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.\n Technique : mixte.",
+      "date": "2011-01-17T22:22:03",
+      "dateGmt": "2011-01-17T21:22:03",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/sans-titre-1.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 151,
+      "slug": "les-jumeaux",
+      "link": "https://mehomez.de/les-jumeaux/",
+      "type": "work-painting",
+      "title": "Les jumeaux",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde. Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.\n Technique : mixte.",
+      "date": "2011-01-17T22:17:14",
+      "dateGmt": "2011-01-17T21:17:14",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Les-jumeaux.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 141,
+      "slug": "primitif-instinct",
+      "link": "https://mehomez.de/primitif-instinct/",
+      "type": "work-painting",
+      "title": "Primitif instinct",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.",
+      "date": "2011-01-17T22:07:55",
+      "dateGmt": "2011-01-17T21:07:55",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Primitif-instinct.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 138,
+      "slug": "main-tendue",
+      "link": "https://mehomez.de/main-tendue/",
+      "type": "work-painting",
+      "title": "Main tendue",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 100 x 100 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 100 x 100 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 100 x 100 cm.",
+      "date": "2011-01-17T22:05:13",
+      "dateGmt": "2011-01-17T21:05:13",
+      "createdYear": "2011",
+      "archiveYear": "2009",
+      "categories": [
+        {
+          "id": 11,
+          "name": "Peintures 2009",
+          "slug": "p-2009",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 11,
+              "name": "Peintures 2009",
+              "slug": "p-2009"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Main-tendue.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "100 x 100 cm.",
+      "materials": ""
+    },
+    {
+      "id": 134,
+      "slug": "le-vodoun-et-le-christ",
+      "link": "https://mehomez.de/le-vodoun-et-le-christ/",
+      "type": "work-painting",
+      "title": "Le Vodoun et le Christ",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments. Technique : mixte. Dimensions : 15 x 36 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 15 x 36 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments.\n Technique : mixte.\n Dimensions : 15 x 36 cm.",
+      "date": "2011-01-17T22:03:22",
+      "dateGmt": "2011-01-17T21:03:22",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Le-Vodoun-et-le-Christ.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments.",
+      "technique": "mixte.",
+      "dimensions": "15 x 36 cm.",
+      "materials": ""
+    },
+    {
+      "id": 131,
+      "slug": "les-marionnettes-africaines",
+      "link": "https://mehomez.de/les-marionnettes-africaines/",
+      "type": "work-painting",
+      "title": "Les marionnettes africaines",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 30 x 41 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 30 x 41 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 30 x 41 cm.",
+      "date": "2011-01-17T22:01:00",
+      "dateGmt": "2011-01-17T21:01:00",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Les-marionnettes-africaines.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "30 x 41 cm.",
+      "materials": ""
+    },
+    {
+      "id": 128,
+      "slug": "larmes-et-sueur",
+      "link": "https://mehomez.de/larmes-et-sueur/",
+      "type": "work-painting",
+      "title": "Larmes et sueur",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde. Technique : mixte. Dimensions : 103 x 130 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 103 x 130 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.\n Technique : mixte.\n Dimensions : 103 x 130 cm.",
+      "date": "2011-01-17T21:57:46",
+      "dateGmt": "2011-01-17T20:57:46",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Larmes-et-sueur.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.",
+      "technique": "mixte.",
+      "dimensions": "103 x 130 cm.",
+      "materials": ""
+    },
+    {
+      "id": 124,
+      "slug": "le-gozin",
+      "link": "https://mehomez.de/le-gozin/",
+      "type": "work-painting",
+      "title": "Le gozin",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 37 x 69 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 37 x 69 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 37 x 69 cm.",
+      "date": "2011-01-17T21:56:01",
+      "dateGmt": "2011-01-17T20:56:01",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Le-gozin.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "37 x 69 cm.",
+      "materials": ""
+    },
+    {
+      "id": 118,
+      "slug": "la-resonance",
+      "link": "https://mehomez.de/la-resonance/",
+      "type": "work-painting",
+      "title": "La résonance",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 43,5 x 45,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 43,5 x 45,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 43,5 x 45,5 cm.",
+      "date": "2011-01-17T21:51:32",
+      "dateGmt": "2011-01-17T20:51:32",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/La-résonance.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "43,5 x 45,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 115,
+      "slug": "larbre-de-loubli",
+      "link": "https://mehomez.de/larbre-de-loubli/",
+      "type": "work-painting",
+      "title": "L'arbre de l'oubli",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois. Technique : mixte. Dimensions : 81 x 71 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 81 x 71 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois.\n Technique : mixte.\n Dimensions : 81 x 71 cm.",
+      "date": "2011-01-17T21:49:31",
+      "dateGmt": "2011-01-17T20:49:31",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Larbre-de-loubli.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois.",
+      "technique": "mixte.",
+      "dimensions": "81 x 71 cm.",
+      "materials": ""
+    },
+    {
+      "id": 112,
+      "slug": "la-fenetre-du-retour",
+      "link": "https://mehomez.de/la-fenetre-du-retour/",
+      "type": "work-painting",
+      "title": "La fenêtre du retour",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois. Technique : mixte. Dimensions : 60 x 40 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 60 x 40 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois.\n Technique : mixte.\n Dimensions : 60 x 40 cm.",
+      "date": "2011-01-17T21:47:26",
+      "dateGmt": "2011-01-17T20:47:26",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/La-fenêtre-du-retour.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois.",
+      "technique": "mixte.",
+      "dimensions": "60 x 40 cm.",
+      "materials": ""
+    },
+    {
+      "id": 109,
+      "slug": "la-danse-des-vierges-2",
+      "link": "https://mehomez.de/la-danse-des-vierges-2/",
+      "type": "work-painting",
+      "title": "La danse des vierges (Cérémonie des Gozins)",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde. Technique : mixte. Dimensions : 93 x 103,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 93 x 103,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.\n Technique : mixte.\n Dimensions : 93 x 103,5 cm.",
+      "date": "2011-01-17T21:44:00",
+      "dateGmt": "2011-01-17T20:44:00",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/La-danse-des-vierges.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.",
+      "technique": "mixte.",
+      "dimensions": "93 x 103,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 106,
+      "slug": "la-douleur-des-vierges-2010",
+      "link": "https://mehomez.de/la-douleur-des-vierges-2010/",
+      "type": "work-painting",
+      "title": "La douleur des vierges",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois, corde. Technique : mixte. Dimensions : 65,5 x 121 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois, corde.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 65,5 x 121 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois, corde.\n Technique : mixte.\n Dimensions : 65,5 x 121 cm.",
+      "date": "2011-01-17T21:41:35",
+      "dateGmt": "2011-01-17T20:41:35",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/La-douleur-des-vierges.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus), bois, corde.",
+      "technique": "mixte.",
+      "dimensions": "65,5 x 121 cm.",
+      "materials": ""
+    },
+    {
+      "id": 102,
+      "slug": "im-waiting-for-you",
+      "link": "https://mehomez.de/im-waiting-for-you/",
+      "type": "work-painting",
+      "title": "I'm waiting for you",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 60 x 45 cm.",
+      "html": "<p>﻿Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 60 x 45 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 60 x 45 cm.",
+      "date": "2011-01-17T21:37:38",
+      "dateGmt": "2011-01-17T20:37:38",
+      "createdYear": "2011",
+      "archiveYear": "2009",
+      "categories": [
+        {
+          "id": 11,
+          "name": "Peintures 2009",
+          "slug": "p-2009",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 11,
+              "name": "Peintures 2009",
+              "slug": "p-2009"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Im-waiting-for-you.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "60 x 45 cm.",
+      "materials": ""
+    },
+    {
+      "id": 97,
+      "slug": "igbe-kpaman-achiri",
+      "link": "https://mehomez.de/igbe-kpaman-achiri/",
+      "type": "work-painting",
+      "title": "Igbé kpaman achiri",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 58 x 58 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 58 x 58 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 58 x 58 cm.",
+      "date": "2011-01-17T21:36:09",
+      "dateGmt": "2011-01-17T20:36:09",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Igbé-kpaman-achiri.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "58 x 58 cm.",
+      "materials": ""
+    },
+    {
+      "id": 94,
+      "slug": "i-can-fly",
+      "link": "https://mehomez.de/i-can-fly/",
+      "type": "work-painting",
+      "title": "I can fly",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 40 x 100,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 40 x 100,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 40 x 100,5 cm.",
+      "date": "2011-01-17T21:22:11",
+      "dateGmt": "2011-01-17T20:22:11",
+      "createdYear": "2011",
+      "archiveYear": "2009",
+      "categories": [
+        {
+          "id": 11,
+          "name": "Peintures 2009",
+          "slug": "p-2009",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 11,
+              "name": "Peintures 2009",
+              "slug": "p-2009"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/I-can-fly.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "40 x 100,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 91,
+      "slug": "harmonie-de-lunicite",
+      "link": "https://mehomez.de/harmonie-de-lunicite/",
+      "type": "work-painting",
+      "title": "Harmonie de l'unicité",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 41 x 68,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 41 x 68,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 41 x 68,5 cm.",
+      "date": "2011-01-17T21:19:50",
+      "dateGmt": "2011-01-17T20:19:50",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Harmonie-de-lunicité.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "41 x 68,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 88,
+      "slug": "djobale",
+      "link": "https://mehomez.de/djobale/",
+      "type": "work-painting",
+      "title": "Djobalè",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 80 x 45 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 80 x 45 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 80 x 45 cm.",
+      "date": "2011-01-17T21:17:04",
+      "dateGmt": "2011-01-17T20:17:04",
+      "createdYear": "2011",
+      "archiveYear": "2009",
+      "categories": [
+        {
+          "id": 11,
+          "name": "Peintures 2009",
+          "slug": "p-2009",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 11,
+              "name": "Peintures 2009",
+              "slug": "p-2009"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Djobalè.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "80 x 45 cm.",
+      "materials": ""
+    },
+    {
+      "id": 86,
+      "slug": "complete-mentalite",
+      "link": "https://mehomez.de/complete-mentalite/",
+      "type": "work-painting",
+      "title": "Complète – mentalité",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus). Technique : mixte. Dimensions : 64,5 x 65,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 64,5 x 65,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).\n Technique : mixte.\n Dimensions : 64,5 x 65,5 cm.",
+      "date": "2011-01-17T21:15:09",
+      "dateGmt": "2011-01-17T20:15:09",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Complète-mentalité.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, avorkidja (chutes de tissus).",
+      "technique": "mixte.",
+      "dimensions": "64,5 x 65,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 83,
+      "slug": "comme-union",
+      "link": "https://mehomez.de/comme-union/",
+      "type": "work-painting",
+      "title": "Comme Union",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde. Technique : mixte. Dimensions : 101,5 x 101,5 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 101,5 x 101,5 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.\n Technique : mixte.\n Dimensions : 101,5 x 101,5 cm.",
+      "date": "2011-01-17T21:13:25",
+      "dateGmt": "2011-01-17T20:13:25",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Comme-Union.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments, terre, avorkidja (chutes de tissus), corde.",
+      "technique": "mixte.",
+      "dimensions": "101,5 x 101,5 cm.",
+      "materials": ""
+    },
+    {
+      "id": 78,
+      "slug": "balogun-le-chef-de-guerre",
+      "link": "https://mehomez.de/balogun-le-chef-de-guerre/",
+      "type": "work-painting",
+      "title": "Balogun (Le chef de guerre)",
+      "excerpt": "Composition : peinture acrylique, ocre, pigments. Technique : mixte. Dimensions : 20 x 35 cm.",
+      "html": "<p>Composition : peinture acrylique, ocre, pigments.</p>\n<p>Technique : mixte.</p>\n<p>Dimensions : 20 x 35 cm.</p>\n",
+      "text": "Composition : peinture acrylique, ocre, pigments.\n Technique : mixte.\n Dimensions : 20 x 35 cm.",
+      "date": "2011-01-17T21:07:57",
+      "dateGmt": "2011-01-17T20:07:57",
+      "createdYear": "2011",
+      "archiveYear": "2010",
+      "categories": [
+        {
+          "id": 12,
+          "name": "Peintures sculptées 2010",
+          "slug": "p-2010",
+          "trail": [
+            {
+              "id": 45,
+              "name": "Les Peintures et Les Peintures Sculptées",
+              "slug": "peintures-sculptees-2020"
+            },
+            {
+              "id": 12,
+              "name": "Peintures sculptées 2010",
+              "slug": "p-2010"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/01/Balogun-Le-chef-de-guerre.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique, ocre, pigments.",
+      "technique": "mixte.",
+      "dimensions": "20 x 35 cm.",
+      "materials": ""
+    }
+  ],
+  "press": [
+    {
+      "id": 798,
+      "slug": "sauerlandkurier2019-vernissage-trifft-auf-menschenrechte",
+      "link": "https://mehomez.de/sauerlandkurier2019-vernissage-trifft-auf-menschenrechte/",
+      "type": "press",
+      "title": "Sauerlandkurier,2019: Vernissage trifft auf Menschenrechte",
+      "excerpt": "https://www.sauerlandkurier.de/hochsauerlandkreis/marsberg/kunstpreis-kloster-bredelar-thema-menschenrechte-verliehen-12709878.html?fbclid=IwAR0OTvV0GTDxe7ocIBNNxvyYOst4woxAactnLbYEPVPmcthPEUe3AH9rGFQ",
+      "html": "\n<p><a href=\"https://www.sauerlandkurier.de/hochsauerlandkreis/marsberg/kunstpreis-kloster-bredelar-thema-menschenrechte-verliehen-12709878.html?fbclid=IwAR0OTvV0GTDxe7ocIBNNxvyYOst4woxAactnLbYEPVPmcthPEUe3AH9rGFQ\">https://www.sauerlandkurier.de/hochsauerlandkreis/marsberg/kunstpreis-kloster-bredelar-thema-menschenrechte-verliehen-12709878.html?fbclid=IwAR0OTvV0GTDxe7ocIBNNxvyYOst4woxAactnLbYEPVPmcthPEUe3AH9rGFQ</a></p>\n\n\n\n<figure class=\"wp-block-image\"><img src=\"http://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-375x500.jpg\" alt=\"\" class=\"wp-image-799\" srcset=\"https://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-375x500.jpg 375w, https://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-113x150.jpg 113w, https://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-278x370.jpg 278w, https://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-768x1024.jpg 768w\" sizes=\"(max-width: 375px) 100vw, 375px\" /></figure>\n",
+      "text": "https://www.sauerlandkurier.de/hochsauerlandkreis/marsberg/kunstpreis-kloster-bredelar-thema-menschenrechte-verliehen-12709878.html?fbclid=IwAR0OTvV0GTDxe7ocIBNNxvyYOst4woxAactnLbYEPVPmcthPEUe3AH9rGFQ",
+      "date": "2020-06-30T16:35:03",
+      "dateGmt": "2020-06-30T15:35:03",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2020/06/Press-Mehomez4-375x500.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 791,
+      "slug": "zeitung-fur-das-hochsauerland2017-alte-werkstatt-wird-zu-galerie-junges-quintett-zeigt-vielfaltige-kunst",
+      "link": "https://mehomez.de/zeitung-fur-das-hochsauerland2017-alte-werkstatt-wird-zu-galerie-junges-quintett-zeigt-vielfaltige-kunst/",
+      "type": "press",
+      "title": "Zeitung für das hochsauerland,2017: Alte Werkstatt wird zu Galerie Junges quintett zeigt vielfältige Kunst",
+      "excerpt": "",
+      "html": "\n<figure class=\"wp-block-image\"><img src=\"http://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1-375x500.jpg\" alt=\"\" class=\"wp-image-796\" srcset=\"https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1-375x500.jpg 375w, https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1-113x150.jpg 113w, https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1-278x370.jpg 278w, https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1.jpg 720w\" sizes=\"(max-width: 375px) 100vw, 375px\" /></figure>\n",
+      "text": "",
+      "date": "2020-06-30T15:19:57",
+      "dateGmt": "2020-06-30T14:19:57",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/06/press-mehomez2.jpg",
+        "http://mehomez.de/wp-content/uploads/2020/06/press-mehomez2-1-375x500.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 788,
+      "slug": "lichtung1-zeigt-kunstwerke-in-brilons-alter-werkstatt",
+      "link": "https://mehomez.de/lichtung1-zeigt-kunstwerke-in-brilons-alter-werkstatt/",
+      "type": "press",
+      "title": "Lichtung#1 zeigt Kunstwerke in Brilons Alter werkstatt",
+      "excerpt": "https://www.wr.de/staedte/altkreis-brilon/lichtung-1-zeigt-kunstwerke-in-brilons-alter-werkstatt-id209343129.html?fbclid=IwAR3n6hrERw5UmhzEQP78PxmCM2fEddwdWNd7UFk4HSqHkpPtQtxZHCHqWm4",
+      "html": "\n<p><a href=\"https://www.wr.de/staedte/altkreis-brilon/lichtung-1-zeigt-kunstwerke-in-brilons-alter-werkstatt-id209343129.html?fbclid=IwAR3n6hrERw5UmhzEQP78PxmCM2fEddwdWNd7UFk4HSqHkpPtQtxZHCHqWm4\">https://www.wr.de/staedte/altkreis-brilon/lichtung-1-zeigt-kunstwerke-in-brilons-alter-werkstatt-id209343129.html?fbclid=IwAR3n6hrERw5UmhzEQP78PxmCM2fEddwdWNd7UFk4HSqHkpPtQtxZHCHqWm4</a></p>\n",
+      "text": "https://www.wr.de/staedte/altkreis-brilon/lichtung-1-zeigt-kunstwerke-in-brilons-alter-werkstatt-id209343129.html?fbclid=IwAR3n6hrERw5UmhzEQP78PxmCM2fEddwdWNd7UFk4HSqHkpPtQtxZHCHqWm4",
+      "date": "2020-06-30T14:57:22",
+      "dateGmt": "2020-06-30T13:57:22",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/06/Lichtung-expo-collective.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 417,
+      "slug": "lancement-de-lexposition-dart-contemporain-hogbonoudes-racines-et-des-ailes-de-mehomez-du-11-juin-au-17-jueillet-2011-au-centre-culturel-ouadada-de-porto-novo",
+      "link": "https://mehomez.de/lancement-de-lexposition-dart-contemporain-hogbonoudes-racines-et-des-ailes-de-mehomez-du-11-juin-au-17-jueillet-2011-au-centre-culturel-ouadada-de-porto-novo/",
+      "type": "press",
+      "title": "lancement de l'exposition d'art contemporain.Hogbonou:des racines et des ailes de MEHOMEZ. du 11 juin au 17 jueillet 2011 au centre culturel ouadada de porto-novo.",
+      "excerpt": "lancement de l'exposition d'art contemporain,Hogbonou (Porto-Novo) :des racines et des ailes de MEHOMEZ. du 11 juin au 17 juillet 2011 au centre culturel ouadada de porto-novo.",
+      "html": "<p>lancement de l&rsquo;exposition d&rsquo;art contemporain,Hogbonou (Porto-Novo) :des racines et des ailes de MEHOMEZ. du 11 juin au 17 juillet</p>\n<p><iframe width=\"640\" height=\"480\" src=\"https://www.youtube.com/embed/rVB5hp0_qgQ?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe></p>\n<p>2011 au centre culturel ouadada de porto-novo.<img class=\"aligncenter size-full wp-image-429\" title=\"Hogbonou: Des Racines et des ailes.Exposition d'Art contemporain de Ezéchiel MEHOME alias MEHOMEZ.Du 11juin au 17 jueillet 2011 au centre culturel ouadada de porto-novo.\" src=\"http://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg\" alt=\"Hogbonou: Des Racines et des ailes.Exposition d'Art contemporain de Ezéchiel MEHOME alias MEHOMEZ.Du 11juin au 17 jueillet 2011 au centre culturel ouadada de porto-novo.\" /></p>\n",
+      "text": "lancement de l'exposition d'art contemporain,Hogbonou (Porto-Novo) :des racines et des ailes de MEHOMEZ. du 11 juin au 17 juillet\n 2011 au centre culturel ouadada de porto-novo.",
+      "date": "2011-09-12T21:36:53",
+      "dateGmt": "2011-09-12T20:36:53",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/09/Affiche3.jpg"
+      ],
+      "embeds": [
+        "https://www.youtube.com/embed/rVB5hp0_qgQ?feature=oembed"
+      ],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 382,
+      "slug": "la-tribune-de-la-capitale-2011-lart-plastique-beninois-en-pleine-expansion",
+      "link": "https://mehomez.de/la-tribune-de-la-capitale-2011-lart-plastique-beninois-en-pleine-expansion/",
+      "type": "press",
+      "title": "La Tribune de la Capitale, 2011 : L'art plastique béninois en pleine expansion",
+      "excerpt": "",
+      "html": "<p><a href=\"http://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion.jpg\"><img class=\"aligncenter size-large wp-image-383\" title=\"La Tribune de la Capitale - L'art plastique béninois en pleine expansion\" src=\"http://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion-502x500.jpg\" alt=\"La Tribune de la Capitale - L'art plastique béninois en pleine expansion\" width=\"502\" height=\"500\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion-502x500.jpg 502w, https://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion-150x150.jpg 150w, https://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion-370x368.jpg 370w, https://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion.jpg 1100w\" sizes=\"(max-width: 502px) 100vw, 502px\" /></a></p>\n",
+      "text": "",
+      "date": "2011-06-05T10:24:49",
+      "dateGmt": "2011-06-05T09:24:49",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/06/La-Tribune-de-la-Capitale-Lart-plastique-béninois-en-pleine-expansion-502x500.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 277,
+      "slug": "waba-2010-mehomez",
+      "link": "https://mehomez.de/waba-2010-mehomez/",
+      "type": "press",
+      "title": "WABA, 2010 : Mehomez",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-medium wp-image-278\" title=\"WABA 2010, la couverture\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture-280x370.jpg\" alt=\"WABA 2010, la couverture\" width=\"280\" height=\"370\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture-280x370.jpg 280w, https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture-113x150.jpg 113w, https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture-378x500.jpg 378w, https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture.jpg 800w\" sizes=\"(max-width: 280px) 100vw, 280px\" /><img class=\"aligncenter size-full wp-image-279\" title=\"Article dans WABA 2010\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article.jpg\" alt=\"Article dans WABA 2010\" width=\"800\" height=\"1056\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article-113x150.jpg 113w, https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article-280x370.jpg 280w, https://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article-378x500.jpg 378w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:49:07",
+      "dateGmt": "2011-01-18T10:49:07",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2010-WABA-couverture-280x370.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/01/2010-WABA-article.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 274,
+      "slug": "le-matinal-2009-mehomez-explique-son-vernissage-%c2%ab%c2%a0patrie-moine%c2%a0%c2%bb",
+      "link": "https://mehomez.de/le-matinal-2009-mehomez-explique-son-vernissage-%c2%ab%c2%a0patrie-moine%c2%a0%c2%bb/",
+      "type": "press",
+      "title": "Le Matinal, 2009 : Mehomez explique son vernissage « Patrie-moine »",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-275\" title=\"Article dans Le Matinal, 14/09/2009\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal.jpg\" alt=\"Article dans Le Matinal, 14/09/2009\" width=\"800\" height=\"608\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal-150x114.jpg 150w, https://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal-370x281.jpg 370w, https://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal-600x456.jpg 600w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:46:24",
+      "dateGmt": "2011-01-18T10:46:24",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2009-09-14-Le-Matinal.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 271,
+      "slug": "la-tribune-de-la-capitale-2009-plus-dune-vingtaine-de-toiles-exposees-au-musee-alexandre-adande",
+      "link": "https://mehomez.de/la-tribune-de-la-capitale-2009-plus-dune-vingtaine-de-toiles-exposees-au-musee-alexandre-adande/",
+      "type": "press",
+      "title": "La Tribune de la Capitale, 2009 : Plus d'une vingtaine de toiles exposées au musée Alexandre Adandé",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-272\" title=\"Article dans La Tribune de la Capitale, 12/08/2009\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale.jpg\" alt=\"Article dans La Tribune de la Capitale, 12/08/2009\" width=\"800\" height=\"611\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale-150x114.jpg 150w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale-370x282.jpg 370w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale-600x458.jpg 600w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:44:18",
+      "dateGmt": "2011-01-18T10:44:18",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2009-08-12-La-Tribune-de-la-Capitale.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 268,
+      "slug": "adjinakou-2009-lartiste-ezechiel-expose-patrie-moine",
+      "link": "https://mehomez.de/adjinakou-2009-lartiste-ezechiel-expose-patrie-moine/",
+      "type": "press",
+      "title": "Adjinakou, 2009 : L'artiste Ézéchiel expose Patrie-Moine",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-269\" title=\"Article dans Adjinakou, 12/08/2009\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou.jpg\" alt=\"Article dans Adjinakou, 12/08/2009\" width=\"800\" height=\"659\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou-150x123.jpg 150w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou-370x304.jpg 370w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou-600x494.jpg 600w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:42:42",
+      "dateGmt": "2011-01-18T10:42:42",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2009-08-12-Adjinakou.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 265,
+      "slug": "le-matinal-2009-lartiste-ezechiel-expose-%c2%ab%c2%a0patrie-moine%c2%a0%c2%bb-des-ce-jour",
+      "link": "https://mehomez.de/le-matinal-2009-lartiste-ezechiel-expose-%c2%ab%c2%a0patrie-moine%c2%a0%c2%bb-des-ce-jour/",
+      "type": "press",
+      "title": "Le Matinal, 2009 : L'artiste Ézéchiel expose « Patrie-moine » dès ce jour",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-266\" title=\"Article dans Le Matinal, 10/08/2009\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal.jpg\" alt=\"Article dans Le Matinal, 10/08/2009\" width=\"800\" height=\"925\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal-129x150.jpg 129w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal-320x370.jpg 320w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal-432x500.jpg 432w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:40:57",
+      "dateGmt": "2011-01-18T10:40:57",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2009-08-10-Le-Matinal.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 262,
+      "slug": "la-tribune-de-la-capitale-2009-lartiste-mehome-ezechiel-en-exposition-lundi-prochain",
+      "link": "https://mehomez.de/la-tribune-de-la-capitale-2009-lartiste-mehome-ezechiel-en-exposition-lundi-prochain/",
+      "type": "press",
+      "title": "La Tribune de la Capitale, 2009 : L'artiste Mèhomè Ézéchiel en exposition lundi prochain",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-263\" title=\"Article dans La Tribune de la Capitale, 06/08/2009\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale.jpg\" alt=\"Article dans La Tribune de la Capitale, 06/08/2009\" width=\"800\" height=\"1098\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale-109x150.jpg 109w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale-269x370.jpg 269w, https://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale-364x500.jpg 364w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:38:51",
+      "dateGmt": "2011-01-18T10:38:51",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2009-08-06-La-Tribune-de-la-Capitale.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 258,
+      "slug": "le-matinal-2006-mehomez-presente-%c2%ab-secrets-des-quatre-murs%c2%a0%c2%bb",
+      "link": "https://mehomez.de/le-matinal-2006-mehomez-presente-%c2%ab-secrets-des-quatre-murs%c2%a0%c2%bb/",
+      "type": "press",
+      "title": "Le Matinal, 2006 : Mehomez présente « Secrets des quatre murs »",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-259\" title=\"Article dans Le Matinal, 15/11/2006\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal.jpg\" alt=\"Article dans Le Matinal, 15/11/2006\" width=\"800\" height=\"846\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal-141x150.jpg 141w, https://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal-349x370.jpg 349w, https://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal-472x500.jpg 472w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:35:35",
+      "dateGmt": "2011-01-18T10:35:35",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2006-11-15-Le-Matinal.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 255,
+      "slug": "lautre-quotidien-2006-le-peintre-mehomez-interpelle-la-tradition",
+      "link": "https://mehomez.de/lautre-quotidien-2006-le-peintre-mehomez-interpelle-la-tradition/",
+      "type": "press",
+      "title": "L'Autre Quotidien, 2006 : Le peintre Mehomez interpelle la tradition",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-256\" title=\"Article de L'Autre Quotidien, 08/11/2006\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien.jpg\" alt=\"Article de L'Autre Quotidien, 08/11/2006\" width=\"800\" height=\"1119\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien-107x150.jpg 107w, https://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien-264x370.jpg 264w, https://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien-357x500.jpg 357w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:33:14",
+      "dateGmt": "2011-01-18T10:33:14",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2006-11-08-LAutre-Quotidien.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 252,
+      "slug": "laction-2003-ezechiel-mehome-lartiste-plasticien-qui-monte",
+      "link": "https://mehomez.de/laction-2003-ezechiel-mehome-lartiste-plasticien-qui-monte/",
+      "type": "press",
+      "title": "L'action, 2003 : Ézéchiel Mèhomè, l'artiste plasticien qui monte",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-253\" title=\"Article de L'Action, 10/12/2003\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction.jpg\" alt=\"Article de L'Action, 10/12/2003\" width=\"800\" height=\"939\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction-127x150.jpg 127w, https://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction-315x370.jpg 315w, https://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction-425x500.jpg 425w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:30:59",
+      "dateGmt": "2011-01-18T10:30:59",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2003-12-10-LAction.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 249,
+      "slug": "le-matinal-2003-lart-pictural-du-benin-dans-sa-variete",
+      "link": "https://mehomez.de/le-matinal-2003-lart-pictural-du-benin-dans-sa-variete/",
+      "type": "press",
+      "title": "Le Matinal, 2003 : L'art pictural du Bénin dans sa variété",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-250\" title=\"Article du Matinal, 12/08/2003\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal.jpg\" alt=\"Article du Matinal, 12/08/2003\" width=\"800\" height=\"1178\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal-101x150.jpg 101w, https://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal-251x370.jpg 251w, https://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal-339x500.jpg 339w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:29:01",
+      "dateGmt": "2011-01-18T10:29:01",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2003-08-12-Le-Matinal.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 245,
+      "slug": "loeil-du-peuple-2003-mehome-ezechiel-dans-la-cour-des-grands",
+      "link": "https://mehomez.de/loeil-du-peuple-2003-mehome-ezechiel-dans-la-cour-des-grands/",
+      "type": "press",
+      "title": "L'œil du peuple, 2003 : Mèhomè Ézéchiel dans la cour des grands",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-246\" title=\"Article de L'oeil du peuple, 28/01/2003\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple.jpg\" alt=\"Article de L'oeil du peuple, 28/01/2003\" width=\"800\" height=\"817\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple-146x150.jpg 146w, https://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple-362x370.jpg 362w, https://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple-489x500.jpg 489w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:25:50",
+      "dateGmt": "2011-01-18T10:25:50",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2003-01-28-Loeil-du-peuple.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 242,
+      "slug": "laurore-2003-ezechiel-mehome-laureat-du-fesnac",
+      "link": "https://mehomez.de/laurore-2003-ezechiel-mehome-laureat-du-fesnac/",
+      "type": "press",
+      "title": "L'Aurore, 2003 : Ézéchiel Mèhomè ; lauréat du Fesnac",
+      "excerpt": "",
+      "html": "<p><img class=\"aligncenter size-full wp-image-243\" title=\"Article de L'Aurore, 23/01/2003\" src=\"http://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore.jpg\" alt=\"Article de L'Aurore, 23/01/2003\" width=\"800\" height=\"1049\" srcset=\"https://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore.jpg 800w, https://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore-114x150.jpg 114w, https://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore-282x370.jpg 282w, https://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore-381x500.jpg 381w\" sizes=\"(max-width: 800px) 100vw, 800px\" /></p>\n",
+      "text": "",
+      "date": "2011-01-18T11:22:44",
+      "dateGmt": "2011-01-18T10:22:44",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 6,
+          "name": "Revue de presse",
+          "slug": "revue-de-presse",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 6,
+              "name": "Revue de presse",
+              "slug": "revue-de-presse"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/01/2003-01-23-LAurore.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    }
+  ],
+  "parcours": [
+    {
+      "id": 858,
+      "slug": "billet-retour-effet-papillon-2",
+      "link": "https://mehomez.de/billet-retour-effet-papillon-2/",
+      "type": "parcours",
+      "title": "Billet Retour: Effet Papillon?! Cotonou Bénin, Déc 2021",
+      "excerpt": "",
+      "html": "\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"MEHOMEZ Billet Retour: Effet Papillon?!  Cotonou, Déc 2021\" width=\"640\" height=\"480\" src=\"https://www.youtube.com/embed/ABEzkXY0PMI?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</div><figcaption> Exposition sur la restitution des trésors royaux pillés et déportés par la France au Dahomey (actuel République du Bénin) pendant la colonisation de 1892. </figcaption></figure>\n",
+      "text": "Exposition sur la restitution des trésors royaux pillés et déportés par la France au Dahomey (actuel République du Bénin) pendant la colonisation de 1892.",
+      "date": "2022-01-08T23:32:44",
+      "dateGmt": "2022-01-08T22:32:44",
+      "createdYear": "2022",
+      "archiveYear": "2022",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2022/01/Homeback-1-detail-2.jpg"
+      ],
+      "embeds": [
+        "https://www.youtube.com/embed/ABEzkXY0PMI?feature=oembed"
+      ],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 809,
+      "slug": "womit-haben-wir-das-verdient-06-2019-bredelar-marsberg-deutschland",
+      "link": "https://mehomez.de/womit-haben-wir-das-verdient-06-2019-bredelar-marsberg-deutschland/",
+      "type": "parcours",
+      "title": "Womit haben wir das verdient? 06-2019 Bredelar Marsberg Deutschland",
+      "excerpt": "",
+      "html": "\n<figure class=\"wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"Womit...? (Pour quelle cause...? Installation - Mehomez 2019\" width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/6EU-o9O4kxc?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</div><figcaption>Pourquoi méritons-nous cela? </figcaption></figure>\n",
+      "text": "Pourquoi méritons-nous cela?",
+      "date": "2020-07-06T14:22:01",
+      "dateGmt": "2020-07-06T13:22:01",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/07/Mehomez-Womit.jpg"
+      ],
+      "embeds": [
+        "https://www.youtube.com/embed/6EU-o9O4kxc?feature=oembed"
+      ],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 801,
+      "slug": "las-es-besser-werden",
+      "link": "https://mehomez.de/las-es-besser-werden/",
+      "type": "parcours",
+      "title": "Lass es besser werden 06-2020 Dresden Deutschland",
+      "excerpt": "Centre Culturel Zentralwerk, Dresde Allemagne",
+      "html": "\n<p> Centre Culturel Zentralwerk, Dresde Allemagne</p>\n\n\n\n<figure class=\"wp-block-embed-vimeo wp-block-embed is-type-video is-provider-vimeo wp-embed-aspect-16-9 wp-has-aspect-ratio\"><div class=\"wp-block-embed__wrapper\">\n<iframe title=\"#15 Lass Es besser werden | Ezechiel Mehomez | 15. Juni 2020\" src=\"https://player.vimeo.com/video/429618809?dnt=1&amp;app_id=122963\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n</div></figure>\n",
+      "text": "Centre Culturel Zentralwerk, Dresde Allemagne",
+      "date": "2020-06-30T16:40:35",
+      "dateGmt": "2020-06-30T15:40:35",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/06/Mehomez2020.jpg"
+      ],
+      "embeds": [
+        "https://player.vimeo.com/video/429618809?dnt=1&amp;app_id=122963"
+      ],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 782,
+      "slug": "exposition-bois-sacre-dakart-2014-wallonie-bruxelles-international",
+      "link": "https://mehomez.de/exposition-bois-sacre-dakart-2014-wallonie-bruxelles-international/",
+      "type": "parcours",
+      "title": "Exposition Bois sacré Dak'art 2014 Wallonie-Bruxelles international",
+      "excerpt": "https://boisacre.blogspot.com/2014/05/ezechiel-mehome-nous-presente-son.html?fbclid=IwAR1qX4Sj1KcL7n1gouzA5IP12w3kIndIpX2ILNOf9ZFXl47gTaZgh4U7TY0",
+      "html": "\n<p><a href=\"https://boisacre.blogspot.com/2014/05/ezechiel-mehome-nous-presente-son.html?fbclid=IwAR1qX4Sj1KcL7n1gouzA5IP12w3kIndIpX2ILNOf9ZFXl47gTaZgh4U7TY0\">https://boisacre.blogspot.com/2014/05/ezechiel-mehome-nous-presente-son.html?fbclid=IwAR1qX4Sj1KcL7n1gouzA5IP12w3kIndIpX2ILNOf9ZFXl47gTaZgh4U7TY0</a></p>\n",
+      "text": "https://boisacre.blogspot.com/2014/05/ezechiel-mehome-nous-presente-son.html?fbclid=IwAR1qX4Sj1KcL7n1gouzA5IP12w3kIndIpX2ILNOf9ZFXl47gTaZgh4U7TY0",
+      "date": "2020-06-30T14:12:19",
+      "dateGmt": "2020-06-30T13:12:19",
+      "createdYear": "2020",
+      "archiveYear": "2020",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2020/06/Portrait-Mehomez.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 711,
+      "slug": "emois-serie",
+      "link": "https://mehomez.de/emois-serie/",
+      "type": "parcours",
+      "title": "Émois (série de dessins au format de carte postale)",
+      "excerpt": "https://www.youtube.com/watch?v=78btw-3On1k&t=60s Série de dessins au format de carte postale Composition: peinture acrylique sur papier Technique: découpage et collage Dimensions irrégulières",
+      "html": "\n<p><a href=\"https://www.youtube.com/watch?v=78btw-3On1k&amp;t=60s\">https://www.youtube.com/watch?v=78btw-3On1k&amp;t=60s</a></p>\n\n\n\n<p>Série de dessins au format de carte postale</p>\n\n\n\n<p>Composition: peinture acrylique sur papier</p>\n\n\n\n<p>Technique: découpage et collage</p>\n\n\n\n<p>Dimensions irrégulières</p>\n",
+      "text": "https://www.youtube.com/watch?v=78btw-3On1k&t=60s\n Série de dessins au format de carte postale\n Composition: peinture acrylique sur papier\n Technique: découpage et collage\n Dimensions irrégulières",
+      "date": "2019-09-08T18:43:22",
+      "dateGmt": "2019-09-08T17:43:22",
+      "createdYear": "2019",
+      "archiveYear": "2019",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2019/08/Emois.jpg"
+      ],
+      "embeds": [],
+      "composition": "peinture acrylique sur papier",
+      "technique": "découpage et collage",
+      "dimensions": "irrégulières",
+      "materials": ""
+    },
+    {
+      "id": 363,
+      "slug": "20-avril-2011-visite-de-latelier-par-la-delegation-de-la-mairie-de-buchelay-france",
+      "link": "https://mehomez.de/20-avril-2011-visite-de-latelier-par-la-delegation-de-la-mairie-de-buchelay-france/",
+      "type": "parcours",
+      "title": "20 avril 2011 : Visite de l'atelier par la délégation de la mairie de buchelay (FRANCE)",
+      "excerpt": "Visite de l'atelier de Mehomez par la délégation de la mairie de buchelay (FRANCE) accompagnée de celle de Porto-Novo (BÉNIN) dans le cadre d'un partenariat et d'échanges culturels gagnants- gagnants entre les deux villes. Le mercredi 20 avril 2011.",
+      "html": "<p><img class=\"aligncenter size-medium wp-image-364\" title=\"Délégation de la mairie de buchelay de France (1)\" src=\"http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-1-370x266.jpg\" alt=\"Délégation de la mairie de buchelay de France (1)\" width=\"370\" height=\"266\" srcset=\"https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-1-370x266.jpg 370w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-1-150x108.jpg 150w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-1.jpg 600w\" sizes=\"(max-width: 370px) 100vw, 370px\" /><img class=\"alignright size-medium wp-image-365\" title=\"Délégation de la mairie de buchelay de France (2)\" src=\"http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-2-319x370.jpg\" alt=\"Délégation de la mairie de buchelay de France (2)\" width=\"319\" height=\"370\" srcset=\"https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-2-319x370.jpg 319w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-2-129x150.jpg 129w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-2.jpg 380w\" sizes=\"(max-width: 319px) 100vw, 319px\" />Visite de l&rsquo;atelier de Mehomez par la délégation de la mairie de buchelay (FRANCE) accompagnée de celle de Porto-Novo (BÉNIN) dans le cadre d&rsquo;un partenariat et d&rsquo;échanges culturels gagnants- gagnants entre les deux villes.</p>\n<p>Le mercredi 20 avril 2011.</p>\n<p><img class=\"aligncenter size-medium wp-image-366\" title=\"Délégation de la mairie de buchelay de France (3)\" src=\"http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-5-370x265.jpg\" alt=\"Délégation de la mairie de buchelay de France (3)\" width=\"370\" height=\"265\" srcset=\"https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-5-370x265.jpg 370w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-5-150x107.jpg 150w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-5.jpg 600w\" sizes=\"(max-width: 370px) 100vw, 370px\" /></p>\n",
+      "text": "Visite de l'atelier de Mehomez par la délégation de la mairie de buchelay (FRANCE) accompagnée de celle de Porto-Novo (BÉNIN) dans le cadre d'un partenariat et d'échanges culturels gagnants- gagnants entre les deux villes.\n Le mercredi 20 avril 2011.",
+      "date": "2011-05-07T10:57:01",
+      "dateGmt": "2011-05-07T09:57:01",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-1-370x266.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-2-319x370.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/05/20110428-Délégation-5-370x265.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 357,
+      "slug": "infos-parcours",
+      "link": "https://mehomez.de/infos-parcours/",
+      "type": "parcours",
+      "title": "Infos & Parcours",
+      "excerpt": "Télécharger le CV de Mehomez.",
+      "html": "<p style=\"text-align: center;\"><strong><a title=\"Ouvrir le CV de Mehomez au format PDF\" href=\"http://mehomez.de/wp-content/uploads/2011/05/Mehomez-CV.pdf\"><span style=\"color: #8cac00;\">Télécharger le CV de Mehomez.</span></a></strong></p>\n",
+      "text": "Télécharger le CV de Mehomez.",
+      "date": "2011-05-07T10:35:43",
+      "dateGmt": "2011-05-07T09:35:43",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 31,
+          "name": "Infos &amp; Parcours",
+          "slug": "infos-parcours",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 368,
+      "slug": "7-mars-2011-visite-datelier-et-entretien-%e2%80%93-retour-sur-la-mission-dakar-djibouti-par-lens-de-lyon-france",
+      "link": "https://mehomez.de/7-mars-2011-visite-datelier-et-entretien-%e2%80%93-retour-sur-la-mission-dakar-djibouti-par-lens-de-lyon-france/",
+      "type": "parcours",
+      "title": "7 mars 2011 : Visite d'atelier et entretien – Retour sur la mission Dakar-Djibouti par l'ENS de Lyon (France)",
+      "excerpt": "Visite de l'atelier de Mehomez et entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France). Retour sur la mission Dakar-Djibouti : « Remettre en circulation les savoirs et les objets ». Interview enregistré par Marine CERF-CINQ: stagiaire ... Continuer la lecture &rarr;",
+      "html": "<p><img class=\"aligncenter size-medium wp-image-369\" title=\"Entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France) (1)\" src=\"http://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-1-370x260.jpg\" alt=\"Entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France) (1)\" width=\"370\" height=\"260\" srcset=\"https://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-1-370x260.jpg 370w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-1-150x105.jpg 150w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-1.jpg 600w\" sizes=\"(max-width: 370px) 100vw, 370px\" />Visite de l&rsquo;atelier de Mehomez et entretien dans le cadre du projet exploratoire pluridisciplinaire de l&rsquo;École Normale de Lyon (France). Retour sur la mission Dakar-Djibouti : « Remettre en circulation les savoirs et les objets ».</p>\n<p>Interview enregistré par Marine CERF-CINQ: stagiaire à l&rsquo;ENS de lion. Le lundi 07 mars 2011. La discussion portait notamment sur des objets d&rsquo;art du Musée du Quai Branly à Paris : voir les documents <a href=\"http://mehomez.de/wp-content/uploads/2011/05/Quai-branly-Mission-Dakar-Djibouti-Mélange.pdf\">Mélange</a>, <a href=\"http://mehomez.de/wp-content/uploads/2011/05/Quai-branly-Mission-Dakar-Djibouti-Saisie-Guinault-Objets-Magiques-Bopa.pdf\">Saisie Guinault Objets Magiques Bopa</a>, <a href=\"http://mehomez.de/wp-content/uploads/2011/05/Quai-branly-Mission-Dakar-Djibouti-Statuaire.pdf\">Statuaire</a>.</p>\n<p style=\"text-align: center;\"><img class=\"alignnone size-medium wp-image-370\" title=\"Entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France) (2)\" src=\"http://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-2-370x284.jpg\" alt=\"Entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France) (2)\" width=\"326\" height=\"250\" srcset=\"https://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-2-370x284.jpg 370w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-2-150x115.jpg 150w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-2.jpg 600w\" sizes=\"(max-width: 326px) 100vw, 326px\" /> <img class=\"alignnone size-medium wp-image-371\" title=\"Entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France) (3)\" src=\"http://mehomez.de/wp-content/uploads/2011/05/20110428-Lexploratoire-dernière-image-370x246.jpg\" alt=\"Entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France) (3)\" width=\"377\" height=\"250\" srcset=\"https://mehomez.de/wp-content/uploads/2011/05/20110428-Lexploratoire-dernière-image-370x246.jpg 370w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Lexploratoire-dernière-image-150x100.jpg 150w, https://mehomez.de/wp-content/uploads/2011/05/20110428-Lexploratoire-dernière-image.jpg 600w\" sizes=\"(max-width: 377px) 100vw, 377px\" /></p>\n",
+      "text": "Visite de l'atelier de Mehomez et entretien dans le cadre du projet exploratoire pluridisciplinaire de l'École Normale de Lyon (France). Retour sur la mission Dakar-Djibouti : « Remettre en circulation les savoirs et les objets ».\n Interview enregistré par Marine CERF-CINQ: stagiaire à l'ENS de lion. Le lundi 07 mars 2011. La discussion portait notamment sur des objets d'art du Musée du Quai Branly à Paris : voir les documents Mélange , Saisie Guinault Objets Magiques Bopa , Statuaire .",
+      "date": "2011-05-05T11:00:05",
+      "dateGmt": "2011-05-05T10:00:05",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-1-370x260.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/05/20110428-Visite-2-370x284.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/05/20110428-Lexploratoire-dernière-image-370x246.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 319,
+      "slug": "exposition-en-france-2011-perspectives%e2%80%a6-une-memoire-de-l%e2%80%99oubli",
+      "link": "https://mehomez.de/exposition-en-france-2011-perspectives%e2%80%a6-une-memoire-de-l%e2%80%99oubli/",
+      "type": "parcours",
+      "title": "Exposition en France, 2011 : Perspectives… une mémoire de l’oubli",
+      "excerpt": "Du 18 janvier au 28 février 2011, l’association française Perce Oreille a organisé l’exposition « Perspectives… une mémoire de l’oubli » dans la commune de Reignier sur l’artiste Mehomez.",
+      "html": "<p>Du 18 janvier au 28 février 2011, l’association française Perce Oreille a organisé l’exposition « Perspectives… une mémoire de l’oubli » dans la commune de Reignier sur l’artiste Mehomez.</p>\n<p style=\"text-align: center;\"><img class=\"alignnone size-medium wp-image-320\" title=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (1)\" src=\"http://mehomez.de/wp-content/uploads/2011/03/afrique-495-370x277.jpg\" alt=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (1)\" width=\"260\" height=\"194\" srcset=\"https://mehomez.de/wp-content/uploads/2011/03/afrique-495-370x277.jpg 370w, https://mehomez.de/wp-content/uploads/2011/03/afrique-495-150x112.jpg 150w, https://mehomez.de/wp-content/uploads/2011/03/afrique-495.jpg 480w\" sizes=\"(max-width: 260px) 100vw, 260px\" /> <img class=\"alignnone size-medium wp-image-321\" title=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (2)\" src=\"http://mehomez.de/wp-content/uploads/2011/03/afrique-496-370x277.jpg\" alt=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (2)\" width=\"257\" height=\"192\" srcset=\"https://mehomez.de/wp-content/uploads/2011/03/afrique-496-370x277.jpg 370w, https://mehomez.de/wp-content/uploads/2011/03/afrique-496-150x112.jpg 150w, https://mehomez.de/wp-content/uploads/2011/03/afrique-496.jpg 480w\" sizes=\"(max-width: 257px) 100vw, 257px\" /></p>\n<p style=\"text-align: center;\"><img class=\"alignnone size-medium wp-image-322\" title=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (3)\" src=\"http://mehomez.de/wp-content/uploads/2011/03/afrique-497-370x277.jpg\" alt=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (3)\" width=\"240\" height=\"179\" srcset=\"https://mehomez.de/wp-content/uploads/2011/03/afrique-497-370x277.jpg 370w, https://mehomez.de/wp-content/uploads/2011/03/afrique-497-150x112.jpg 150w, https://mehomez.de/wp-content/uploads/2011/03/afrique-497.jpg 480w\" sizes=\"(max-width: 240px) 100vw, 240px\" /> <img class=\"alignnone size-medium wp-image-323\" title=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (4)\" src=\"http://mehomez.de/wp-content/uploads/2011/03/afrique-499-370x277.jpg\" alt=\"Exposition &quot;Perspectives… une mémoire de l’oubli&quot; (4)\" width=\"242\" height=\"181\" srcset=\"https://mehomez.de/wp-content/uploads/2011/03/afrique-499-370x277.jpg 370w, https://mehomez.de/wp-content/uploads/2011/03/afrique-499-150x112.jpg 150w, https://mehomez.de/wp-content/uploads/2011/03/afrique-499.jpg 480w\" sizes=\"(max-width: 242px) 100vw, 242px\" /></p>\n",
+      "text": "Du 18 janvier au 28 février 2011, l’association française Perce Oreille a organisé l’exposition « Perspectives… une mémoire de l’oubli » dans la commune de Reignier sur l’artiste Mehomez.",
+      "date": "2011-03-15T09:19:22",
+      "dateGmt": "2011-03-15T08:19:22",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "http://mehomez.de/wp-content/uploads/2011/03/afrique-495-370x277.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/03/afrique-496-370x277.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/03/afrique-497-370x277.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/03/afrique-499-370x277.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    },
+    {
+      "id": 386,
+      "slug": "2009-vernissage-de-lexposition-patrie-moine",
+      "link": "https://mehomez.de/2009-vernissage-de-lexposition-patrie-moine/",
+      "type": "parcours",
+      "title": "2009 : Vernissage de l'exposition Patrie-Moine",
+      "excerpt": "Vernissage de l'exposition « Patrie-Moine » au musée ethnographique Alexandre Senou Adandé de Porto-Novo, août 2009.",
+      "html": "<p>Vernissage de l&rsquo;exposition « Patrie-Moine » au musée ethnographique Alexandre Senou Adandé de Porto-Novo, août 2009.</p>\n<p><img class=\"aligncenter size-full wp-image-387\" title=\"Vernissage de l'exposition Patrie-Moine 1\" src=\"http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-1.jpg\" alt=\"Vernissage de l'exposition Patrie-Moine 1\" width=\"550\" height=\"890\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-1.jpg 550w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-1-92x150.jpg 92w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-1-228x370.jpg 228w\" sizes=\"(max-width: 550px) 100vw, 550px\" /><img class=\"aligncenter size-full wp-image-388\" title=\"Vernissage de l'exposition Patrie-Moine 2\" src=\"http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-2.jpg\" alt=\"Vernissage de l'exposition Patrie-Moine 2\" width=\"550\" height=\"850\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-2.jpg 550w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-2-97x150.jpg 97w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-2-239x370.jpg 239w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-2-323x500.jpg 323w\" sizes=\"(max-width: 550px) 100vw, 550px\" /><img class=\"aligncenter size-full wp-image-389\" title=\"Vernissage de l'exposition Patrie-Moine 3\" src=\"http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-3.jpg\" alt=\"Vernissage de l'exposition Patrie-Moine 3\" width=\"550\" height=\"810\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-3.jpg 550w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-3-101x150.jpg 101w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-3-251x370.jpg 251w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-3-339x500.jpg 339w\" sizes=\"(max-width: 550px) 100vw, 550px\" /><img class=\"aligncenter size-full wp-image-390\" title=\"Vernissage de l'exposition Patrie-Moine 4\" src=\"http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-4.jpg\" alt=\"Vernissage de l'exposition Patrie-Moine 4\" width=\"550\" height=\"864\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-4.jpg 550w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-4-95x150.jpg 95w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-4-235x370.jpg 235w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-4-318x500.jpg 318w\" sizes=\"(max-width: 550px) 100vw, 550px\" /><img class=\"aligncenter size-full wp-image-391\" title=\"Vernissage de l'exposition Patrie-Moine 5\" src=\"http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-5.jpg\" alt=\"Vernissage de l'exposition Patrie-Moine 5\" width=\"550\" height=\"801\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-5.jpg 550w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-5-102x150.jpg 102w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-5-254x370.jpg 254w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-5-343x500.jpg 343w\" sizes=\"(max-width: 550px) 100vw, 550px\" /><img class=\"aligncenter size-full wp-image-392\" title=\"Vernissage de l'exposition Patrie-Moine 6\" src=\"http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-6.jpg\" alt=\"Vernissage de l'exposition Patrie-Moine 6\" width=\"550\" height=\"809\" srcset=\"https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-6.jpg 550w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-6-101x150.jpg 101w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-6-251x370.jpg 251w, https://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-6-339x500.jpg 339w\" sizes=\"(max-width: 550px) 100vw, 550px\" /></p>\n",
+      "text": "Vernissage de l'exposition « Patrie-Moine » au musée ethnographique Alexandre Senou Adandé de Porto-Novo, août 2009.",
+      "date": "2011-03-05T10:44:13",
+      "dateGmt": "2011-03-05T09:44:13",
+      "createdYear": "2011",
+      "archiveYear": "2011",
+      "categories": [
+        {
+          "id": 32,
+          "name": "Événements",
+          "slug": "evenements",
+          "trail": [
+            {
+              "id": 31,
+              "name": "Infos &amp; Parcours",
+              "slug": "infos-parcours"
+            },
+            {
+              "id": 32,
+              "name": "Événements",
+              "slug": "evenements"
+            }
+          ]
+        }
+      ],
+      "tags": [],
+      "images": [
+        "https://mehomez.de/wp-content/uploads/2011/03/Vernissage-de-lexposition-Patrie-Moine-thumb.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-1.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-2.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-3.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-4.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-5.jpg",
+        "http://mehomez.de/wp-content/uploads/2011/06/Vernissage-de-lexposition-Patrie-Moine-6.jpg"
+      ],
+      "embeds": [],
+      "composition": "",
+      "technique": "",
+      "dimensions": "",
+      "materials": ""
+    }
+  ],
+  "contact": {
+    "title": "Contact",
+    "html": "<h2>Contacter Mehomez</h2>\n<p>Par courriel : <a  href=\"javascript:smae_decode('bWVob21lejFAeWFob28uZnI=');\" >&#109;&#101;&#104;&#111;&#109;&#101;&#122;&#049;&#064;&#121;&#097;&#104;&#111;&#111;&#046;&#102;&#114;</a></p>\n<p>mehomez9@gmail.com</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<div id=\"webmaster\" class=\"webmaster-contact\">\n<hr />\n<h2>Contacter le webmestre</h2>\n<p>Réalisation : <a title=\"Ouvrir le site du webmestre\" href=\"http://creapage.net/\">Creapage.net, création de sites Web au Bénin</a>.</p>\n</div>\n",
+    "text": "Contacter Mehomez\n Par courriel : mehomez1@yahoo.fr\n mehomez9@gmail.com\n Contacter le webmestre\n Réalisation : Creapage.net, création de sites Web au Bénin .",
+    "emails": [
+      "mehomez1@yahoo.fr",
+      "mehomez9@gmail.com"
+    ],
+    "links": [
+      "https://mehomez.de",
+      "http://www.ouadada.com/",
+      "http://creapage.net/"
+    ]
+  },
+  "categories": [
+    {
+      "id": 32,
+      "name": "Événements",
+      "slug": "evenements",
+      "description": "",
+      "parent": 31,
+      "count": 9
+    },
+    {
+      "id": 31,
+      "name": "Infos &amp; Parcours",
+      "slug": "infos-parcours",
+      "description": "",
+      "parent": 0,
+      "count": 10
+    },
+    {
+      "id": 45,
+      "name": "Les Peintures et Les Peintures Sculptées",
+      "slug": "peintures-sculptees-2020",
+      "description": "",
+      "parent": 0,
+      "count": 6
+    },
+    {
+      "id": 57,
+      "name": "Les sculptures",
+      "slug": "sculptures-2024",
+      "description": "sculptures 2024",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 5,
+      "name": "Les Sculptures",
+      "slug": "sculptures",
+      "description": "",
+      "parent": 0,
+      "count": 0
+    },
+    {
+      "id": 1,
+      "name": "Non classé",
+      "slug": "non-classe",
+      "description": "",
+      "parent": 0,
+      "count": 0
+    },
+    {
+      "id": 44,
+      "name": "Peinture 2000",
+      "slug": "p-2000",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 42,
+      "name": "Peinture 2001",
+      "slug": "peinture-2001",
+      "description": "",
+      "parent": 45,
+      "count": 1
+    },
+    {
+      "id": 37,
+      "name": "Peintures 2002",
+      "slug": "p-2002",
+      "description": "Peintures 2002",
+      "parent": 45,
+      "count": 1
+    },
+    {
+      "id": 43,
+      "name": "Peintures 2003",
+      "slug": "peintures-2003",
+      "description": "",
+      "parent": 45,
+      "count": 1
+    },
+    {
+      "id": 8,
+      "name": "Peintures 2006",
+      "slug": "p-2006",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 9,
+      "name": "Peintures 2007",
+      "slug": "p-2007",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 10,
+      "name": "Peintures 2008",
+      "slug": "p-2008",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 11,
+      "name": "Peintures 2009",
+      "slug": "p-2009",
+      "description": "",
+      "parent": 45,
+      "count": 4
+    },
+    {
+      "id": 23,
+      "name": "Peintures 2014",
+      "slug": "p-2014",
+      "description": "",
+      "parent": 45,
+      "count": 11
+    },
+    {
+      "id": 36,
+      "name": "Peintures 2018",
+      "slug": "peintures-2018",
+      "description": "",
+      "parent": 45,
+      "count": 2
+    },
+    {
+      "id": 35,
+      "name": "Peintures 2019",
+      "slug": "p-2019",
+      "description": "",
+      "parent": 45,
+      "count": 8
+    },
+    {
+      "id": 46,
+      "name": "Peintures 2020",
+      "slug": "peintures-2020-2",
+      "description": "",
+      "parent": 45,
+      "count": 2
+    },
+    {
+      "id": 48,
+      "name": "Peintures 2021",
+      "slug": "peintures-2021",
+      "description": "",
+      "parent": 45,
+      "count": 4
+    },
+    {
+      "id": 49,
+      "name": "Peintures 2022",
+      "slug": "peintures-2022",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 50,
+      "name": "Peintures 2023",
+      "slug": "peintures-2023",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 51,
+      "name": "Peintures 2024",
+      "slug": "peintures-2024",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 52,
+      "name": "Peintures 2025",
+      "slug": "peintures-2025",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 53,
+      "name": "Peintures 2026",
+      "slug": "peintures-2026",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 12,
+      "name": "Peintures sculptées 2010",
+      "slug": "p-2010",
+      "description": "",
+      "parent": 45,
+      "count": 29
+    },
+    {
+      "id": 13,
+      "name": "Peintures sculptées 2011",
+      "slug": "p-2011",
+      "description": "",
+      "parent": 45,
+      "count": 2
+    },
+    {
+      "id": 21,
+      "name": "Peintures sculptées 2012",
+      "slug": "p-2012",
+      "description": "",
+      "parent": 45,
+      "count": 0
+    },
+    {
+      "id": 22,
+      "name": "Peintures sculptées 2013",
+      "slug": "p-2013",
+      "description": "",
+      "parent": 45,
+      "count": 9
+    },
+    {
+      "id": 24,
+      "name": "Peintures sculptées 2015",
+      "slug": "p-2015",
+      "description": "",
+      "parent": 45,
+      "count": 1
+    },
+    {
+      "id": 25,
+      "name": "Peintures sculptées 2016",
+      "slug": "p-2016",
+      "description": "",
+      "parent": 45,
+      "count": 1
+    },
+    {
+      "id": 38,
+      "name": "Peintures sculptées 2017",
+      "slug": "peintures-2017",
+      "description": "",
+      "parent": 45,
+      "count": 1
+    },
+    {
+      "id": 6,
+      "name": "Revue de presse",
+      "slug": "revue-de-presse",
+      "description": "",
+      "parent": 31,
+      "count": 17
+    },
+    {
+      "id": 14,
+      "name": "Sculptures 2006",
+      "slug": "s-2006",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 15,
+      "name": "Sculptures 2007",
+      "slug": "s-2007",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 16,
+      "name": "Sculptures 2008",
+      "slug": "s-2008",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 17,
+      "name": "Sculptures 2009",
+      "slug": "s-2009",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 18,
+      "name": "Sculptures 2010",
+      "slug": "s-2010",
+      "description": "",
+      "parent": 5,
+      "count": 17
+    },
+    {
+      "id": 19,
+      "name": "Sculptures 2011",
+      "slug": "s-2011",
+      "description": "",
+      "parent": 5,
+      "count": 1
+    },
+    {
+      "id": 26,
+      "name": "Sculptures 2012",
+      "slug": "s-2012",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 27,
+      "name": "Sculptures 2013",
+      "slug": "s-2013",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 28,
+      "name": "Sculptures 2014",
+      "slug": "s-2014",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 29,
+      "name": "Sculptures 2015",
+      "slug": "s-2015",
+      "description": "",
+      "parent": 5,
+      "count": 2
+    },
+    {
+      "id": 30,
+      "name": "Sculptures 2016",
+      "slug": "s-2016",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 34,
+      "name": "Sculptures 2017",
+      "slug": "sculptures-2017",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 47,
+      "name": "Sculptures 2020",
+      "slug": "sculptures-2020",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 54,
+      "name": "Sculptures 2021",
+      "slug": "sculptures-2021",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 55,
+      "name": "Sculptures 2022",
+      "slug": "sculptures-2022",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 56,
+      "name": "Sculptures 2023",
+      "slug": "sculptures-2023",
+      "description": "",
+      "parent": 5,
+      "count": 0
+    },
+    {
+      "id": 33,
+      "name": "Toiles Sculptées",
+      "slug": "toiles-sculptees",
+      "description": "",
+      "parent": 0,
+      "count": 0
+    }
+  ]
+};
