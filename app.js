@@ -84,11 +84,6 @@ const assetUrl = (asset, size = 'large') => {
   return asset[size] || asset.large || asset.medium || asset.full || asset.thumbnail || '';
 };
 
-const assetDims = (asset) =>
-  typeof asset === 'object' && asset
-    ? { width: asset.width || '', height: asset.height || '' }
-    : null;
-
 const ownImageOf = (entry, size = 'large') => assetUrl(entry?.image, size) || entry?.images?.[0] || '';
 
 const imageOf = (entry, size = 'large', allowFallback = true) => {
@@ -98,23 +93,15 @@ const imageOf = (entry, size = 'large', allowFallback = true) => {
   return assetUrl(siteData.artist.portrait, size) || heroSlides[0];
 };
 
-const imageDimsOf = (entry) =>
-  assetDims(entry?.image) ||
-  assetDims(siteData.artist.portrait) ||
-  null;
-
 const imgTag = (
   entry,
   { size = 'medium', alt = '', loading = 'lazy', fetchpriority = 'auto', className = '', allowFallback = true } = {},
 ) => {
   const src = imageOf(entry, size, allowFallback);
   if (!src) return '';
-  const dims = imageDimsOf(entry);
   const classAttr = className ? ` class="${className}"` : '';
   const fetchAttr = fetchpriority !== 'auto' ? ` fetchpriority="${fetchpriority}"` : '';
-  const widthAttr = dims?.width ? ` width="${dims.width}"` : '';
-  const heightAttr = dims?.height ? ` height="${dims.height}"` : '';
-  return `<img${classAttr} src="${esc(src)}" alt="${esc(alt)}" loading="${loading}" decoding="async"${fetchAttr}${widthAttr}${heightAttr}>`;
+  return `<img${classAttr} src="${esc(src)}" alt="${esc(alt)}" loading="${loading}" decoding="async"${fetchAttr}>`;
 };
 
 const mediaTag = (
