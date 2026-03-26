@@ -1694,7 +1694,6 @@ img {
   .contact-layout,
   .contact-grid,
   .feature-grid,
-  .stats-band,
   .site-footer-inner,
   .story-grid {
     grid-template-columns: 1fr;
@@ -1765,31 +1764,57 @@ img {
 
 @media (max-width: 640px) {
   #hero {
-    min-height: 78svh;
+    min-height: 86svh;
   }
 
   .hero-slide {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 84px;
-    transform: none;
+    background-position: center;
+    transform: scale(1.02);
   }
 
   .hero-slide.active {
-    transform: none;
+    transform: scale(1);
   }
 
   .hero-content {
-    padding: 0 20px 36px;
+    width: min(calc(100% - 32px), var(--site-max));
+    padding: 0 16px 40px;
   }
 
   .hero-title {
-    font-size: clamp(2.9rem, 14vw, 4rem);
+    font-size: clamp(3rem, 14vw, 4.2rem);
+    line-height: 0.92;
   }
 
   .hero-sub {
-    font-size: 0.72rem;
+    max-width: 22rem;
+    font-size: 0.68rem;
     letter-spacing: 0.16em;
+  }
+
+  .stats-band {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    padding: 32px 12px;
+  }
+
+  .stat-item {
+    min-width: 0;
+    padding: 12px 6px;
+    border-right: 1px solid var(--border-dim);
+  }
+
+  .stat-number {
+    font-size: clamp(1.6rem, 7vw, 2.2rem);
+  }
+
+  .stat-label {
+    margin-top: 6px;
+    font-size: 0.42rem;
+    letter-spacing: 0.16em;
+    line-height: 1.5;
   }
 
   .gallery-grid,
