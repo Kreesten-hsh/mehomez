@@ -503,6 +503,8 @@ function renderWorksPage() {
     grid.innerHTML = filtered.length
       ? filtered.map(galleryCard).join('')
       : '<div class="empty-state">Aucune œuvre ne correspond à ce filtre.</div>';
+
+    grid.querySelectorAll('.reveal').forEach((item) => item.classList.add('visible'));
   };
 
   buttons.forEach((button) =>

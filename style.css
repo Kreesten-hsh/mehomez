@@ -532,7 +532,7 @@ img {
 }
 
 .artiste-portrait {
-  max-width: 380px;
+  max-width: 3800px;
   margin-top: 24px;
 }
 
@@ -1533,11 +1533,11 @@ img {
 .lightbox {
   position: fixed;
   inset: 0;
-  z-index: 9000;
+  z-index: 11050;
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding: 48px 40px 40px;
   background: rgba(10, 9, 7, 0.97);
 }
 
@@ -1549,6 +1549,7 @@ img {
   position: relative;
   max-width: 900px;
   width: 100%;
+  padding-top: 64px;
 }
 
 .lightbox-img {
@@ -1582,13 +1583,14 @@ img {
 
 .lightbox-close {
   position: absolute;
-  top: -50px;
+  top: 0;
   right: 0;
+  z-index: 2;
   width: 44px;
   height: 44px;
   border: 1px solid var(--border-dim);
-  background: transparent;
-  color: var(--text-dim);
+  background: rgba(10, 9, 7, 0.84);
+  color: var(--text);
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.2s;
@@ -1762,6 +1764,34 @@ img {
 }
 
 @media (max-width: 640px) {
+  #hero {
+    min-height: 78svh;
+  }
+
+  .hero-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center 84px;
+    transform: none;
+  }
+
+  .hero-slide.active {
+    transform: none;
+  }
+
+  .hero-content {
+    padding: 0 20px 36px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.9rem, 14vw, 4rem);
+  }
+
+  .hero-sub {
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+  }
+
   .gallery-grid,
   .gallery-grid.gallery-grid--wide {
     columns: 1;
@@ -1799,6 +1829,14 @@ img {
   .story-card-meta {
     font-size: 0.54rem;
     letter-spacing: 0.12em;
+  }
+
+  .lightbox {
+    padding: 20px 16px;
+  }
+
+  .lightbox-inner {
+    padding-top: 56px;
   }
 
   .archive-filters {
